@@ -1,0 +1,124 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding>
+    <name>Answers to Questions</name>
+    <text id="20190213cb7ed6edf6e44b0d80000001">
+      <heading>Answers to Questions</heading>
+    </text>
+    <subject>
+      <name>Hospital Presentations</name>
+      <text id="20190213cb7ed6edf6e44b0d80000002">
+        <inserted>
+          <heading>Hospital Presentations</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="542">
+            <name>Hospital Presentations</name>
+          </question>
+        </questions>
+        <text id="20190213cb7ed6edf6e44b0d80000003">
+          <inserted>542 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  What is the total number of hospital presentations, statewide and for each metro hospital and country in total, for 2016-17 and 2017-18?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="542">
+            <name>Hospital Presentations</name>
+          </question>
+        </questions>
+        <text id="20190213cb7ed6edf6e44b0d80000004">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="20190213cb7ed6edf6e44b0d80000005">
+          <inserted>In 2017-18, hospital presentations were 605,730 across the state.</inserted>
+        </text>
+        <text id="20190213cb7ed6edf6e44b0d80000006">
+          <inserted>In 2016-17, hospital presentations were 587,466 across the state.</inserted>
+        </text>
+        <text id="20190213cb7ed6edf6e44b0d80000007">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell>Hospital</cell>
+                <cell>2016-17</cell>
+                <cell>2017-18</cell>
+              </rowtitle>
+              <row>
+                <cell>Flinders Medical Centre</cell>
+                <cell>85,778</cell>
+                <cell>88,890</cell>
+              </row>
+              <row>
+                <cell>Lyell McEwin Hospital</cell>
+                <cell>71,850</cell>
+                <cell>73,475</cell>
+              </row>
+              <row>
+                <cell>Modbury Hospital</cell>
+                <cell>36,864</cell>
+                <cell>40,804</cell>
+              </row>
+              <row>
+                <cell>Noarlunga Hospital</cell>
+                <cell>40,470</cell>
+                <cell>40,886</cell>
+              </row>
+              <row>
+                <cell>Royal Adelaide Hospital </cell>
+                <cell>77,625</cell>
+                <cell>77,693</cell>
+              </row>
+              <row>
+                <cell>The Queen Elizabeth Hospital</cell>
+                <cell>44,725</cell>
+                <cell>45,256</cell>
+              </row>
+              <row>
+                <cell>Women's and Children's Hospital</cell>
+                <cell>46,581</cell>
+                <cell>45,931</cell>
+              </row>
+              <row>
+                <cell>Country</cell>
+                <cell>183,573</cell>
+                <cell>192,795</cell>
+              </row>
+              <row>
+                <cell>Total of all presentations</cell>
+                <cell>587,466</cell>
+                <cell>605,730</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190213cb7ed6edf6e44b0d80000008" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

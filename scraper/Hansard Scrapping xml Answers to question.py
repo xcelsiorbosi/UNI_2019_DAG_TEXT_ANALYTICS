@@ -21,7 +21,7 @@ options.add_experimental_option("prefs", {
   "download.prompt_for_download": False,
   "safebrowsing.enabled": True
 })
-driver = webdriver.Chrome(executable_path='C:\\Users\\Bipin Karki\\Desktop\\chromedriver.exe',chrome_options=options) #need to download chromedriver.exe and give path
+driver = webdriver.Chrome(chrome_options=options) #need to download chromedriver.exe and give path
 
 
 # In[ ]:
@@ -74,7 +74,7 @@ driver.close()
 
 #Scrapping all XML files for individual debates
 for i in range(len(allHrefs)):
-    driver = webdriver.Chrome(executable_path='C:\\Users\\Bipin Karki\\Desktop\\chromedriver.exe',chrome_options=options)
+    driver = webdriver.Chrome(chrome_options=options)
     driver.get(allHrefs[i])
     driver.find_element_by_xpath(("//*[@alt=\"XML\"]")).click()    #this will download the xml file
     time.sleep(4)

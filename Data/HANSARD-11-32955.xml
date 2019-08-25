@@ -1,0 +1,72 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-14" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4649" />
+  <endPage num="4730" />
+  <dateModified time="2019-06-05T16:55:08+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Auditor-General's Report</name>
+      <text id="2019021455e9035d08014a1b90000001">
+        <inserted>
+          <heading>Auditor-General's Report</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="5084" kind="question">
+        <name>In reply to Mr MALINAUSKAS</name>
+        <house>House of Assembly</house>
+        <electorate id="">Croydon</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Leader of the Opposition</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-14">
+            <name>Auditor-General's Report</name>
+          </question>
+        </questions>
+        <text id="2019021455e9035d08014a1b90000002">
+          <inserted>In reply to <by role="member" id="5084">Mr MALINAUSKAS (Croydon—Leader of the Opposition)</by> (28 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4338" kind="answer">
+        <name>The Hon. S.S. MARSHALL</name>
+        <house>House of Assembly</house>
+        <electorate id="">Dunstan</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Premier</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-14">
+            <name>Auditor-General's Report</name>
+          </question>
+        </questions>
+        <text id="2019021455e9035d08014a1b90000003">
+          <inserted>
+            <by role="member" id="4338">The Hon. S.S. MARSHALL (Dunstan—Premier):</by>  I have been advised:</inserted>
+        </text>
+        <text id="2019021455e9035d08014a1b90000004">
+          <inserted>A Goods and Services Agreement was established with Mr Wayne Eagleson commencing on 11 June 2018 and expiring on 10 November 2018. The agreement was for specialist consultancy advice required by the Department of the Premier and Cabinet to provide support with the transition to the new government of South Australia.</inserted>
+        </text>
+        <text id="2019021455e9035d08014a1b90000005">
+          <inserted>There was a need for the ongoing receipt of this specialist consultancy advice. Therefore, a new Goods and Services Agreement was entered into with Mr Eagleson commencing on 11 November 2018 and expiring on 11 January 2019.</inserted>
+        </text>
+        <text id="2019021455e9035d08014a1b90000006">
+          <inserted>The terms and conditions of the engagement remain the same: A daily rate of NZ$2,400 for a maximum of six days per month with an expectation that for at least three days per month, Mr Eagleson will be physically located in Adelaide. Additionally, Mr Eagleson's reasonable travel, accommodation and incidental costs will be reimbursed.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

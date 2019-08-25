@@ -15,15 +15,11 @@ cwd = os.getcwd()
 # BASE_DIR = os.path.join( os.path.dirname( __file__ ),'' )
 # print (BASE_DIR, 'this is base')
 
-from pathlib import Path
-parentPath = Path(cwd).parent
-parentPath = str(parentPath)
-# print(parentPath+"\\Data")
 
 #this is the setup for silenium
 options = webdriver.ChromeOptions()
 options.add_experimental_option("prefs", {
-  "download.default_directory": parentPath+"\\Data",
+  "download.default_directory": cwd,
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True

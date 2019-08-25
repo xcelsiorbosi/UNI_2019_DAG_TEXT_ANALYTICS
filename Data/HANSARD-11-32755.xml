@@ -1,0 +1,61 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Health Services</name>
+      <text id="20190212bf187035f8dd4a85b0000001">
+        <inserted>
+          <heading>Health Services</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="540">
+            <name>Health Services</name>
+          </question>
+        </questions>
+        <text id="20190212bf187035f8dd4a85b0000002">
+          <inserted>540 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  What are the FTEs across our health services, for 2016- 17, for 2017-18, budgeted costs for this financial year and over the forward estimates, broken down into the following categories—DHW employees, LHNs, SAAS, medical professionals, nursing/midwifery, allied health professionals, public sector salaried officers, public sector executives, grant-funded scientists, medical scientists, technical officers, weekly paid/metal trades, dental officers, SA Ambulance Award, ministerial appointments and principal research fellows?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="540">
+            <name>Health Services</name>
+          </question>
+        </questions>
+        <text id="20190212bf187035f8dd4a85b0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has advised: </inserted>
+        </text>
+        <text id="20190212bf187035f8dd4a85b0000004">
+          <inserted>I refer the member to the evidence given to the South Australian Parliamentary Committee on Occupational Safety, Rehabilitation and Compensation's inquiry into Workplace Fatigue and Bullying in south Australian Hospitals and Health Services on Friday 7 December 2018.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

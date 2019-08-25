@@ -1,0 +1,231 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Central Health Department Staff</name>
+      <text id="2019021387849a591dde4da190000001">
+        <inserted>
+          <heading>Central Health Department Staff</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="547">
+            <name>Central Health Department Staff</name>
+          </question>
+        </questions>
+        <text id="2019021387849a591dde4da190000002">
+          <inserted>547 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  What is the breakdown, by location and job title, of positions that have been abolished across the central department's staff?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="547">
+            <name>Central Health Department Staff</name>
+          </question>
+        </questions>
+        <text id="2019021387849a591dde4da190000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="2019021387849a591dde4da190000004">
+          <inserted>In the 2018 calendar year, 40 ongoing positions were abolished across the Department for Health and Wellbeing.</inserted>
+        </text>
+        <text id="2019021387849a591dde4da190000005">
+          <inserted>Appendix A lists location and job title of the positions that have been abolished across the central Department for Health and Wellbeing.</inserted>
+        </text>
+        <text continued="true" id="2019021387849a591dde4da190000006">
+          <inserted>Appendix A</inserted>
+        </text>
+        <text id="2019021387849a591dde4da190000007">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell>LOCATION</cell>
+                <cell>JOB TITLE</cell>
+                <cell>Number</cell>
+              </rowtitle>
+              <row>
+                <cell rowspan="16">EHEALTH SYSTEMS</cell>
+                <cell>BUSINESS ANALYST</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>EHEALTH SYSTEMS ASO5</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>EHEALTH SYSTEMS ASO7</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>EHEALTH SYSTEMS ASO8</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>EXEC SUPPORT OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>ICT CHANGE &amp; INCIDENT COORDINATOR</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>RESOURCING OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR ANALYST PROGRAMMER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR ANALYST/PROGRAMMER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR OPERATOR</cell>
+                <cell>3</cell>
+              </row>
+              <row>
+                <cell>SENIOR SYSTEMS PROGRAMMER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SERVICE DESK OFFICER</cell>
+                <cell>3</cell>
+              </row>
+              <row>
+                <cell>SENIOR MANAGER DESKTOP SERVICES</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR PROJECT NURSE/MIDWIFE</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR SYSTEMS PROGRAMMER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>TECHNICAL SUPPORT OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell rowspan="8">FINANCE</cell>
+                <cell>FINANCE ADMINISTRATION CLERK</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>FINANCE OFFICER</cell>
+                <cell>2</cell>
+              </row>
+              <row>
+                <cell>FINANCIAL ACCOUNTANT</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>GROUP MANAGER FINANCIAL ACCOUNTING</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>UNATTACHED EMPLOYEE (FINANCE)</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>PRINCIPAL FINANCIAL ACCOUNTANT </cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR ASSET OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SUPERVISOR DEBT MANAGEMENT</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell rowspan="2">HEALTH AND COMMUNITY SERVICES COMPLAINTS COMMISSION</cell>
+                <cell>DISABILITY PEER OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>EXECUTIVE ASSISTANT</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>POLICY AND GOVERNANCE</cell>
+                <cell>SENIOR POLICY OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>PROCUREMENT AND SUPPLY CHAIN MANAGEMENT</cell>
+                <cell>BUSINESS SERVICES OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell rowspan="3">PUBLIC HEALTH AND CLINICAL SYSTEMS</cell>
+                <cell>MANAGER INFORMATION SUPPORT</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SCIENTIFIC OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR PROJECT OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell rowspan="3">SERVICE DEVELOPMENT</cell>
+                <cell>ADMINISTRATION SUPPORT OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>PROJECT MANAGER TRANSFORMING HEALTH</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>SENIOR PROJECT OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell>MINISTER'S OFFICE</cell>
+                <cell>SENIOR MINISTERIAL LIAISON OFFICER</cell>
+                <cell>1</cell>
+              </row>
+              <row>
+                <cell colspan="2">TOTAL</cell>
+                <cell>40</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="2019021387849a591dde4da190000008" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

@@ -1,0 +1,61 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>National Disability Insurance Scheme</name>
+      <text id="20190213166aef52e76b446690000001">
+        <inserted>
+          <heading>National Disability Insurance Scheme</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="568">
+            <name>National Disability Insurance Scheme</name>
+          </question>
+        </questions>
+        <text id="20190213166aef52e76b446690000002">
+          <inserted>568 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  Has the minister made representations to the federal government to speed up the process of transitioning South Australian patients to the National Disability Insurance Scheme? If so, what representations has he made?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="568">
+            <name>National Disability Insurance Scheme</name>
+          </question>
+        </questions>
+        <text id="20190213166aef52e76b446690000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has advised:</inserted>
+        </text>
+        <text id="20190213166aef52e76b446690000004">
+          <inserted>I refer the member to the answers provided to questions on notice.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

@@ -1,0 +1,65 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>SHINE SA</name>
+      <page num="4639" />
+      <text id="20190213c2527b15ef47454cb0000001">
+        <inserted>
+          <heading>SHINE SA</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="553">
+            <name>SHINE SA</name>
+          </question>
+        </questions>
+        <text id="20190213c2527b15ef47454cb0000002">
+          <inserted>553 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  On what basis did the government conclude that SHINE SA's services cut in the 2018-19 budget would be covered by the medical benefits scheme, as stated in the minister's budget day media release on the topic?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="553">
+            <name>SHINE SA</name>
+          </question>
+        </questions>
+        <text id="20190213c2527b15ef47454cb0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="20190213c2527b15ef47454cb0000004">
+          <inserted>SHINE SA has been working toward sustainability of their clinical services through the medical benefits scheme since 2014.</inserted>
+        </text>
+        <text id="20190213c2527b15ef47454cb0000005">
+          <inserted>Medical benefits scheme clinic earnings have increased every year from $381,000 in 2015-16 to $419,344 in 2016-17 and $638,477 in 2017-18.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

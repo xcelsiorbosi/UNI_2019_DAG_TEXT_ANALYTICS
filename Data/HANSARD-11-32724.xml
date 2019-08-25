@@ -1,0 +1,70 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Home for the Incurables Trust</name>
+      <text id="2019021226dc4bf1273e458290000001">
+        <inserted>
+          <heading>Home for the Incurables Trust</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="496">
+            <name>Home for the Incurables Trust</name>
+          </question>
+        </questions>
+        <text id="2019021226dc4bf1273e458290000002">
+          <inserted>496 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  What is the 2017-18 and 2018-19 operational or associated budget and the 2017-18 and 2018-19 FTE equivalency in the operation or delivery of the Home for the Incurables Trust?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="496">
+            <name>Home for the Incurables Trust</name>
+          </question>
+        </questions>
+        <text id="2019021226dc4bf1273e458290000003">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <text id="2019021226dc4bf1273e458290000004">
+          <inserted>The 2017-18 and 2018-19 budget for the Home for the Incurables Trust, on a cash flow basis, is published in the 2018-19 Agency Statements – Budget Paper 4 Volume 3 – Additional information for administered items – statement of cash flows. </inserted>
+        </text>
+        <text id="2019021226dc4bf1273e458290000005">
+          <inserted>Actual expenses for 2017-18 are contained within the Department for Human Services' Administered Financial Statements for the year ended 30 June 2018.</inserted>
+        </text>
+        <text id="2019021226dc4bf1273e458290000006">
+          <inserted>As applicable, the operational budget for delivery of the Home for the Incurables Trust and associated FTEs form part of the Department for Human Services' total controlled budget and FTEs published in the 2018-19 Agency Statements – Budget Paper 4 Volume 3.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

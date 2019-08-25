@@ -1,0 +1,60 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Major Events</name>
+      <text id="201902122a4aa889b0ed4b4ab0000001">
+        <inserted>
+          <heading>Major Events</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4363" kind="question">
+        <name>The Hon. T.A. FRANKS</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>Major Events</name>
+          </question>
+        </questions>
+        <text id="201902122a4aa889b0ed4b4ab0000002">
+          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Major Events</name>
+          </question>
+        </questions>
+        <text id="201902122a4aa889b0ed4b4ab0000003">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+        </text>
+        <text id="201902122a4aa889b0ed4b4ab0000004">
+          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        </text>
+        <text id="201902122a4aa889b0ed4b4ab0000005" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

@@ -1,0 +1,192 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Emergency Departments</name>
+      <text id="201902139f533c430697483590000001">
+        <inserted>
+          <heading>Emergency Departments</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="616">
+            <name>Emergency Departments</name>
+          </question>
+        </questions>
+        <text id="201902139f533c430697483590000002">
+          <inserted>616 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  Given that there is no historical information available on the SA Health Dashboard website, what is the number of mental health admissions in metro Adelaide public hospital emergency departments in:</inserted>
+        </text>
+        <text id="201902139f533c430697483590000003">
+          <inserted>(a)&amp;#x9;July 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000004">
+          <inserted>(b)&amp;#x9;August 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000005">
+          <inserted>(c)&amp;#x9;September 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000006">
+          <inserted>(d)&amp;#x9;October 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000007">
+          <inserted>(e)&amp;#x9;November 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000008">
+          <inserted>(f)&amp;#x9;December 2017?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000009">
+          <inserted>(g)&amp;#x9;January 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000010">
+          <inserted>(h)&amp;#x9;February 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000011">
+          <inserted>(i)&amp;#x9;March 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000012">
+          <inserted>(j)&amp;#x9;April 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000013">
+          <inserted>(k)&amp;#x9;May 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000014">
+          <inserted>(l)&amp;#x9;June 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000015">
+          <inserted>(m)&amp;#x9;July 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000016">
+          <inserted>(n)&amp;#x9;August 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000017">
+          <inserted>(o)&amp;#x9;September 2018?</inserted>
+        </text>
+        <page num="4645" />
+        <text id="201902139f533c430697483590000018">
+          <inserted>(p)&amp;#x9;October 2018?</inserted>
+        </text>
+        <text id="201902139f533c430697483590000019">
+          <inserted>(q)&amp;#x9;November 2018?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="616">
+            <name>Emergency Departments</name>
+          </question>
+        </questions>
+        <text id="201902139f533c430697483590000020">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="201902139f533c430697483590000021">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell colspan="2">Number of Mental Health presentations to Metropolitan SA Public Hospital Emergency Departments</cell>
+              </rowtitle>
+              <row>
+                <cell>Jul-17</cell>
+                <cell>1,449</cell>
+              </row>
+              <row>
+                <cell>Aug-17</cell>
+                <cell>1,517</cell>
+              </row>
+              <row>
+                <cell>Sep-17</cell>
+                <cell>1,386</cell>
+              </row>
+              <row>
+                <cell>Oct-17</cell>
+                <cell>1,492</cell>
+              </row>
+              <row>
+                <cell>Nov-17</cell>
+                <cell>1,479</cell>
+              </row>
+              <row>
+                <cell>Dec-17</cell>
+                <cell>1,407</cell>
+              </row>
+              <row>
+                <cell>Jan-18</cell>
+                <cell>1,576</cell>
+              </row>
+              <row>
+                <cell>Feb-18</cell>
+                <cell>1,373</cell>
+              </row>
+              <row>
+                <cell>Mar-18</cell>
+                <cell>1,622</cell>
+              </row>
+              <row>
+                <cell>Apr-18</cell>
+                <cell>1,391</cell>
+              </row>
+              <row>
+                <cell>May-18</cell>
+                <cell>1,493</cell>
+              </row>
+              <row>
+                <cell>Jun-18</cell>
+                <cell>1,500</cell>
+              </row>
+              <row>
+                <cell>Jul-18</cell>
+                <cell>1,503</cell>
+              </row>
+              <row>
+                <cell>Aug-18</cell>
+                <cell>1,534</cell>
+              </row>
+              <row>
+                <cell>Sep-18</cell>
+                <cell>1,438</cell>
+              </row>
+              <row>
+                <cell>Oct-18</cell>
+                <cell>1,560</cell>
+              </row>
+              <row>
+                <cell>Nov-18</cell>
+                <cell>1,544</cell>
+              </row>
+              <row>
+                <cell>Dec-18</cell>
+                <cell>1,533</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="201902139f533c430697483590000022" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
