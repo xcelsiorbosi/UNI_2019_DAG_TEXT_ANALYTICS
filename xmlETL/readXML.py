@@ -42,7 +42,9 @@ for i in onlyfiles:
 	# print(json.dumps(doc))
 
 	with open(parentPath+"\\xml_json\\"+rename+'.json', 'w') as outfile:
+		doc = json.loads(doc)
 		json.dump(doc, outfile)
+		print(doc)
 	# json_transform = json.loads(jsojson.dumps(dic)n.dumps(xmltodict.parse(i, process_namespaces=True)))
 
 	# print(json_transform)
