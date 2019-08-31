@@ -26,7 +26,41 @@ Listed below are what is required to run this project.
 ```TODO: Add additional notes about how to deploy this on a live system```
 
 ## Contributing
-```TODO: Instructions on how to contribute to his project e.g. pull requests and naming conventions ```
+When contributing to this project follow these steps:
+1.	Fork the project & clone locally
+2.	Create an upstream remote and sync your local copy before you branch
+3.	Branch for each separate piece of work.
+4.	Do the work and write good commit messages
+5.	Push to your origin repository
+6.	Create a new Pull Request in GitHub
+
+Full detailed instructions on how to complete each of these steps see [The beginner's guide to contributing to a GitHub project](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/)
+
+### Naming Conventions
+Project code should follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide for Python to maintain readability. 
+
+There is a command-line program, [pycodestyle](https://github.com/PyCQA/pycodestyle), that can check your code for conformance. Install it by running the following command in your terminal:
+
+``` $ pip install pycodestyle ```
+
+Then run it on a file or series of files to get a report of any violations.
+
+``` $ pycodestyle optparse.py ```
+
+The table below outlines some of the common naming styles in Python code and when you should use them:
+
+|Type	|Naming Convention	|Examples|
+|---|---|---|
+|Function	|Use a lowercase word or words. Separate words by underscores to improve readability.	|function, my_function|
+|Variable	|Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.	|x, var, my_variable|
+|Class	|Start each word with a capital letter. Do not separate words with underscores. This style is called camel case.	|Model, MyClass|
+|Method	|Use a lowercase word or words. Separate words with underscores to improve readability.	|class_method, method|
+|Constant	|Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.	|CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT|
+|Module	|Use a short, lowercase word or words. Separate words with underscores to improve readability.	|module.py, my_module.py|
+|Package	|Use a short, lowercase word or words. Do not separate words with underscores.| package, mypackage|
+
+Additional reading resources on using PEP 8 style guide:
+* [Python Naming Conventions](https://visualgit.readthedocs.io/en/latest/pages/naming_convention.html)
 
 ## Authors
 * Aaron Butler
