@@ -1,0 +1,82 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Gambling Regulation</name>
+      <text id="20190212d35784fe00b946f590000001">
+        <inserted>
+          <heading>Gambling Regulation</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="543" kind="question">
+        <name>In reply to Ms BEDFORD</name>
+        <house>House of Assembly</house>
+        <electorate id="">Florey</electorate>
+        <questions>
+          <question date="2019-02-12">
+            <name>Gambling Regulation</name>
+          </question>
+        </questions>
+        <text id="20190212d35784fe00b946f590000002">
+          <inserted>In reply to <by role="member" id="543">Ms BEDFORD (Florey)</by> (29 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Gambling Regulation</name>
+          </question>
+        </questions>
+        <text id="20190212d35784fe00b946f590000003">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Lotteries Commission of South Australia (the commission) is a statutory authority empowered by the State Lotteries Act 1966 to promote and conduct lotteries for and on behalf of the State of South Australia. </inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000004">
+          <inserted>The commission has appointed Tatts Lotteries SA Pty Ltd (SA Lotteries) as the master agent to operate the Commission's brands and products for a 40 year term, which is due to expire on 10 December 2052.</inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000005">
+          <inserted>The commission monitors Tatts and ensures the operation of lotteries in South Australia complies with all regulatory and legal arrangements. </inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000006">
+          <inserted>All gambling providers operating in South Australia are governed by the Gambling Codes of Practice Notice 2013 (the codes). </inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000007">
+          <inserted>Whilst the extension of credit by a gambling provider and the use of credit to gamble is prohibited under the <term>Casino Act 1997,</term> the <term>Gaming Machines Act 1992 </term>and the Major Betting Operator and licensed racing clubs under the <term>Authorised Betting Operations Act 2000, </term>the Codes <term>and the State Lotteries Act 1966</term> do not prohibit the use of credit to purchase Lotto or Keno tickets. </inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000008">
+          <inserted>As part of the transition to a new regulatory regime for gambling in South Australia, the Liquor and Gambling commissioner will be undertaking a broader review of all gambling regulation in South Australia.</inserted>
+        </text>
+        <page num="4533" />
+        <text id="20190212d35784fe00b946f590000009">
+          <inserted>The most appropriate way to progress the review will be determined by the commissioner early in the new year. </inserted>
+        </text>
+        <text id="20190212d35784fe00b946f590000010">
+          <inserted>This matter will be considered in conjunction with consultation with the Lotteries Commission of South Australia and the South Australian public.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

@@ -7,6 +7,7 @@ parentPath = Path(cwd).parent
 parentPath = str(parentPath)
 
 xmlLocation = parentPath+"\\Data"
+xmlLocationTransformed = parentPath+"\\Data\\transformedXML"
 import glob
 
 
@@ -24,7 +25,7 @@ print(onlyfiles)
 for i in onlyfiles:
 	with open(xmlLocation+"\\"+i, 'r') as fin:
 		data = fin.read().splitlines(True)
-	with open(xmlLocation+"\\"+i, 'w') as fout:
+	with open(xmlLocationTransformed+"\\"+i, 'w') as fout:
 		fout.writelines(data[1:])
 
 
@@ -33,7 +34,7 @@ for i in onlyfiles:
 	rename = i.split(".")
 	rename = rename[0]
 
-	with open(xmlLocation+"\\"+i) as fd:
+	with open(xmlLocationTransformed+"\\"+i) as fd:
 		try:
 			doc = xmltodict.parse(fd.read())
 		except:
@@ -45,12 +46,3 @@ for i in onlyfiles:
 		doc = json.loads(doc)
 		json.dump(doc, outfile)
 		print(doc)
-	# json_transform = json.loads(jsojson.dumps(dic)n.dumps(xmltodict.parse(i, process_namespaces=True)))
-
-	# print(json_transform)
-
-# mydict = {u'root': {u'persons': [{u'@city': u'hyderabad', u'person': {u'@name': u'abc', u'name': {u'@mobile': u'789', u'@age': u'50'}}}, {u'@city': u'vizag', u'person': {u'@name': u'xyz', u'name': {u'@mobile': u'123', u'@age': u'70'}}}]}}
-# print (xmltodict.unparse(mydict, pretty=True))
-
-
-# .option("rowTag", "foo").load(parentPath+"\\Data"")

@@ -1,0 +1,58 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>South Australian Government Financing Authority</name>
+      <text id="2019021255bb6b233aa94cd390000001">
+        <inserted>
+          <heading>South Australian Government Financing Authority</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4697" kind="question">
+        <name>The Hon. K.J. MAHER</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Leader of the Opposition</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>South Australian Government Financing Authority</name>
+          </question>
+        </questions>
+        <text id="2019021255bb6b233aa94cd390000002">
+          <inserted>In reply to <by role="member" id="4697">the Hon. K.J. MAHER (Leader of the Opposition) </by>(13 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="605" kind="answer">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>South Australian Government Financing Authority</name>
+          </question>
+        </questions>
+        <text id="2019021255bb6b233aa94cd390000003">
+          <inserted>
+            <by role="member" id="605">The Hon. R.I. LUCAS (Treasurer):</by>  The guarantee fee rate for the 2019-20 financial year has not yet been calculated.</inserted>
+        </text>
+        <text id="2019021255bb6b233aa94cd390000004">
+          <inserted>The guarantee fee rate for 2019-20 will be calculated in February/March 2019 and will be determined based on credit margins (spreads) in the Australian financial markets.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

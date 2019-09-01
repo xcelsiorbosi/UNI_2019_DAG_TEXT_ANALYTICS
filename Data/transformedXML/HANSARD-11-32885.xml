@@ -1,0 +1,63 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>National Disability Insurance Scheme</name>
+      <text id="2019021378d61a779bfe491fa0000001">
+        <inserted>
+          <heading>National Disability Insurance Scheme</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="566">
+            <name>National Disability Insurance Scheme</name>
+          </question>
+        </questions>
+        <text id="2019021378d61a779bfe491fa0000002">
+          <inserted>566 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  As at 1 December 2018, how many public hospital beds are currently occupied by patients waiting to transition to the National Disability Insurance Scheme?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="566">
+            <name>National Disability Insurance Scheme</name>
+          </question>
+        </questions>
+        <text id="2019021378d61a779bfe491fa0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="2019021378d61a779bfe491fa0000004">
+          <inserted>As at 23 December 2018, SA Health was monitoring 118 general patients in hospital beds who are eligible for NDIS support services, of whom 70 are discharge ready. The only matters delaying the discharge are pending NDIS decisions and processes. In addition, there are 23 mental health inpatients, who are discharge ready awaiting NDIS processes to be completed.</inserted>
+        </text>
+        <text id="2019021378d61a779bfe491fa0000005">
+          <inserted>In summary, a total of 93 discharge ready patients are unable to transition to community because they are awaiting NDIS supports.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

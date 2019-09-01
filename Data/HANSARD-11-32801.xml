@@ -1,0 +1,110 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Auditor-General's Report</name>
+      <text id="201902125c95fcdd5980460980000001">
+        <inserted>
+          <heading>Auditor-General's Report</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="5376" kind="question">
+        <name>In reply to Ms STINSON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Badcoe</electorate>
+        <questions>
+          <question date="2019-02-12">
+            <name>Auditor-General's Report</name>
+          </question>
+        </questions>
+        <text id="201902125c95fcdd5980460980000002">
+          <inserted>In reply to <by role="member" id="5376">Ms STINSON (Badcoe)</by> (28 November 2018).</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4340" kind="answer">
+        <name>The Hon. R. SANDERSON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Adelaide</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Child Protection</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Auditor-General's Report</name>
+          </question>
+        </questions>
+        <text id="201902125c95fcdd5980460980000003">
+          <inserted>
+            <by role="member" id="4340">The Hon. R. SANDERSON (Adelaide—Minister for Child Protection):</by>  I have been advised:</inserted>
+        </text>
+        <text id="201902125c95fcdd5980460980000004">
+          <inserted>As at the 30 June 2018, the total number of children in out-of-home-care is 3,695:</inserted>
+        </text>
+        <text id="201902125c95fcdd5980460980000005">
+          <item sublevel="1" bullet="true">
+            <inserted>Commercial care – 93</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000006">
+          <item sublevel="1" bullet="true">
+            <inserted>Foster Care – 1,434</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000007">
+          <item sublevel="1" bullet="true">
+            <inserted>Kinship Care (inclusive of Specified Child only carer) – 1,684</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000008">
+          <item sublevel="1" bullet="true">
+            <inserted>Residential Care – 408</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000009">
+          <item sublevel="1" bullet="true">
+            <inserted>Independent Living – 47</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000010">
+          <item sublevel="1" bullet="true">
+            <inserted>Family day care—29</inserted>
+          </item>
+        </text>
+        <text continued="true" id="201902125c95fcdd5980460980000011">
+          <inserted>Please note:</inserted>
+        </text>
+        <text id="201902125c95fcdd5980460980000012">
+          <item sublevel="1" bullet="true">
+            <inserted>Data is correct as at 30 June 2018.</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000013">
+          <item sublevel="1" bullet="true">
+            <inserted>Previous data adjustments occur due to information updates within the client management system. Data has now been frozen as at 31 August 2018.</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000014">
+          <item sublevel="1" bullet="true">
+            <inserted>Data is counted for children aged 0-17, consistent with National Australian institute of Health and Welfare (AIHW) and Report on Government Services (ROGS) reporting.</inserted>
+          </item>
+        </text>
+        <text id="201902125c95fcdd5980460980000015" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

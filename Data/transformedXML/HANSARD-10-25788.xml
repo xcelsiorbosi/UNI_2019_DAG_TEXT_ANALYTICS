@@ -1,0 +1,61 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Adelaide Motorsport Festival</name>
+      <text id="201902129f7122181ceb484a90000001">
+        <inserted>
+          <heading>Adelaide Motorsport Festival</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4363" kind="question">
+        <name>The Hon. T.A. FRANKS</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>Adelaide Motorsport Festival</name>
+          </question>
+        </questions>
+        <text id="201902129f7122181ceb484a90000002">
+          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(4 December 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Adelaide Motorsport Festival</name>
+          </question>
+        </questions>
+        <text id="201902129f7122181ceb484a90000003">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+        </text>
+        <text id="201902129f7122181ceb484a90000004">
+          <inserted>1.&amp;#x9;The South Australian Tourism Commission (SATC) is a sponsor of the Adelaide Motorsport Festival. It does not own nor manage the event, and as a result, the SATC does not hold this information.</inserted>
+        </text>
+        <text id="201902129f7122181ceb484a90000005">
+          <inserted>2.&amp;#x9;As a sponsor, this information is not the property of the SATC.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

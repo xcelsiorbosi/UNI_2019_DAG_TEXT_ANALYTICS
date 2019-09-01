@@ -1,0 +1,60 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>KordaMentha</name>
+      <text id="20190212aba89410baee4afb80000001">
+        <inserted>
+          <heading>KordaMentha</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-12-06" qonNum="519">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="20190212aba89410baee4afb80000002">
+          <inserted>519 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (6 December 2018).  What are the names and positions of members of the KordaMentha Turnaround Team engaged by CALHN?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-12-06" qonNum="519">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="20190212aba89410baee4afb80000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised: </inserted>
+        </text>
+        <text id="20190212aba89410baee4afb80000004">
+          <inserted>Mark Mentha and Chris Martin will lead the CALHN Organisational and Financial Recovery Plan turnaround team.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
