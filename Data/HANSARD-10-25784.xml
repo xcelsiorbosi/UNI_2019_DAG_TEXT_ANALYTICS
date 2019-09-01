@@ -1,0 +1,74 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Leigh Creek Energy</name>
+      <text id="20190212c584ea4bb304435590000001">
+        <inserted>
+          <heading>Leigh Creek Energy</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="3130" kind="question">
+        <name>The Hon. M.C. PARNELL</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>Leigh Creek Energy</name>
+          </question>
+        </questions>
+        <text id="20190212c584ea4bb304435590000002">
+          <inserted>In reply to <by role="member" id="3130">the Hon. M.C. PARNELL </by>(15 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Leigh Creek Energy</name>
+          </question>
+        </questions>
+        <text id="20190212c584ea4bb304435590000003">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  The Minister for Energy and Mining has advised</inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000004">
+          <inserted>1.&amp;#x9;In accordance with approvals, Leigh Creek Energy (LCE) is undertaking considerable monitoring both on-site and in surrounding areas to ensure the construction, operation and decommissioning of the underground coal gasification (UCG) demonstration plant is undertaken safely in relation to people and the environment. The fit-for-purpose monitoring programs measure air quality, water quality, soil vapours, temperature, pressure and surface/subsurface movement to ensure that identified risks are being appropriately monitored, meet established environmental objectives, and prompt corrective actions can be taken if necessary. </inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000005">
+          <inserted>These monitoring programs have been reviewed and endorsed by the Department for Energy and Mining and relevant co-regulators including the Environment Protection Authority and Department for Environment and Water.</inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000006">
+          <inserted>Dr Cliff Mallett, former CSIRO UCG research scientist, has also been engaged by the Department for Energy and Mining to provide independent advice and confirmation of the site suitability, fitness for purpose of the Groundwater and Soil Vapour Monitoring Plan to ensure the they adhere to good industry practice.</inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000007">
+          <inserted>2.&amp;#x9;The quantity of greenhouse gasses vented to date is considered negligible.</inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000008">
+          <inserted>3.&amp;#x9;Listed companies are required to provide continuous disclosure under the Australian Stock Exchange (ASX) Listing Rule 3.1 to ensure the integrity and efficiency of the ASX market. While all companies operating in South Australia are expected to meet the obligations under the listing rules, compliance with this Listing Rule is a matter for the ASX.</inserted>
+        </text>
+        <text id="20190212c584ea4bb304435590000009">
+          <inserted>4.&amp;#x9;Decisions on the approval or otherwise of projects administered under South Australia's Petroleum and Geothermal Energy Act 2000 are guided by science after thorough and unbiased assessment by experts within the co-regulatory agencies.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

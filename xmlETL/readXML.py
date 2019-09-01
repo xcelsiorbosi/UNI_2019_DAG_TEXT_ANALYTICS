@@ -21,11 +21,11 @@ print(onlyfiles)
 
 
 ## once off trim make this occur after download
-# for i in onlyfiles:
-# 	with open(xmlLocation+"\\"+i, 'r') as fin:
-# 		data = fin.read().splitlines(True)
-# 	with open(xmlLocation+"\\"+i, 'w') as fout:
-# 		fout.writelines(data[1:])
+for i in onlyfiles:
+	with open(xmlLocation+"\\"+i, 'r') as fin:
+		data = fin.read().splitlines(True)
+	with open(xmlLocation+"\\"+i, 'w') as fout:
+		fout.writelines(data[1:])
 
 
 import xmltodict

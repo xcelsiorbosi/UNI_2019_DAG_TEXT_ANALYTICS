@@ -15,10 +15,10 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Adelaide Motorsport Festival</name>
+      <text id="201902129f7122181ceb484a90000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Adelaide Motorsport Festival</heading>
         </inserted>
       </text>
       <talker role="member" id="4363" kind="question">
@@ -26,11 +26,11 @@
         <house>Legislative Council</house>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Adelaide Motorsport Festival</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        <text id="201902129f7122181ceb484a90000002">
+          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(4 December 2018).  </inserted>
         </text>
       </talker>
       <talker role="member" id="1820" kind="answer">
@@ -43,17 +43,19 @@
         </portfolios>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Adelaide Motorsport Festival</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="201902129f7122181ceb484a90000003">
           <inserted>
             <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="201902129f7122181ceb484a90000004">
+          <inserted>1.&amp;#x9;The South Australian Tourism Commission (SATC) is a sponsor of the Adelaide Motorsport Festival. It does not own nor manage the event, and as a result, the SATC does not hold this information.</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
+        <text id="201902129f7122181ceb484a90000005">
+          <inserted>2.&amp;#x9;As a sponsor, this information is not the property of the SATC.</inserted>
+        </text>
       </talker>
     </subject>
   </proceeding>

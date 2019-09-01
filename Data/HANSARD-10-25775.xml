@@ -15,45 +15,44 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Assist Homecare</name>
+      <text id="20190212a6d4c91694c24c0bb0000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Assist HomeCare</heading>
         </inserted>
       </text>
-      <talker role="member" id="4363" kind="question">
-        <name>The Hon. T.A. FRANKS</name>
+      <talker role="member" id="5418" kind="question">
+        <name>The Hon. C. BONAROS</name>
         <house>Legislative Council</house>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Assist HomeCare</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        <text id="20190212a6d4c91694c24c0bb0000002">
+          <inserted>In reply to <by role="member" id="5418">the Hon. C. BONAROS </by>(8 November 2018).  </inserted>
         </text>
       </talker>
-      <talker role="member" id="1820" kind="answer">
-        <name>The Hon. D.W. RIDGWAY</name>
+      <talker role="member" id="3164" kind="answer">
+        <name>The Hon. S.G. WADE</name>
         <house>Legislative Council</house>
         <portfolios>
           <portfolio id="">
-            <name>Minister for Trade</name>
+            <name>Minister for Health and Wellbeing</name>
           </portfolio>
         </portfolios>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Assist HomeCare</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="20190212a6d4c91694c24c0bb0000003">
           <inserted>
-            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+            <by role="member" id="3164">The Hon. S.G. WADE (Minister for Health and Wellbeing):</by>  I have been advised:</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="20190212a6d4c91694c24c0bb0000004">
+          <inserted>SA Health does not hold contracts with Assist HomeCare.</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
       </talker>
     </subject>
   </proceeding>

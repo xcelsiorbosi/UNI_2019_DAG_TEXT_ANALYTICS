@@ -15,45 +15,47 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Motor Accident Commission</name>
+      <text id="2019021216a95b74e0754b8ea0000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Motor Accident Commission</heading>
         </inserted>
       </text>
-      <talker role="member" id="4363" kind="question">
-        <name>The Hon. T.A. FRANKS</name>
-        <house>Legislative Council</house>
-        <questions>
-          <question date="2019-02-12">
-            <name>Major Events</name>
-          </question>
-        </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
-        </text>
-      </talker>
-      <talker role="member" id="1820" kind="answer">
-        <name>The Hon. D.W. RIDGWAY</name>
+      <talker role="member" id="4697" kind="question">
+        <name>The Hon. K.J. MAHER</name>
         <house>Legislative Council</house>
         <portfolios>
           <portfolio id="">
-            <name>Minister for Trade</name>
+            <name>Leader of the Opposition</name>
           </portfolio>
         </portfolios>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Motor Accident Commission</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="2019021216a95b74e0754b8ea0000002">
+          <inserted>In reply to <by role="member" id="4697">the Hon. K.J. MAHER (Leader of the Opposition) </by>(13 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="605" kind="answer">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>Motor Accident Commission</name>
+          </question>
+        </questions>
+        <text id="2019021216a95b74e0754b8ea0000003">
           <inserted>
-            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+            <by role="member" id="605">The Hon. R.I. LUCAS (Treasurer):</by>  </inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="2019021216a95b74e0754b8ea0000004">
+          <inserted>1.&amp;#x9;Surplus funds have previously been budgeted to return as either dividends or returns of equity. Previous dividends/returns from MAC have been paid to the Highways Fund with the intention that they be put toward road safety initiatives, pursuant to section 25(5)(d) and in accordance with section 26(2) of the <term>Motor Accident Commission Act 1992</term> (MAC Act).</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
+        <text id="2019021216a95b74e0754b8ea0000005">
+          <inserted>2.&amp;#x9;An amount of $142.7 million in 2018-19 was budgeted to be paid from the Motor Accident Commission, as at the 2018-19 Mid-Year Budget Review.</inserted>
+        </text>
       </talker>
     </subject>
   </proceeding>

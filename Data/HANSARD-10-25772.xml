@@ -15,10 +15,10 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Sexually Transmitted Infections and Bloodborne Viruses</name>
+      <text id="201902129b7ece33c1ae4474a0000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Sexually Transmitted Infections and Bloodborne Viruses</heading>
         </inserted>
       </text>
       <talker role="member" id="4363" kind="question">
@@ -26,34 +26,39 @@
         <house>Legislative Council</house>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Sexually Transmitted Infections and Bloodborne Viruses</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        <text id="201902129b7ece33c1ae4474a0000002">
+          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(16 October 2018).  </inserted>
         </text>
       </talker>
-      <talker role="member" id="1820" kind="answer">
-        <name>The Hon. D.W. RIDGWAY</name>
+      <talker role="member" id="3164" kind="answer">
+        <name>The Hon. S.G. WADE</name>
         <house>Legislative Council</house>
         <portfolios>
           <portfolio id="">
-            <name>Minister for Trade</name>
+            <name>Minister for Health and Wellbeing</name>
           </portfolio>
         </portfolios>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Sexually Transmitted Infections and Bloodborne Viruses</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="201902129b7ece33c1ae4474a0000003">
           <inserted>
-            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+            <by role="member" id="3164">The Hon. S.G. WADE (Minister for Health and Wellbeing):</by>  I have been advised:</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="201902129b7ece33c1ae4474a0000004">
+          <inserted>The Young, Deadly Syphilis Free campaign is a commonwealth funded campaign with national reach across all jurisdictions affected by the syphilis outbreak, including remote regions in Queensland, Northern Territory and Western Australia and the Far North and Western and Eyre regions of South Australia. </inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
+        <text id="201902129b7ece33c1ae4474a0000005">
+          <inserted>The campaign's focus is on encouraging Aboriginal and Torres Strait Islander young people aged 15 to 34 to test for syphilis and other STIs to assist in bringing the outbreak under control. The aim of the campaign is that 30,000 young people in communities affected by the syphilis outbreak test for STIs by June 2019.</inserted>
+        </text>
+        <text id="201902129b7ece33c1ae4474a0000006">
+          <inserted>The program outcomes, evaluation and data from the campaign are the property of the South Australian Health and Medical Research Institute and the commonwealth Department of Health. This data has not yet been published.</inserted>
+        </text>
       </talker>
     </subject>
   </proceeding>

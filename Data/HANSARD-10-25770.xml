@@ -15,22 +15,28 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Forestry Industry</name>
+      <text id="20190212654ee61e2a22498480000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Forestry Industry</heading>
         </inserted>
       </text>
-      <talker role="member" id="4363" kind="question">
-        <name>The Hon. T.A. FRANKS</name>
+      <talker role="member" id="5412" kind="question">
+        <name>The Hon. C.M. SCRIVEN</name>
         <house>Legislative Council</house>
         <questions>
-          <question date="2019-02-12">
-            <name>Major Events</name>
+          <question date="2018-12-05" qonNum="125">
+            <name>Forestry Industry</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        <text id="20190212654ee61e2a22498480000002">
+          <inserted>125 <by role="member" id="5412">The Hon. C.M. SCRIVEN </by>(5 December 2018).  Can the Minister for Primary Industries and Regional Development advise: </inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000003">
+          <inserted>1.&amp;#x9;How many farm forestry agreements are in place between Forestry SA and private farm forestry operators? </inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000004">
+          <inserted>2.&amp;#x9;Following the sale of the forward rotations of forests in the South East of South Australia, what happened to the legal status of the farm forestry agreements? </inserted>
         </text>
       </talker>
       <talker role="member" id="1820" kind="answer">
@@ -42,18 +48,20 @@
           </portfolio>
         </portfolios>
         <questions>
-          <question date="2019-02-12">
-            <name>Major Events</name>
+          <question date="2018-12-05" qonNum="125">
+            <name>Forestry Industry</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="20190212654ee61e2a22498480000005">
           <inserted>
-            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  The Minister for Primary Industries and Regional Development has provided the following</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="20190212654ee61e2a22498480000006">
+          <inserted>1.&amp;#x9;43.</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
+        <text id="20190212654ee61e2a22498480000007">
+          <inserted>2.&amp;#x9;It did not change.</inserted>
+        </text>
       </talker>
     </subject>
   </proceeding>

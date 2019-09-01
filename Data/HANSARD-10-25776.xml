@@ -15,22 +15,22 @@
   <proceeding continued="true">
     <name>Answers to Questions</name>
     <subject>
-      <name>Major Events</name>
-      <text id="201902122a4aa889b0ed4b4ab0000001">
+      <name>Mitsubishi Motors Australia</name>
+      <text id="2019021207091325ab4c4bff90000001">
         <inserted>
-          <heading>Major Events</heading>
+          <heading>Mitsubishi Motors Australia</heading>
         </inserted>
       </text>
-      <talker role="member" id="4363" kind="question">
-        <name>The Hon. T.A. FRANKS</name>
+      <talker role="member" id="5412" kind="question">
+        <name>The Hon. C.M. SCRIVEN</name>
         <house>Legislative Council</house>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Mitsubishi Motors Australia</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000002">
-          <inserted>In reply to <by role="member" id="4363">the Hon. T.A. FRANKS </by>(5 December 2018).  </inserted>
+        <text id="2019021207091325ab4c4bff90000002">
+          <inserted>In reply to <by role="member" id="5412">the Hon. C.M. SCRIVEN </by>(13 November 2018).  </inserted>
         </text>
       </talker>
       <talker role="member" id="1820" kind="answer">
@@ -43,17 +43,16 @@
         </portfolios>
         <questions>
           <question date="2019-02-12">
-            <name>Major Events</name>
+            <name>Mitsubishi Motors Australia</name>
           </question>
         </questions>
-        <text id="201902122a4aa889b0ed4b4ab0000003">
+        <text id="2019021207091325ab4c4bff90000003">
           <inserted>
             <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I have been advised:</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000004">
-          <inserted>The South Australian Tourism Commission conducts around 150 procurement projects per annum. The tender process for all procurement projects comply with State Procurement Board Policies and Guidelines for the procurement of all goods and services.</inserted>
+        <text id="2019021207091325ab4c4bff90000004">
+          <inserted>Mitsubishi Motors Australia Limited has agreed to establish a purpose built head office in Adelaide and an increase of 50 FTE. Clawback provisions extending to 2026 relate to both new and retained jobs.</inserted>
         </text>
-        <text id="201902122a4aa889b0ed4b4ab0000005" />
       </talker>
     </subject>
   </proceeding>
