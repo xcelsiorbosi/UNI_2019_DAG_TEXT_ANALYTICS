@@ -1,0 +1,180 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Statutes Amendment (National Energy Laws) (Binding Rate of Return Instrument) Bill</name>
+      <text id="20190212210f5cfafe6d4f3cb0000001">
+        <inserted>
+          <heading>Statutes Amendment (National Energy Laws) (Binding Rate of Return Instrument) Bill</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="3130" kind="question">
+        <name>The Hon. M.C. PARNELL</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-02-12">
+            <name>Statutes Amendment (National Energy Laws) (Binding Rate of Return Instrument) Bill</name>
+          </question>
+        </questions>
+        <text id="20190212210f5cfafe6d4f3cb0000002">
+          <inserted>In reply to <by role="member" id="3130">the Hon. M.C. PARNELL </by>(13 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Statutes Amendment (National Energy Laws) (Binding Rate of Return Instrument) Bill</name>
+          </question>
+        </questions>
+        <text id="20190212210f5cfafe6d4f3cb0000003">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  The Minister for Energy and Mining has advised:</inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000004">
+          <inserted>The Consumer Reference Group (CRG) is funded by the Australian Energy Regulator (AER), who is funded by the Commonwealth government. Throughout the 2018 rate of return guideline review, the AER funded the CRG members to provide consumer perspectives at a cost of approximately $350 000. This gave the 15 CRG members remuneration to prepare for and attend around 50 meetings from November 2017 through to December 2018.It also gave them funding for analysing information and writing their submissions into the review. </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000005">
+          <inserted>The CRG used this funding to: </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000006">
+          <item sublevel="1" bullet="true">
+            <inserted>Attend information sessions to develop capacity within the group to understand and put forward a unified position on the rate of return key issues.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000007">
+          <item sublevel="1" bullet="true">
+            <inserted>Engage with other stakeholder groups, including Energy Networks Australia, the Consumer Challenge Panel and Investor Reference Group to give the group greater context of other stakeholder perspectives.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000008">
+          <item sublevel="1" bullet="true">
+            <inserted>Work in sub-groups on specific parameters that could focus on producing detailed positions on the appropriate values and methodology for each parameter.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000009">
+          <item sublevel="1" bullet="true">
+            <inserted>Engage with an independent author to help draft the submission and concisely pull together the work of the sub-groups.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000010">
+          <item sublevel="1" bullet="true">
+            <inserted>Present the consumer perspective at the public forum to other stakeholders and to the AER board directly.</inserted>
+          </item>
+        </text>
+        <page num="2570" />
+        <text id="20190212210f5cfafe6d4f3cb0000011">
+          <inserted>The CRG also received support from Energy Consumers Australia (EGA), in the form of an expert report EGA commissioned from the South Australian Centre for Economic Studies that commented on issues raised by Frontier Economics in the review. This expert report provided additional evidence in support of the CRG positions. </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000012">
+          <inserted>The members of the CRG represented a diverse range of consumers. The group was able to develop a single submission incorporating views from each of the representatives. </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000013">
+          <inserted>The membership and representation of the group was as follows:</inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000014">
+          <item sublevel="1" bullet="true">
+            <inserted>John Devereaux, Chair, Goanna Energy—representing small business interests.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000015">
+          <item sublevel="1" bullet="true">
+            <inserted>Robyn Robinson, Deputy Chair, COTA- representing older consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000016">
+          <item sublevel="1" bullet="true">
+            <inserted>Warren Males, Canegrowers—representing agricultural consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000017">
+          <item sublevel="1" bullet="true">
+            <inserted>Ash Salardini, NSW Farmer's Federation—representing agricultural consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000018">
+          <item sublevel="1" bullet="true">
+            <inserted>Miyuru Ediweera, Public Interest Advocacy Centre—representing disadvantaged consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000019">
+          <item sublevel="1" bullet="true">
+            <inserted>David Havyatt, Energy Consumers Australia—representing general consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000020">
+          <item sublevel="1" bullet="true">
+            <inserted>David Headberry, Major Energy Users—representing manufacturing and other business consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000021">
+          <item sublevel="1" bullet="true">
+            <inserted>Mark Henley, Uniting Communities—representing older consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000022">
+          <item sublevel="1" bullet="true">
+            <inserted>Mark Grenning, Energy Users' Association of Australia—representing small to medium business consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000023">
+          <item sublevel="1" bullet="true">
+            <inserted>Heather I 'Anson, SA Farmer's federation—representing agricultural consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000024">
+          <item sublevel="1" bullet="true">
+            <inserted>Chris Joseph, Independent farmer—representing agricultural farmers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000025">
+          <item sublevel="1" bullet="true">
+            <inserted>Ian McAuley, CARE ACT—representing disadvantaged consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000026">
+          <item sublevel="1" bullet="true">
+            <inserted>Kym Mercer, Anti-Poverty Network SA—representing disadvantaged consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000027">
+          <item sublevel="1" bullet="true">
+            <inserted>Brendon Radford, National Seniors—representing older consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000028">
+          <item sublevel="1" bullet="true">
+            <inserted>Jo De Silva, South Australian Council of Social Service—representing disadvantaged consumers.</inserted>
+          </item>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000029">
+          <inserted>In relation to the current CRG (which was established prior to the new legislative framework), the AER publicised its intention to establish the group and invited interested consumers to apply to become members. This process was consistent with the way the AER appoints other important consumer representative bodies such as the Consumer Challenge Panel and Consumer Consultative Group. </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000030">
+          <inserted>The AER's selection process considered expertise, representation and ensured each group member had signed a contract that disclosed any conflict of interest. The AER did not receive any complaints about the selection process, but there has been feedback on how the process could be improved. </inserted>
+        </text>
+        <text id="20190212210f5cfafe6d4f3cb0000031">
+          <inserted>Once the 2018 rate of return guideline review process is completed, the AER will review the establishment and operation of the current CRG and incorporate learnings into future processes.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

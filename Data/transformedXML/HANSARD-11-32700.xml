@@ -1,0 +1,72 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Community Connections</name>
+      <text id="20190212a683fea940c449e890000001">
+        <inserted>
+          <heading>Community Connections</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="471">
+            <name>Community Connections</name>
+          </question>
+        </questions>
+        <text id="20190212a683fea940c449e890000002">
+          <inserted>471 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  With reference to sub-program 1.1: Community Connections and Support from the 2017-18 budget:</inserted>
+        </text>
+        <text id="20190212a683fea940c449e890000003">
+          <inserted>(a)&amp;#x9;Where does this sub-program and its objectives now sit within the Department for Human Services?</inserted>
+        </text>
+        <text id="20190212a683fea940c449e890000004">
+          <inserted>(b)&amp;#x9;What changes, additions, substitutions or discontinuations of Community Connections and Support have resulted from the machinery of government change, and what impact has this had on expenditure and FTE?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="471">
+            <name>Community Connections</name>
+          </question>
+        </questions>
+        <text id="20190212a683fea940c449e890000005">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <text id="20190212a683fea940c449e890000006">
+          <inserted>All programs and objectives under in Sub-program 1.1: Community Connections and Support in the 2017-18 Agency Statements are now reflected in Program 1: Communities of the 2018-19 Agency Statements for the Department for Human Services.</inserted>
+        </text>
+        <text id="20190212a683fea940c449e890000007">
+          <inserted>There have been no changes, additions, substitutions or discontinuations of the programs in Community Connections and Support resulting from the machinery of government change, and therefore no impact has resulted on expenditure and full time equivalent staff.'</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

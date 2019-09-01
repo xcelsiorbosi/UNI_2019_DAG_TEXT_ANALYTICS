@@ -1,0 +1,124 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Human Services Department</name>
+      <text id="20190212ae3d760d0ab6452cb0000001">
+        <inserted>
+          <heading>Human Services Department</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="476">
+            <name>Human Services Department</name>
+          </question>
+        </questions>
+        <text id="20190212ae3d760d0ab6452cb0000002">
+          <inserted>476 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  Regarding the Department for Human Services and all agencies reporting to the minister:</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000003">
+          <inserted>(a)&amp;#x9;What was the cost of electricity in 2017-18?</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000004">
+          <inserted>(b)&amp;#x9;What is the budgeted cost of electricity in 2018-19?</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000005">
+          <inserted>(c)&amp;#x9;What is the provisional cost of electricity in 2019-20, 2020-21 and 2021-22?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="476">
+            <name>Human Services Department</name>
+          </question>
+        </questions>
+        <text id="20190212ae3d760d0ab6452cb0000006">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000007">
+          <inserted>(a)&amp;#x9;The actual cost of electricity for the Department for Human Services (DHS) in 2017-18 was approximately $2.979m.</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000008">
+          <inserted>(b)&amp;#x9;The budgeted cost for electricity for the DHS in 2018-19 is approximately $2.114 million.</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000009">
+          <item sublevel="2">
+            <inserted>The budgeted cost for electricity for the SA Housing Authority in 2018-19 is $703,000</inserted>
+          </item>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000010">
+          <inserted>(c)&amp;#x9;The provisional cost for electricity for DHS in 2019-20, 2020-21 and</inserted>
+        </text>
+        <text continued="true" id="20190212ae3d760d0ab6452cb0000011">
+          <inserted>2021-22 is:</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000012">
+          <inserted>
+            <table>
+              <row>
+                <cell>2019-20Provision$'000</cell>
+                <cell>2020-21Provision$'000</cell>
+                <cell>2021-22Provision$'000</cell>
+              </row>
+              <row>
+                <cell>2,167</cell>
+                <cell>2,221</cell>
+                <cell>2,276</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000013" />
+        <text id="20190212ae3d760d0ab6452cb0000014">
+          <inserted>The provisional cost for electricity for the SA Housing Authority in 2019-20, 2020-21 and 2021-22 is:</inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000015">
+          <inserted>
+            <table>
+              <row>
+                <cell>2019-20Provision$'000</cell>
+                <cell>2020-21Provision$'000</cell>
+                <cell>2021-22Provision$'000</cell>
+              </row>
+              <row>
+                <cell>721</cell>
+                <cell>739</cell>
+                <cell>758</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190212ae3d760d0ab6452cb0000016" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

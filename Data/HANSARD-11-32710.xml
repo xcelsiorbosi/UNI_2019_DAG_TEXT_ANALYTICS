@@ -1,0 +1,133 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Human Services Department</name>
+      <text id="20190212b348303be28a48c480000001">
+        <inserted>
+          <heading>Human Services Department</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="482">
+            <name>Human Services Department</name>
+          </question>
+        </questions>
+        <text id="20190212b348303be28a48c480000002">
+          <inserted>482 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  Regarding the Department for Human Services and all agencies reporting to the minister:</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000003">
+          <inserted>(a)&amp;#x9;What is the FTE cap for each year of the forward estimates?</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000004">
+          <inserted>(b)&amp;#x9;Does the department or agency expect to exceed that cap in any year of the</inserted>
+        </text>
+        <text continued="true" id="20190212b348303be28a48c480000005">
+          <inserted>forward estimates?</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000006">
+          <inserted>(c)&amp;#x9;What is the actual FTE count currently, and the projected actual FTE count for each year of the forward estimates?</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000007">
+          <inserted>(d)&amp;#x9;What is the notional FTE job reduction target that has been agreed with Treasury for each year of the forward estimates?</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000008">
+          <inserted>(e)&amp;#x9;Does the department expect to meet that target in each year of the forward estimates?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="482">
+            <name>Human Services Department</name>
+          </question>
+        </questions>
+        <text id="20190212b348303be28a48c480000009">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <page num="4515" />
+        <text id="20190212b348303be28a48c480000010">
+          <inserted>(a)&amp;#x9;The FTE Cap for each year of the forward estimates is 2,240.6 FTEs for 2019-20; 1,758.6 FTEs for 2020-21; and 1,265.1 FTEs for 2021-22.</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000011">
+          <inserted>
+            <table>
+              <row>
+                <cell>Agency</cell>
+                <cell>2019-20</cell>
+                <cell>2020-21</cell>
+                <cell>2021-22</cell>
+              </row>
+              <row>
+                <cell>DHS</cell>
+                <cell>2240.6</cell>
+                <cell>1758.6</cell>
+                <cell>1265.1</cell>
+              </row>
+              <row>
+                <cell>SA Housing Authority</cell>
+                <cell>854.2</cell>
+                <cell>769.2</cell>
+                <cell>708.2</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000012" />
+        <text id="20190212b348303be28a48c480000013">
+          <inserted>(b)&amp;#x9;The department and SA Housing Authority do not expect to exceed the cap in any year of the forward estimates.</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000014">
+          <inserted>(c)&amp;#x9;The actual FTE count as at 30 September 2018 is 2,975 FTEs. There are no actuals projections for the forward estimates, other than the Department is not expecting to exceed its FTE cap in any year of the forward estimates.</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000015">
+          <inserted>The SA Housing Authority's FTE count at the last pay in October 2018 was 846.8. The projected FTE count across the forward estimates is in line with the approved FTE cap.</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000016">
+          <inserted>(d)&amp;#x9;Please note the following in regards to FTE reductions:</inserted>
+        </text>
+        <text id="20190212b348303be28a48c480000017">
+          <item sublevel="1" bullet="true">
+            <inserted>FTE reductions associated with the 2018-19 budget savings measures are outlined in the 2018-19 Budget Measures Statement (Budget Paper 5).</inserted>
+          </item>
+        </text>
+        <text id="20190212b348303be28a48c480000018">
+          <item sublevel="1" bullet="true">
+            <inserted>As part of the NDIS reforms and transfer of disability services to the non-government sector, please refer to the 2018-19 Budget Statement, Budget Paper 3 for the notional FTE reductions across the forward estimates, which is based on current assumptions of the transfer timing.</inserted>
+          </item>
+        </text>
+        <text id="20190212b348303be28a48c480000019">
+          <inserted>(e)&amp;#x9;The Department and SA Housing Authority expect to meet the FTE targets in each year of the forward estimates.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

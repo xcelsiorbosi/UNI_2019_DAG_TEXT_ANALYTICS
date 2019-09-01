@@ -1,0 +1,95 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Sexual Health Services Funding</name>
+      <text id="2019021393dbb4aa7b9744e480000001">
+        <inserted>
+          <heading>Sexual Health Services Funding</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="554">
+            <name>Sexual Health Services Funding</name>
+          </question>
+        </questions>
+        <text id="2019021393dbb4aa7b9744e480000002">
+          <inserted>554 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  Will the minister provide a list of all the organisations to be affected by cuts to blood-borne virus and STI prevention programs?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="554">
+            <name>Sexual Health Services Funding</name>
+          </question>
+        </questions>
+        <text id="2019021393dbb4aa7b9744e480000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised:</inserted>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000004">
+          <inserted>Effective 1 January 2019, the following organisations received a reduction in funding levels for blood-borne virus and STI care and support, and prevention programs:</inserted>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000005">
+          <item sublevel="1" bullet="true">
+            <inserted>SHINE SA</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000006">
+          <item sublevel="1" bullet="true">
+            <inserted>Hepatitis SA</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000007">
+          <item sublevel="1" bullet="true">
+            <inserted>Relationships Australia SA</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000008">
+          <item sublevel="1" bullet="true">
+            <inserted>Royal District Nursing Service SA</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000009">
+          <item sublevel="1" bullet="true">
+            <inserted>Centacare Catholic Family Services</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000010">
+          <item sublevel="1" bullet="true">
+            <inserted>Sex Industry Network; and</inserted>
+          </item>
+        </text>
+        <text id="2019021393dbb4aa7b9744e480000011">
+          <item sublevel="1" bullet="true">
+            <inserted>Aboriginal Health Council of SA.</inserted>
+          </item>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

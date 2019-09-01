@@ -1,0 +1,94 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Machinery of Government Changes</name>
+      <text id="201902124f12e76882af4b4180000001">
+        <inserted>
+          <heading>Machinery of Government Changes</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="477">
+            <name>Machinery of Government Changes</name>
+          </question>
+        </questions>
+        <text id="201902124f12e76882af4b4180000002">
+          <inserted>477 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  What is the total cost of machinery of government changes since 18 March 2018 and what is the breakdown of these costs?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="477">
+            <name>Machinery of Government Changes</name>
+          </question>
+        </questions>
+        <text id="201902124f12e76882af4b4180000003">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <text id="201902124f12e76882af4b4180000004">
+          <inserted>On 17 May 2018, the Department for Communities and Social Inclusion was renamed the Department for Human Services. The cost to rename and rebrand the department was $48,868 (excluding GST) There were no advertising costs associated with the renaming or rebranding of the department.</inserted>
+        </text>
+        <text id="201902124f12e76882af4b4180000005">
+          <inserted>The costs are broken down as follows:</inserted>
+        </text>
+        <text id="201902124f12e76882af4b4180000006">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell>Expenditure Items</cell>
+                <cell>Cost (excluding GST)</cell>
+              </rowtitle>
+              <row>
+                <cell>Infrastructure: lanyards, signage and security cards</cell>
+                <cell>$5,300</cell>
+              </row>
+              <row>
+                <cell>Communications and Engagement: printing—stationery, print collateral, distribution (e.g. forms, brochures, posters, pull up banners)</cell>
+                <cell>$37,468</cell>
+              </row>
+              <row>
+                <cell>Business Technology: updating mainframe operating systems, internet and intranet sites, and other general systems</cell>
+                <cell>$6,100</cell>
+              </row>
+              <row>
+                <cell>Total</cell>
+                <cell>$48,868</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="201902124f12e76882af4b4180000007" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

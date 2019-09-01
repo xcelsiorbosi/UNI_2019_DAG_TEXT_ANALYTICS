@@ -1,0 +1,72 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Main South Road Duplication</name>
+      <text id="20190212e0ce2cf8bbe5480db0000001">
+        <inserted>
+          <heading>Main South Road Duplication</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="3117" kind="question">
+        <name>The Hon. L.W.K. BIGNELL</name>
+        <house>House of Assembly</house>
+        <electorate id="">Mawson</electorate>
+        <questions>
+          <question date="2018-02-12" qonNum="530">
+            <name>Main South Road Duplication</name>
+          </question>
+        </questions>
+        <text id="20190212e0ce2cf8bbe5480db0000002">
+          <inserted>530 <by role="member" id="3117">The Hon. L.W.K. BIGNELL (Mawson)</by> (12 February 2018).  The community have made it clear they want under/overpasses included in the Main South Road Duplication from Seaford to Sellicks. This has been discussed at meetings with the minister and submitted in writing by the Main South Road Action Group. Can the Minister provide an update on what is proposed for the major intersections?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4847" kind="answer">
+        <name>The Hon. S.K. KNOLL</name>
+        <house>House of Assembly</house>
+        <electorate id="">Schubert</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Transport</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Minister for Planning</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-12" qonNum="530">
+            <name>Main South Road Duplication</name>
+          </question>
+        </questions>
+        <text id="20190212e0ce2cf8bbe5480db0000003">
+          <inserted>
+            <by role="member" id="4847">The Hon. S.K. KNOLL (Schubert—Minister for Transport, Infrastructure and Local Government, Minister for Planning):</by>  I have been advised of the following- </inserted>
+        </text>
+        <text id="20190212e0ce2cf8bbe5480db0000004">
+          <inserted>The Department of Planning, Transport and Infrastructure is progressing with the detailed planning required for this project. The planning will provide a better understanding of the timeline and extent of each stage, as well as provide clarity on the treatments with intersecting roads and provisions for pedestrians and cyclists.</inserted>
+        </text>
+        <text id="20190212e0ce2cf8bbe5480db0000005">
+          <inserted>Planning will provide recommended treatments for the major intersections with consideration of the road function, safety and accessibility to adjacent properties.</inserted>
+        </text>
+        <text id="20190212e0ce2cf8bbe5480db0000006">
+          <inserted>Direct liaison with the community will be a strong focus throughout the planning and delivery for this project including the Main South Road Action Group.</inserted>
+        </text>
+        <text id="20190212e0ce2cf8bbe5480db0000007">
+          <inserted>At this point in time, the contact for the Main South Road Action Group will be the Manager Infrastructure Planning and Investment, Mr Scott Cooper.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
