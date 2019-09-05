@@ -1,0 +1,124 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Police Numbers</name>
+      <text id="20190212851134bb8ecc4b5ca0000001">
+        <inserted>
+          <heading>Police Numbers</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4335" kind="question">
+        <name>Mr ODENWALDER</name>
+        <house>House of Assembly</house>
+        <electorate id="">Elizabeth</electorate>
+        <questions>
+          <question date="2018-12-05" qonNum="517">
+            <name>Police Numbers</name>
+          </question>
+        </questions>
+        <text id="20190212851134bb8ecc4b5ca0000002">
+          <inserted>517 <by role="member" id="4335">Mr ODENWALDER (Elizabeth)</by> (5 December 2018).  What was the total number of sworn police officers (FTE), at 31 July 2018, of the rank of:</inserted>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000003">
+          <item sublevel="1" bullet="true">
+            <inserted>Constable (including probationary constable)?</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000004">
+          <item sublevel="1" bullet="true">
+            <inserted>Senior Constable?</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000005">
+          <item sublevel="1" bullet="true">
+            <inserted>Sergeant?</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000006">
+          <item sublevel="1" bullet="true">
+            <inserted>Senior Sergeant?</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000007">
+          <item sublevel="1" bullet="true">
+            <inserted>Inspector?</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000008">
+          <item sublevel="1" bullet="true">
+            <inserted>Chief Inspector?</inserted>
+          </item>
+        </text>
+      </talker>
+      <talker role="member" id="4843" kind="answer">
+        <name>The Hon. C.L. WINGARD</name>
+        <house>House of Assembly</house>
+        <electorate id="">Gibson</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Police</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Minister for Recreation</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-12-05" qonNum="517">
+            <name>Police Numbers</name>
+          </question>
+        </questions>
+        <text id="20190212851134bb8ecc4b5ca0000009">
+          <inserted>
+            <by role="member" id="4843">The Hon. C.L. WINGARD (Gibson—Minister for Police, Emergency Services and Correctional Services, Minister for Recreation, Sport and Racing):</by>  </inserted>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000010">
+          <inserted>Total number of sworn police officers (FTE) as at 31 July 2018, of the rank of:</inserted>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000011">
+          <item sublevel="1" bullet="true">
+            <inserted>Constable – 966.2 FTE. This includes 363 Probationary Constables and 603.2 Constables.</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000012">
+          <item sublevel="1" bullet="true">
+            <inserted>Senior Constable – 1,608.6 FTE. This includes 1058.3 Senior Constables and 550.3 Senior Constables First Class.  </inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000013">
+          <item sublevel="1" bullet="true">
+            <inserted>Sergeant – 629.0 FTE</inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000014">
+          <item sublevel="1" bullet="true">
+            <inserted>Senior Sergeant – 220.8 FTE. This includes 88.0 Senior Sergeants and 132.8 Senior Sergeants First Class<term> </term></inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000015">
+          <item sublevel="1" bullet="true">
+            <inserted>Inspector – 58.8 FTE </inserted>
+          </item>
+        </text>
+        <text id="20190212851134bb8ecc4b5ca0000016">
+          <item sublevel="1" bullet="true">
+            <inserted>Chief Inspector – 42.0 FTE.</inserted>
+          </item>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

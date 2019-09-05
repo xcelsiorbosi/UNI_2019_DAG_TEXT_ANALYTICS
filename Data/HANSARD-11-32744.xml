@@ -1,0 +1,97 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>KordaMentha</name>
+      <text id="201902121d2f337de5c7415380000001">
+        <inserted>
+          <heading>KordaMentha</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-12-06" qonNum="527">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="201902121d2f337de5c7415380000002">
+          <inserted>527 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (6 December 2018).  On what dates between 18 March 2018 and 26 November 2018 did the Chief Executive of the Department for Health and Wellbeing meet with representatives from KordaMentha?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-12-06" qonNum="527">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="201902121d2f337de5c7415380000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised: </inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000004">
+          <inserted>The Chief Executive, SA Health met with representatives from KordaMentha on the following dates:</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000005">
+          <inserted>9 August 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000006">
+          <inserted>28 August 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000007">
+          <inserted>29 August 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000008">
+          <inserted>11 September 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000009">
+          <inserted>13 September 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000010">
+          <inserted>4 October 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000011">
+          <inserted>11 October 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000012">
+          <inserted>12 October 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000013">
+          <inserted>15 October 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000014">
+          <inserted>6 November 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000015">
+          <inserted>8 November 2018</inserted>
+        </text>
+        <text id="201902121d2f337de5c7415380000016">
+          <inserted>21 November 2018.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

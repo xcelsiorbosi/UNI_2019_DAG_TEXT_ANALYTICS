@@ -1,0 +1,75 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Noarlunga Hospital</name>
+      <text id="2019021244a5f890cf214e2cb0000001">
+        <inserted>
+          <heading>Noarlunga Hospital</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="565">
+            <name>Noarlunga Hospital</name>
+          </question>
+        </questions>
+        <text id="2019021244a5f890cf214e2cb0000002">
+          <inserted>565 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  Is the government still committed to the establishment of a 24/7, 12-bed Acute Medical Ward at Noarlunga Hospital, and if so:</inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000003">
+          <inserted>(a)&amp;#x9;When will construction commence on this ward?</inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000004">
+          <inserted>(b)&amp;#x9;Where will this ward be located?</inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000005">
+          <inserted>(c)&amp;#x9;Will this ward be 24/7 or will it have limited hours? If so what hours?</inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000006">
+          <inserted>(d)&amp;#x9;What is the anticipated opening date for this ward?</inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000007">
+          <inserted>(e)&amp;#x9;What will be moved off the Noarlunga Hospital site to make room for the acute medical ward?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="565">
+            <name>Noarlunga Hospital</name>
+          </question>
+        </questions>
+        <text id="2019021244a5f890cf214e2cb0000008">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised: </inserted>
+        </text>
+        <text id="2019021244a5f890cf214e2cb0000009">
+          <inserted>The planning process is ongoing and the government will meet its commitments.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

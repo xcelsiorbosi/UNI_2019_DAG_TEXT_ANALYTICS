@@ -1,0 +1,104 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Wallaroo Mining Proposal</name>
+      <text id="2019021257b0fbfb064745e2b0000001">
+        <inserted>
+          <heading>Wallaroo Mining Proposal</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="543" kind="question">
+        <name>In reply to Ms BEDFORD</name>
+        <house>House of Assembly</house>
+        <electorate id="">Florey</electorate>
+        <questions>
+          <question date="2019-02-12">
+            <name>Wallaroo Mining Proposal</name>
+          </question>
+        </questions>
+        <text id="2019021257b0fbfb064745e2b0000002">
+          <inserted>In reply to <by role="member" id="543">Ms BEDFORD (Florey)</by> (6 December 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Wallaroo Mining Proposal</name>
+          </question>
+        </questions>
+        <text id="2019021257b0fbfb064745e2b0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  I have been advised the following:</inserted>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000004">
+          <item sublevel="1" bullet="true">
+            <inserted>The application proposed is over a cleared paddock, currently and historically used for agricultural purposes, which has been subject to impacts from agricultural land use for some time. </inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000005">
+          <item sublevel="1" bullet="true">
+            <inserted>While independent surveys of the geology, flora, fauna, soil, air quality, noise, to name a few, are regularly required for mining lease applications, for this particular application the existing environment of a cleared paddock and low impact mining techniques proposed did not warrant an independent survey.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000006">
+          <item sublevel="1" bullet="true">
+            <inserted>If the extractive operation is approved, the zoning will remain unchanged however, consistent with government's assessment of the proposal, if the proposed operation is approved any future development in the area will be assessed in light of the surrounding environment, residences and businesses including the quarry. </inserted>
+          </item>
+        </text>
+        <page num="4534" />
+        <text id="2019021257b0fbfb064745e2b0000007">
+          <item sublevel="1" bullet="true">
+            <inserted>The application was circulated by the Department for Energy and Mining with an invitation for public comment for a total period of five weeks.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000008">
+          <item sublevel="1" bullet="true">
+            <inserted>During this period five public submissions were received, which will directly contribute to the assessment of this application.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000009">
+          <item sublevel="1" bullet="true">
+            <inserted>Additionally, Triad Transport provided evidence that they have agreements in place with the underlying landowner and over lapping exploration licence holder.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000010">
+          <item sublevel="1" bullet="true">
+            <inserted>The proposed activities described in the application is over an agricultural paddock, which is devoid of native vegetation and is currently used for agricultural purposes. </inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000011">
+          <item sublevel="1" bullet="true">
+            <inserted>Any flora or fauna growing or inhabiting the area would already be impacted by current agricultural operations, including the cycle of planting and harvesting crops.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000012">
+          <item sublevel="1" bullet="true">
+            <inserted>As a result of the public consultation and assessment of the application and responses received the Department for Energy and Mining have requested additional information from Triad Transport to assess potential impacts from proposed mining on adjacent businesses and residential properties.</inserted>
+          </item>
+        </text>
+        <text id="2019021257b0fbfb064745e2b0000013" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

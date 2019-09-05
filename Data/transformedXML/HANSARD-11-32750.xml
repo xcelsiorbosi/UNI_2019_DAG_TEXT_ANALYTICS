@@ -1,0 +1,61 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Emergency Departments</name>
+      <text id="20190212fdbb689cb49248baa0000001">
+        <inserted>
+          <heading>Emergency Departments</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-02-13" qonNum="535">
+            <name>Emergency Departments</name>
+          </question>
+        </questions>
+        <text id="20190212fdbb689cb49248baa0000002">
+          <inserted>535 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (13 February 2018).  What are the average emergency department visit times for each metro hospital, country in total, and statewide total, for 2016-17 and 2017-18?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-02-13" qonNum="535">
+            <name>Emergency Departments</name>
+          </question>
+        </questions>
+        <text id="20190212fdbb689cb49248baa0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised: </inserted>
+        </text>
+        <page num="4525" />
+        <text id="20190212fdbb689cb49248baa0000004">
+          <inserted>I refer the Member to the publications of the Australian Institute of Health and Welfare.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

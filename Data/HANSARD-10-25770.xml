@@ -1,0 +1,68 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Forestry Industry</name>
+      <text id="20190212654ee61e2a22498480000001">
+        <inserted>
+          <heading>Forestry Industry</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="5412" kind="question">
+        <name>The Hon. C.M. SCRIVEN</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2018-12-05" qonNum="125">
+            <name>Forestry Industry</name>
+          </question>
+        </questions>
+        <text id="20190212654ee61e2a22498480000002">
+          <inserted>125 <by role="member" id="5412">The Hon. C.M. SCRIVEN </by>(5 December 2018).  Can the Minister for Primary Industries and Regional Development advise: </inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000003">
+          <inserted>1.&amp;#x9;How many farm forestry agreements are in place between Forestry SA and private farm forestry operators? </inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000004">
+          <inserted>2.&amp;#x9;Following the sale of the forward rotations of forests in the South East of South Australia, what happened to the legal status of the farm forestry agreements? </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-12-05" qonNum="125">
+            <name>Forestry Industry</name>
+          </question>
+        </questions>
+        <text id="20190212654ee61e2a22498480000005">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  The Minister for Primary Industries and Regional Development has provided the following</inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000006">
+          <inserted>1.&amp;#x9;43.</inserted>
+        </text>
+        <text id="20190212654ee61e2a22498480000007">
+          <inserted>2.&amp;#x9;It did not change.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

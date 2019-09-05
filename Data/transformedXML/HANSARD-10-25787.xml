@@ -1,0 +1,63 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Adelaide Oval Hotel Development</name>
+      <text id="201902123415768f501943a790000001">
+        <inserted>
+          <heading>Adelaide Oval Hotel Development</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4697" kind="question">
+        <name>The Hon. K.J. MAHER</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Leader of the Opposition</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Adelaide Oval Hotel Development</name>
+          </question>
+        </questions>
+        <text id="201902123415768f501943a790000002">
+          <inserted>In reply to <by role="member" id="4697">the Hon. K.J. MAHER (Leader of the Opposition) </by>(29 November 2018).  </inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1820" kind="answer">
+        <name>The Hon. D.W. RIDGWAY</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Trade</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-02-12">
+            <name>Adelaide Oval Hotel Development</name>
+          </question>
+        </questions>
+        <text id="201902123415768f501943a790000003">
+          <inserted>
+            <by role="member" id="1820">The Hon. D.W. RIDGWAY (Minister for Trade, Tourism and Investment):</by>  I was first made aware of the proposal on 22 October 2018.</inserted>
+        </text>
+        <text id="201902123415768f501943a790000004">
+          <inserted>I have not had any representation/correspondence from hotels, or hotel developers about the impact on their business or investment decisions.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

@@ -1,0 +1,77 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2527" />
+  <endPage num="2572" />
+  <dateModified time="2019-02-25T11:19:35+10:30" />
+  <proceeding>
+    <name>Answers to Questions</name>
+    <text id="20190212e103057f98e1446ab0000001">
+      <heading>Answers to Questions</heading>
+    </text>
+    <subject>
+      <name>Attorney-General's Department</name>
+      <text id="20190212e103057f98e1446ab0000002">
+        <inserted>
+          <heading>Attorney-General's Department</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4697" kind="question">
+        <name>The Hon. K.J. MAHER</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Leader of the Opposition</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-10-25" qonNum="92">
+            <name>Attorney-General's Department</name>
+          </question>
+        </questions>
+        <text id="20190212e103057f98e1446ab0000003">
+          <inserted>92 <by role="member" id="4697">The Hon. K.J. MAHER (Leader of the Opposition) </by>(25 October 2018).  Can the Attorney-General advise:</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000004">
+          <inserted>1.&amp;#x9;Why the resources allocated to the Attorney-General's office have increased to 15 FTEs and a budget of $2.5m compared to the 2017-18 level of 12 FTEs and a budget of $2.1m?</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000005">
+          <inserted>2.&amp;#x9;Why the resources allocated to the Minister for Correctional Services office have increased to 13 FTEs with a budget of nearly $2.3m compared to the 2017-18 levels of 7 FTEs and a budget of $1.5million?</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000006">
+          <inserted>3.&amp;#x9;Do those budgets only cover staffing, or the full resourcing of the office?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="605" kind="answer">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2018-10-25" qonNum="92">
+            <name>Attorney-General's Department</name>
+          </question>
+        </questions>
+        <text id="20190212e103057f98e1446ab0000007">
+          <inserted>
+            <by role="member" id="605">The Hon. R.I. LUCAS (Treasurer):</by>  The Attorney-General has provided the following advice:</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000008">
+          <inserted>1.&amp;#x9;The ministerial office budgets of the former government did not reflect the full costs of ministerial offices including costs associated with staff that were funded by agencies but not disclosed against ministerial office budgets, such as ministerial liaison officers and some other administrative staff. If these costs are taken into account, the full budget of the previous Attorney-General's office prior to the election was estimated to be $2.9 million (with 19 FTE rather than 12 FTE). The current Attorney-General's ministerial office budget is $2.6 million—which represents a saving of around $330,000 compared to the previous office.</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000009">
+          <inserted>2.&amp;#x9;This question should be referred to Minister for Correctional Services.</inserted>
+        </text>
+        <text id="20190212e103057f98e1446ab0000010">
+          <inserted>3.&amp;#x9;The budgets stated reflect the full resourcing of the office.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

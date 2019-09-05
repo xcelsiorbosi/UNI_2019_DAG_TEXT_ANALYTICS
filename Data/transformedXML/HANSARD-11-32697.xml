@@ -1,0 +1,78 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>Gambling Regulation Review</name>
+      <text id="201902125739d963268949cdb0000001">
+        <inserted>
+          <heading>Gambling Regulation Review</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4978" kind="question">
+        <name>Ms COOK</name>
+        <house>House of Assembly</house>
+        <electorate id="">Hurtle Vale</electorate>
+        <questions>
+          <question date="2018-11-29" qonNum="468">
+            <name>Gambling Regulation Review</name>
+          </question>
+        </questions>
+        <text id="201902125739d963268949cdb0000002">
+          <inserted>468 <by role="member" id="4978">Ms COOK (Hurtle Vale)</by> (29 November 2018).  What are the priorities of the government in developing and implementing phase 2 of the Gambling Harm Minimisation Strategy?</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000003">
+          <inserted>1.&amp;#x9;What is the time frame for this implementation?</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000004">
+          <inserted>2.&amp;#x9;What does success look like for the implementation of phase 2 of the Gambling Harm Minimisation Strategy and what are the key performance indicators of the strategy?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="1804" kind="answer">
+        <name>The Hon. V.A. CHAPMAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Bragg</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Deputy Premier</name>
+          </portfolio>
+          <portfolio id="">
+            <name>Attorney-General</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-11-29" qonNum="468">
+            <name>Gambling Regulation Review</name>
+          </question>
+        </questions>
+        <text id="201902125739d963268949cdb0000005">
+          <inserted>
+            <by role="member" id="1804">The Hon. V.A. CHAPMAN (Bragg—Deputy Premier, Attorney-General):</by>  The Minister for Human Services has provided the following advice:</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000006">
+          <inserted>The priority for the government in implementing phase 2 of the Gambling Harm Minimisation Strategy is to ensure that patrons from diverse backgrounds are aware of the role that gaming venue staff have to support them to prevent gambling harm.</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000007">
+          <inserted>Engagement between venue staff and patrons can encourage individuals to seek help from services to reduce the further incidence of gambling harm occurring. Phase 2 will target the development of information materials aimed towards identified priority groups, through consultation with the gaming sector and Survey prevalence data.</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000008">
+          <inserted>The timeframe for Phase 2 of the Gambling Harm Minimisation Strategy is late June 2019.</inserted>
+        </text>
+        <text id="201902125739d963268949cdb0000009">
+          <inserted>Success for Phase 2 of the Harm Minimisation Strategy will be the distribution of the Phase 2 gambling harm minimisation materials in all gaming venues across South Australia. The Office for Problem Gambling is considering research initiatives in 2019 that will explore gambling trends and patron awareness of the initiative.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

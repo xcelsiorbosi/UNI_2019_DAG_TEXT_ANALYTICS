@@ -1,0 +1,60 @@
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Answers to Questions</name>
+    <subject>
+      <name>KordaMentha</name>
+      <text id="201902120106e84365474c2ab0000001">
+        <inserted>
+          <heading>KordaMentha</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4841" kind="question">
+        <name>Mr PICTON</name>
+        <house>House of Assembly</house>
+        <electorate id="">Kaurna</electorate>
+        <questions>
+          <question date="2018-12-06" qonNum="526">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="201902120106e84365474c2ab0000002">
+          <inserted>526 <by role="member" id="4841">Mr PICTON (Kaurna)</by> (6 December 2018).  On what dates between 18 March 2018 and 26 November 2018 did the Minister for Health and Wellbeing meet with representatives from KordaMentha?</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="4342" kind="answer">
+        <name>The Hon. D.C. VAN HOLST PELLEKAAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Stuart</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Energy and Mining</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2018-12-06" qonNum="526">
+            <name>KordaMentha</name>
+          </question>
+        </questions>
+        <text id="201902120106e84365474c2ab0000003">
+          <inserted>
+            <by role="member" id="4342">The Hon. D.C. VAN HOLST PELLEKAAN (Stuart—Minister for Energy and Mining):</by>  The Minister for Health and Wellbeing has been advised: </inserted>
+        </text>
+        <text id="201902120106e84365474c2ab0000004">
+          <inserted>28 August, 29 August, 15 October, 30 October, 1 November and 21 November.</inserted>
+        </text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
