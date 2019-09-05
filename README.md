@@ -29,10 +29,10 @@ Listed below are what is required to run this project.
 When contributing to this project follow these steps:
 1.	Fork the project & clone locally
 2.	Create an upstream remote and sync your local copy before you branch
-3.	Branch for each separate piece of work.
+3.	Branch for each separate piece of work. Give the branch a descriptive name in lowercase with hypens to separate words e.g. xml-transformation-logic.
 4.	Do the work and write good commit messages
 5.	Push to your origin repository
-6.	Create a new Pull Request in GitHub
+6.	Create a new Pull Request in GitHub and assign at least one project team member to review
 
 Full detailed instructions on how to complete each of these steps see [The beginner's guide to contributing to a GitHub project](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/)
 
