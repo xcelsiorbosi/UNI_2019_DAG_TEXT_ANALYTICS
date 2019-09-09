@@ -1,9 +1,15 @@
 <?xml version='1.0' ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" indent="yes" version="1.0" encoding="UTF-8" />
-      <xsl:template match="/">
+
+	<xsl:variable name="fileName" select="substring-before(tokenize(base-uri(), '/')[last()],'.')" />
+
+    <xsl:template match="/">
             <xsl:element name="hansard">
 				<xsl:element name="header">
+					<xsl:element name="id">
+						<xsl:value-of select="$fileName"/>
+					</xsl:element>
 					<xsl:element name="name">
 						<xsl:value-of select="hansard/name"/>
 					</xsl:element>
@@ -31,8 +37,11 @@
 					<xsl:element name="proceeding">
 						<xsl:value-of select="hansard/proceeding/@continued"/>
 					</xsl:element>
-					<xsl:element name="name">
+					<xsl:element name="proceedingType">
 						<xsl:value-of select="hansard/proceeding/name"/>
+					</xsl:element>
+					<xsl:element name="url">
+						http://hansardpublic.parliament.sa.gov.au/Pages/HansardResult.aspx#/docid/<xsl:value-of select="$fileName"/>
 					</xsl:element>
 				</xsl:element>
 
