@@ -6,8 +6,8 @@ from pathlib import Path
 parentPath = Path(cwd).parent
 parentPath = str(parentPath)
 
-xmlLocation = parentPath+"\\Data"
-xmlLocationTransformed = parentPath+"\\Data\\transformedXML"
+xmlLocation = parentPath+"\\data"
+xmlLocationTransformed = parentPath+"\\data\\transformedXML"
 import glob
 
 
