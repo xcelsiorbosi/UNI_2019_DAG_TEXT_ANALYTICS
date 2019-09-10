@@ -2,14 +2,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" indent="yes" version="1.0" encoding="UTF-8" />
 
-	<xsl:variable name="fileName" select="substring-before(tokenize(base-uri(), '/')[last()],'.')" />
-
     <xsl:template match="/">
             <xsl:element name="hansard">
 				<xsl:element name="header">
-					<xsl:element name="id">
-						<xsl:value-of select="$fileName"/>
-					</xsl:element>
 					<xsl:element name="name">
 						<xsl:value-of select="hansard/name"/>
 					</xsl:element>
@@ -39,9 +34,6 @@
 					</xsl:element>
 					<xsl:element name="proceedingType">
 						<xsl:value-of select="hansard/proceeding/name"/>
-					</xsl:element>
-					<xsl:element name="url">
-						http://hansardpublic.parliament.sa.gov.au/Pages/HansardResult.aspx#/docid/<xsl:value-of select="$fileName"/>
 					</xsl:element>
 				</xsl:element>
 
@@ -94,13 +86,15 @@
 						<xsl:element name="talkerTranscript">
 							<xsl:choose>
 								<xsl:when test="./inserted/by/@id != ''">
-									<xsl:value-of select="./inserted/text()[not(child::text())]"/>
-									<xsl:value-of select="./inserted/text()[last()]"/>
+									<!-- Gets text before, inside and after 'by' element without any of the attributes -->
+									<xsl:value-of select="./inserted/text()[not(child::text())]"/> <!-- Text before 'by' element -->
+									<xsl:value-of select="./inserted/by/text()"/> <!-- Text inside 'by' element -->
+									<xsl:value-of select="./inserted/text()[last()]"/> <!-- Text after 'by' element -->
 								</xsl:when>
 								<xsl:otherwise>
-									<xsl:value-of select="./inserted/text()"/>
+									<xsl:value-of select=".//inserted/text()"/>
 								</xsl:otherwise>
-							</xsl:choose>							
+							</xsl:choose>
 						</xsl:element>
 					</xsl:element>
 				</xsl:for-each>				
