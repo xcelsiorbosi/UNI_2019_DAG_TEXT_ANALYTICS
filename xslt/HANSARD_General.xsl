@@ -53,20 +53,42 @@
 			<xsl:element name="hansardID"><xsl:value-of select="$fileName"/></xsl:element>
 			<xsl:element name="kind"><xsl:value-of select="../@kind"/></xsl:element>
 			<xsl:element name="text">
+				<xsl:apply-templates select="* | text()"/>
+			</xsl:element>
+			<!--<xsl:element name="text">
                 <xsl:choose>
 				    <xsl:when test=".//inserted/by/@id != ''">
-						<!-- Gets text before, inside and after 'by' element without any of the attributes -->
-						<xsl:value-of select=".//inserted/text()[not(child::text())]"/> <!-- Text before 'by' element -->
-						<xsl:value-of select=".//inserted/by/text()"/> <!-- Text inside 'by' element -->
-						<xsl:value-of select=".//inserted/text()[last()]"/> <!-- Text after 'by' element -->
+						<xsl:value-of select=".//inserted/text()[not(child::text())]"/>
+						<xsl:value-of select=".//inserted/by/text()"/>
+						<xsl:value-of select=".//inserted/text()[last()]"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select=".//inserted/text()"/>
 					</xsl:otherwise>
                 </xsl:choose>
-            </xsl:element>
+            </xsl:element> -->
 		</xsl:element>
 	</xsl:template>
+
+	<xsl:template match="by" mode="by">
+		<xsl:value-of select="./text()"/> <!-- Text inside 'by' element -->
+	</xsl:template>
+
+	<xsl:template match="inserted" mode="inserted">
+		<xsl:value-of select="./text()"/> <!-- Text inside 'inserted' element -->
+	</xsl:template>
+
+	<xsl:template match="item" mode="item">
+		<xsl:value-of select="./text()"/> <!-- Text inside 'item' element -->
+	</xsl:template>
+
+	<xsl:template match="term" mode="term">
+		<xsl:value-of select="./text()"/> <!-- Text inside 'term' element -->
+	</xsl:template>
+
+	<xsl:template match="text()">
+		<xsl:value-of select="." />
+   	</xsl:template>
 
 	<xsl:template match="bill" mode="bill">
 		<xsl:element name="bill">
