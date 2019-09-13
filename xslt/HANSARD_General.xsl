@@ -2,17 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" indent="yes" version="1.0" encoding="UTF-8" />
 
-	<xsl:variable name="fileName" select="substring-before(tokenize(base-uri(), '/')[last()],'.')" />
-
 	<xsl:template match="/">
-        <xsl:element name="record">
+        <xsl:element name="hansard">
 		    <xsl:apply-templates select="hansard"/>
         </xsl:element>
    	</xsl:template>
 
 	<xsl:template match="hansard">
-		 <xsl:element name="hansard">
-            <xsl:element name="id"><xsl:value-of select="$fileName"/></xsl:element>
+		 <xsl:element name="header">
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 			<xsl:element name="parliamentName"><xsl:value-of select="parliamentName"/></xsl:element>
 			<xsl:element name="parliamentNum"><xsl:value-of select="parliamentNum"/></xsl:element>
@@ -23,7 +20,6 @@
 			<xsl:element name="date"><xsl:value-of select="date/@date"/></xsl:element>
 			<xsl:element name="dateModified"><xsl:value-of select="dateModified/@time"/></xsl:element>
 			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
-			<xsl:element name="url">http://hansardpublic.parliament.sa.gov.au/Pages/HansardResult.aspx#/docid/<xsl:value-of select="$fileName"/></xsl:element>
 			<xsl:element name="proceedingType"><xsl:value-of select="proceeding/name"/></xsl:element>
 			<xsl:element name="subject"><xsl:value-of select="proceeding/subject/name"/></xsl:element>
          </xsl:element>
@@ -34,39 +30,33 @@
 	</xsl:template>
 
 	<xsl:template match="talker" mode="talker">
-		<xsl:element name="speaker">
+		<xsl:element name="talker">
 			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
-            <xsl:element name="portfolio"><xsl:value-of select=".//portfolio/name"/></xsl:element>
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
 			<xsl:element name="role"><xsl:value-of select="@role"/></xsl:element>
 			<xsl:element name="electorate"><xsl:value-of select="electorate"/></xsl:element>
 		</xsl:element>
 
-        <xsl:apply-templates select=".//text" mode="text"/>
+		<xsl:apply-templates select=".//portfolio" mode="portfolio">
+				<xsl:with-param name="talkerID" select="@id"/>
+		</xsl:apply-templates>
+
+		<xsl:apply-templates select=".//question" mode="question">
+				<xsl:with-param name="talkerID" select="@id"/>
+		</xsl:apply-templates>
+
+		<xsl:apply-templates select=".//text" mode="text"/>
 	</xsl:template>
 
 	<xsl:template match="talker/text" mode="text">
-		<xsl:element name="speech">
+		<xsl:element name="text">
 			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
-			<xsl:element name="speakerID"><xsl:value-of select="../@id"/></xsl:element>
-			<xsl:element name="hansardID"><xsl:value-of select="$fileName"/></xsl:element>
+			<xsl:element name="talkerID"><xsl:value-of select="../@id"/></xsl:element>
 			<xsl:element name="kind"><xsl:value-of select="../@kind"/></xsl:element>
 			<xsl:element name="text">
 				<xsl:apply-templates select="* | text()"/>
 			</xsl:element>
-			<!--<xsl:element name="text">
-                <xsl:choose>
-				    <xsl:when test=".//inserted/by/@id != ''">
-						<xsl:value-of select=".//inserted/text()[not(child::text())]"/>
-						<xsl:value-of select=".//inserted/by/text()"/>
-						<xsl:value-of select=".//inserted/text()[last()]"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:value-of select=".//inserted/text()"/>
-					</xsl:otherwise>
-                </xsl:choose>
-            </xsl:element> -->
 		</xsl:element>
 	</xsl:template>
 
@@ -90,11 +80,45 @@
 		<xsl:value-of select="." />
    	</xsl:template>
 
+	<xsl:template match="portfolio" mode="portfolio">
+		<xsl:param name="talkerID"/>
+
+		<xsl:element name="portfolio">
+			<xsl:element name="talkerID">
+				<xsl:value-of select="$talkerID"/>
+			</xsl:element>
+			<xsl:element name="id">
+				<xsl:value-of select="@id"/>
+			</xsl:element>
+			<xsl:element name="name">
+				<xsl:value-of select="name"/>
+			</xsl:element>
+		</xsl:element>
+	</xsl:template>
+
 	<xsl:template match="bill" mode="bill">
 		<xsl:element name="bill">
 			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
-			<xsl:element name="hansardID"><xsl:value-of select="$fileName"/></xsl:element>
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="question" mode="question">
+		<xsl:param name="talkerID"/>
+
+		<xsl:element name="question">
+			<xsl:element name="talkerID">
+				<xsl:value-of select="$talkerID"/>
+			</xsl:element>
+			<xsl:element name="date">
+				<xsl:value-of select="@date"/>
+			</xsl:element>
+			<xsl:element name="qonNum">
+				<xsl:value-of select="@qonNum"/>
+			</xsl:element>
+			<xsl:element name="name">
+				<xsl:value-of select="name"/>
+			</xsl:element>
 		</xsl:element>
 	</xsl:template>
 
