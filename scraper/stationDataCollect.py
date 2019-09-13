@@ -18,12 +18,12 @@ cwd = os.getcwd()
 from pathlib import Path
 parentPath = Path(cwd).parent
 parentPath = str(parentPath)
-# print(parentPath+"\\Data")
+# print(parentPath+"\\data")
 
 #this is the setup for silenium
 options = webdriver.ChromeOptions()
 options.add_experimental_option("prefs", {
-  "download.default_directory": parentPath+"\\Data",
+  "download.default_directory": parentPath+"\\data",
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
@@ -43,8 +43,8 @@ def getData(address):
 	# driver.maximize_window()
 	driver.implicitly_wait(4)
 	#click the link for the download
-	# driver.find_element_by_class_name("Data file for daily rainfall data for all years").click()
-	# driver.find_element_by_id("Data file for daily rainfall data for all years").click()
+	# driver.find_element_by_class_name("data file for daily rainfall data for all years").click()
+	# driver.find_element_by_id("data file for daily rainfall data for all years").click()
 	# driver.find_element_by_id("All years of data").click()
 	# elem = browser.find_element_by_link_text("All years of data")
 
@@ -112,6 +112,6 @@ print (dropList)
 df = pd.DataFrame(data = dropList,columns=['station'])
 print (df)
 stationID = 1
-df.to_csv('Data/'+'drop.csv')
+df.to_csv('data/'+'drop.csv')
 
 

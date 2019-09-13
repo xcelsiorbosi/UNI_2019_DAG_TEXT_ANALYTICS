@@ -1,0 +1,71 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-09-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4375" />
+  <endPage num="4412" />
+  <dateModified time="2019-09-13T15:22:19+09:30" />
+  <proceeding continued="true">
+    <name>Question Time</name>
+    <subject>
+      <name>Minister for Human Services, Shares</name>
+      <text id="2019091263b04493e1304b8b90000001">
+        <heading>Minister for Human Services, Shares</heading>
+      </text>
+      <talker role="member" id="5413" kind="question">
+        <name>The Hon. E.S. BOURKE</name>
+        <house>Legislative Council</house>
+        <questions>
+          <question date="2019-09-12">
+            <name>Minister for Human Services, Shares</name>
+          </question>
+        </questions>
+        <startTime time="2019-09-12T14:42:53" />
+        <text id="2019091263b04493e1304b8b90000002">
+          <timeStamp time="2019-09-12T14:42:53" />
+          <by role="member" id="5413">The Hon. E.S. BOURKE (14:42):</by>  Given the minister yesterday had to make a personal explanation that her share portfolio was incorrectly listed, and you are still yet to update that, despite coming into parliament and apologising, how are South Australians meant to have any confidence in your credibility?</text>
+      </talker>
+      <talker role="member" id="2742" kind="answer">
+        <name>The Hon. J.M.A. LENSINK</name>
+        <house>Legislative Council</house>
+        <portfolios>
+          <portfolio id="">
+            <name>Minister for Human Services</name>
+          </portfolio>
+        </portfolios>
+        <questions>
+          <question date="2019-09-12">
+            <name>Minister for Human Services, Shares</name>
+          </question>
+        </questions>
+        <startTime time="2019-09-12T14:43:13" />
+        <text id="2019091263b04493e1304b8b90000003">
+          <timeStamp time="2019-09-12T14:43:13" />
+          <by role="member" id="2742">The Hon. J.M.A. LENSINK (Minister for Human Services) (14:43):</by>  Look, I fessed up. People make mistakes on forms, and so I have done so. I have corrected the record. That is, I think, what the expectation is, that if an error is discovered you correct it. I would also like to reject the assertion in the honourable member's original question about a conflict of interest, because I don't believe there is a conflict of interest.</text>
+        <text id="2019091263b04493e1304b8b90000004">The line of questioning that the Hon. Ms Scriven took yesterday was also of that nature, and whoever the Labor Party staff are who are writing these questions for them really ought to read the estimates beforehand, because they would know that one of those particular issues had been well and truly dealt with. The Labor Party in opposition don't even bother to read the <term>Hansard</term> to ensure that they have all the facts before them. So, really that's just—</text>
+        <text id="2019091263b04493e1304b8b90000005">
+          <event kind="interjection">Members interjecting:</event>
+        </text>
+      </talker>
+      <talker role="member" id="2742" kind="answer" continued="true">
+        <name>The Hon. J.M.A. LENSINK</name>
+        <house>Legislative Council</house>
+        <text id="2019091263b04493e1304b8b90000006">
+          <by role="member" id="2742">The Hon. J.M.A. LENSINK:</by>  Their righteousness in this place is noted, but they can't even be bothered to read the <term>Hansard</term> that has already taken place.</text>
+      </talker>
+      <talker kind="speech" role="office">
+        <name>The President</name>
+        <house>Legislative Council</house>
+        <text id="2019091263b04493e1304b8b90000007">
+          <by role="office">The PRESIDENT:</by>  The Hon. Ms Bourke, a supplementary.</text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
