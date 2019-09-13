@@ -25,6 +25,7 @@
          </xsl:element>
 
         <xsl:apply-templates select="//bill" mode="bill"/>
+		<xsl:apply-templates select="//*[not(self::talker)]/text" mode="proceeding"/> <!-- Include text that isn't speech -->
         <xsl:apply-templates select="//talker" mode="talker"/>
 
 	</xsl:template>
@@ -118,6 +119,17 @@
 			</xsl:element>
 			<xsl:element name="name">
 				<xsl:value-of select="name"/>
+			</xsl:element>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="text" mode="proceeding">
+		<xsl:element name="proceedingText">
+			<xsl:element name="id">
+				<xsl:value-of select="@id"/>
+			</xsl:element>
+			<xsl:element name="text">
+				<xsl:apply-templates select="* | text()"/>
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
