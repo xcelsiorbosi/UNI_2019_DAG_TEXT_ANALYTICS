@@ -1,0 +1,46 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>Legislative Council</name>
+  <date date="2019-03-19" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>Legislative Council</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="2855" />
+  <endPage num="2903" />
+  <dateModified time="2019-04-01T10:17:04+10:30" />
+  <proceeding>
+    <name>Ministerial Statement</name>
+    <text id="2019031917e5ef795b1042b4a0000001">
+      <heading>Ministerial Statement</heading>
+    </text>
+    <subject>
+      <name>Mineral Exploration</name>
+      <text id="2019031917e5ef795b1042b4a0000002">
+        <heading>Mineral Exploration</heading>
+      </text>
+      <talker role="member" id="605" kind="speech">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>Legislative Council</house>
+        <startTime time="2019-03-19T15:13:47" />
+        <text id="2019031917e5ef795b1042b4a0000003">
+          <timeStamp time="2019-03-19T15:13:47" />
+          <by role="member" id="605">The Hon. R.I. LUCAS (Treasurer) (15:13):</by>  I seek leave to make a ministerial statement.</text>
+        <text id="2019031917e5ef795b1042b4a0000004">Leave granted.</text>
+      </talker>
+      <talker role="member" id="605" kind="speech" continued="true">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>Legislative Council</house>
+        <text id="2019031917e5ef795b1042b4a0000005">
+          <by role="member" id="605">The Hon. R.I. LUCAS:</by>  South Australian government approvals to permit mineral exploration at Lake Gairdner in South Australia's north have been finalised. In July 2017, the former government granted approval under the Mining Act for an exploration program proposed by Cartwheel Minerals Proprietary Limited (Cartwheel) and Mr Rudy A.M. Gomez (Mr Gomez). However, at the time of the last election a second approval lodged in late 2016 to deal with Aboriginal heritage had not been finalised.</text>
+        <text id="2019031917e5ef795b1042b4a0000006">After further consultation lasting another 12 months with Aboriginal stakeholders and the project proponents, the government has now approved a native title mining agreement (NTMA) negotiated by Cartwheel and Mr Gomez with the Gawler Ranges Aboriginal Corporation (GRAC), which represents the native title holders over Lake Gairdner.</text>
+        <text id="2019031917e5ef795b1042b4a0000007">An NTMA is required to demonstrate agreement with native title holders for exploration to occur and to satisfactorily deal with any Aboriginal heritage issues that may arise. In July last year, I advised Cartwheel and Mr Gomez that I required amendments to the NTMA they had presented to the former government, including the provision of a cultural heritage management plan. This recognised the fact that in 2004 the whole of Lake Gairdner had been registered as an Aboriginal heritage site by a former Labor government.</text>
+        <text id="2019031917e5ef795b1042b4a0000008">As well as consulting with GRAC, which has informed me that it supports the proposed exploration program, I have also taken advice from the State Aboriginal Heritage Committee in requiring the project proponents to enhance the protections to Aboriginal heritage provided in their NTMA. In deciding not to accept the advice of the heritage committee in its entirety, I note that just prior to the last election the then Aboriginal affairs minister, Mr Kyam Maher, approved an exploration program on Lake Torrens even though the committee had declined to make any recommendation about that program.</text>
+        <text id="2019031917e5ef795b1042b4a0000009">In accordance with the requirements of the Aboriginal Heritage Act, I am now satisfied that satisfactory procedures are in place to deal with Aboriginal heritage. I emphasise that these approvals are confined to exploration. Should any exploration undertaken result in the proponents deciding to proceed with mining, they will have to seek further government assessment of their plans. I have made this decision under powers delegated to me under the Aboriginal Heritage Act.</text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

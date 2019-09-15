@@ -32,7 +32,7 @@
 
 	<xsl:template match="talker" mode="talker">
 		<xsl:element name="talker">
-			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
+			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: need to handle case where a talker doesn't have an ID -->
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
 			<xsl:element name="role"><xsl:value-of select="@role"/></xsl:element>
@@ -47,7 +47,7 @@
 				<xsl:with-param name="talkerID" select="@id"/>
 		</xsl:apply-templates>
 
-		<xsl:apply-templates select=".//text" mode="text"/>
+		<xsl:apply-templates select=".//text" mode="text"/> <!-- TODO: Should text without contents be ignored? -->
 	</xsl:template>
 
 	<xsl:template match="talker/text" mode="text">

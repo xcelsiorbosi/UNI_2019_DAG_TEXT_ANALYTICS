@@ -1,0 +1,78 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding>
+    <name>Personal Explanation</name>
+    <text id="20190213297ec75627534c59b0000001">
+      <heading>Personal Explanation</heading>
+    </text>
+    <subject>
+      <name>Murray-Darling Basin Royal Commission</name>
+      <text id="20190213297ec75627534c59b0000002">
+        <heading>Murray-Darling Basin Royal Commission</heading>
+      </text>
+      <talker role="member" id="4338" kind="speech">
+        <name>The Hon. S.S. MARSHALL</name>
+        <house>House of Assembly</house>
+        <electorate id="">Dunstan</electorate>
+        <portfolios>
+          <portfolio id="">
+            <name>Premier</name>
+          </portfolio>
+        </portfolios>
+        <startTime time="2019-02-13T17:02:42" />
+        <text id="20190213297ec75627534c59b0000003">
+          <timeStamp time="2019-02-13T17:02:42" />
+          <by role="member" id="4338">The Hon. S.S. MARSHALL (Dunstan—Premier) (17:02):</by>  I seek leave to make a personal explanation.</text>
+        <text id="20190213297ec75627534c59b0000004">Leave granted.</text>
+      </talker>
+      <talker role="member" id="4338" kind="speech" continued="true">
+        <name>The Hon. S.S. MARSHALL</name>
+        <house>House of Assembly</house>
+        <text id="20190213297ec75627534c59b0000005">
+          <by role="member" id="4338">The Hon. S.S. MARSHALL:</by>  Yesterday, I was asked a supplementary question by the member for Croydon regarding the findings of the Murray-Darling Basin Royal Commission, specifically:</text>
+        <page num="4618" />
+        <text id="20190213297ec75627534c59b0000006">
+          <inserted>Given the Premier's previous answer, will the Premier rule out reversing the deal his minister agreed with the upstream states as called for by the royal commissioner Bret Walker [SC].</inserted>
+        </text>
+        <text continued="true" id="20190213297ec75627534c59b0000007">The member then sought leave to read an explanation, and again I quote:</text>
+        <text id="20190213297ec75627534c59b0000008">
+          <inserted>The royal commissioner states on pages 414 and 415 of his report, and I quote:</inserted>
+        </text>
+        <text id="20190213297ec75627534c59b0000009">
+          <inserted>'…no minister acting reasonably could consider these changes to the criteria to be anything but totally antipathetic to the interests of South Australia, and the South Australian environment. South Australia's agreement to these changes should be immediately reversed.'</inserted>
+        </text>
+        <text continued="true" id="20190213297ec75627534c59b0000010">The explanation provided, which was used to assert that a statement regarding minister Speirs' conduct was, in fact, a finding, was only half a sentence in the body of the report. This is not a formal recommendation or finding. The beginning of the sentence, which was partially quoted by the member in explanation, relates to the conduct of the Minister for Environment and Water and the Ministerial Code of Conduct. When responding to the member, I responded to the assertion made in the explanation, which relates to the Minister for Environment and Water's conduct and not the question which preceded the member's explanation.</text>
+        <text id="20190213297ec75627534c59b0000011">
+          <event kind="interjection">Members interjecting:</event>
+        </text>
+      </talker>
+      <talker kind="speech" role="office">
+        <name>The Deputy Speaker</name>
+        <house>House of Assembly</house>
+        <text id="20190213297ec75627534c59b0000012">
+          <by role="office">The DEPUTY SPEAKER:</by>  The Leader of the Opposition does not have the call.</text>
+        <text id="20190213297ec75627534c59b0000013">
+          <event kind="interjection">Members interjecting:</event>
+        </text>
+      </talker>
+      <talker kind="speech" role="office">
+        <name>The Deputy Speaker</name>
+        <house>House of Assembly</house>
+        <text id="20190213297ec75627534c59b0000014">
+          <by role="office">The DEPUTY SPEAKER:</by>  Order!</text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

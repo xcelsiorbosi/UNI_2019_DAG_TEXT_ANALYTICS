@@ -1,0 +1,697 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-12" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4425" />
+  <endPage num="4542" />
+  <dateModified time="2019-05-13T17:16:01+09:30" />
+  <proceeding continued="true">
+    <name>Estimates Replies</name>
+    <subject>
+      <name>Grant Programs</name>
+      <text id="20190212c5894798ce1f45cda0000001">
+        <inserted>
+          <heading>Grant Programs</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="5389" kind="question">
+        <name>In reply to Mr BOYER</name>
+        <house>House of Assembly</house>
+        <electorate id="">Wright</electorate>
+        <questions>
+          <question date="2019-02-12">
+            <name>Grant Programs</name>
+          </question>
+        </questions>
+        <text id="20190212c5894798ce1f45cda0000002">
+          <inserted>In reply to <by role="member" id="5389">Mr BOYER (Wright)</by> (25 September 2018).  (Estimates Committee B)</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="">
+        <name>The Hon. S.G. WADE</name>
+        <house>House of Assembly</house>
+        <electorate id="">Minister for Health and Wellbeing</electorate>
+        <text id="20190212c5894798ce1f45cda0000003">
+          <inserted>
+            <by role="member" id="">The Hon. S.G. WADE (Minister for Health and Wellbeing):</by>  I have been advised:</inserted>
+        </text>
+        <text id="20190212c5894798ce1f45cda0000004">
+          <inserted>Recurrent grants budget as at the 2018-19 State budget is summarised herewith:</inserted>
+        </text>
+        <text id="20190212c5894798ce1f45cda0000005">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell>Grant program/fund name (Excludes contracted services)</cell>
+                <cell colspan="2">Purpose of grant program/fund</cell>
+                <cell>2018-19 Budget $000</cell>
+                <cell>2019-20 Estimate $000</cell>
+                <cell>2020-21 Estimate $000</cell>
+                <cell colspan="2">2021-22 Estimate $000</cell>
+              </rowtitle>
+              <rowtitle>
+                <cell>Budget unallocated until agreements approved</cell>
+                <cell colspan="2">Various</cell>
+                <cell>29,797</cell>
+                <cell>30,518</cell>
+                <cell>33,979</cell>
+                <cell colspan="2">33,522</cell>
+              </rowtitle>
+              <rowtitle>
+                <cell colspan="8">The following table details grant expenditure incurred in 2017-18:</cell>
+              </rowtitle>
+              <rowtitle>
+                <cell colspan="2">Grant program/fund name</cell>
+                <cell colspan="5">Purpose of grant program/fund</cell>
+                <cell>2017-18 Actual$000</cell>
+              </rowtitle>
+              <row>
+                <cell colspan="2">South Australian Health and Medical Research Institute (SAHMRI) Operational Grant</cell>
+                <cell colspan="5">South Australian Health and Medical Research Institute (SAHMRI)—operational grant 2016-2020</cell>
+                <cell>5,600</cell>
+              </row>
+              <row>
+                <cell colspan="2">Drug and alcohol services</cell>
+                <cell colspan="5">Various Drug &amp; Alcohol programs</cell>
+                <cell>3,943</cell>
+              </row>
+              <row>
+                <cell colspan="2">Exceptional Needs Funding</cell>
+                <cell colspan="5">Bilateral funding for the Exceptional Needs Unit (ENU) program</cell>
+                <cell>3,208</cell>
+              </row>
+              <row>
+                <cell colspan="2">Nationally Funded Centres (NFC) program</cell>
+                <cell colspan="5">South Australia's contribution to the Nationally Funded Centres (NFC) program</cell>
+                <cell>2,475</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australian Digital Health Agency and delivery of the National Digital Health Work Programme</cell>
+                <cell colspan="5">South Australian contribution to support the Australian Digital Health Agency and delivery of the National Digital Health Work Programme</cell>
+                <cell>2,328</cell>
+              </row>
+              <row>
+                <cell colspan="2">Cancer Research</cell>
+                <cell colspan="5">Beat Cancer Project—foster cancer research in those areas where South Australia can make a significant contribution to the evidence base for cancer control locally and internationally</cell>
+                <cell>2,000</cell>
+              </row>
+              <row>
+                <cell colspan="2">Aboriginal Health Council of South Australia Funding</cell>
+                <cell colspan="5">Provide services and support to the Aboriginal people of South Australia</cell>
+                <cell>1,833</cell>
+              </row>
+              <row>
+                <cell colspan="2">Closing the Gap in Aboriginal Health Outcomes</cell>
+                <cell colspan="5">Provision of the environmental health worker program and aboriginal chronic disease consortium</cell>
+                <cell>1,624</cell>
+              </row>
+              <row>
+                <cell colspan="2">Suicide prevention strategies</cell>
+                <cell colspan="5">Multiple small projects to improve suicide prevention</cell>
+                <cell>1,049</cell>
+              </row>
+              <row>
+                <cell colspan="2">Long term ventilator support for medically and surgically stabilised patients</cell>
+                <cell colspan="5">Long term ventilator support for medically and surgically stabilised patients</cell>
+                <cell>700</cell>
+              </row>
+              <row>
+                <cell colspan="2">Other mental health programs—recurrent grants</cell>
+                <cell colspan="5">Other mental health programs—recurrent grants</cell>
+                <cell>590</cell>
+              </row>
+              <row>
+                <cell colspan="2">Mental health—high needs consumer grants</cell>
+                <cell colspan="5">Contribution to ongoing support for client of Exceptional Needs Unit</cell>
+                <cell>550</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australian Commission on Safety and Quality Health Care program</cell>
+                <cell colspan="5">South Australia's contribution to the Australian Commission on Safety and Quality Health Care program</cell>
+                <cell>546</cell>
+              </row>
+              <row>
+                <cell colspan="2">Men's Health—Expanding healthy workers</cell>
+                <cell colspan="5">Healthy Workers—Healthy Futures initiative</cell>
+                <cell>541</cell>
+              </row>
+              <row>
+                <cell colspan="2">Mental Health Coalition of SA</cell>
+                <cell colspan="5">Mental health promotion, coordination and lived experience program</cell>
+                <cell>507</cell>
+              </row>
+              <row>
+                <cell colspan="2">Homeless Support</cell>
+                <cell colspan="5">Services and programs to support homeless isolated and disadvantaged people.</cell>
+                <cell>497</cell>
+              </row>
+              <row>
+                <cell colspan="2">Health Consumers Alliance of South Australia core services</cell>
+                <cell colspan="5">Health Consumers Alliance of South Australia core services</cell>
+                <cell>449</cell>
+              </row>
+              <row>
+                <cell colspan="2">Community Visitor Scheme—Department for Communities and Social Inclusion</cell>
+                <cell colspan="5">Mental health stream of the Community Visitor Scheme</cell>
+                <cell>470</cell>
+              </row>
+              <row>
+                <cell colspan="2">Age Friendly South Australia</cell>
+                <cell colspan="5">Multiple small grants to support and engagement with older South Australian's</cell>
+                <cell>400</cell>
+              </row>
+              <row>
+                <cell colspan="2">South Australian Audit of Peri-Operative Mortality (SAAPM)</cell>
+                <cell colspan="5">South Australian Audit of Peri-Operative Mortality (SAAPM)</cell>
+                <cell>398</cell>
+              </row>
+              <row>
+                <cell colspan="2">Palliative Support Services</cell>
+                <cell colspan="5">Palliative Support Services</cell>
+                <cell>387</cell>
+              </row>
+              <row>
+                <cell colspan="2">Disease prevention for South Australian Aboriginal and Torres Strait Islander Communities</cell>
+                <cell colspan="5">Enhanced sexually transmissible infection (STI) and blood borne virus (BBV) prevention response for South Australian Aboriginal and Torres Strait Islander Communities</cell>
+                <cell>355</cell>
+              </row>
+              <row>
+                <cell colspan="2">Statewide General Practitioner Obstetric Shared Care Program</cell>
+                <cell colspan="5">Statewide General Practitioner Obstetric Shared Care Program</cell>
+                <cell>348</cell>
+              </row>
+              <row>
+                <cell colspan="2">Blood Organ &amp; Tissue grants</cell>
+                <cell colspan="5">South Australia's contribution to the National Cord Blood Collection Network (NCBCN)</cell>
+                <cell>338</cell>
+              </row>
+              <row>
+                <cell colspan="2">Spiritual care</cell>
+                <cell colspan="5">Spiritual care program for people who are hospitalised and those who care for them</cell>
+                <cell>312</cell>
+              </row>
+              <row>
+                <cell colspan="2">Ethnic Ageing Grants</cell>
+                <cell colspan="5">Activities that grow community capacity for active ageing for culturally and linguistically diverse communities</cell>
+                <cell>286</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australian Health Ministers' Advisory Council (AHMAC)</cell>
+                <cell colspan="5">South Australia's contribution to the Australian Health Ministers' Advisory Council (AHMAC)</cell>
+                <cell>254</cell>
+              </row>
+              <row>
+                <cell colspan="2">The University of South Australia—Chair in Mental Health (Practice and Research)</cell>
+                <cell colspan="5">Funding for the position of Chair in Mental Health to generate research and community engagement</cell>
+                <cell>189</cell>
+              </row>
+              <row>
+                <cell colspan="2">Council on the Ageing SA Inc.</cell>
+                <cell colspan="5">South Australia's Ageing Plan</cell>
+                <cell>180</cell>
+              </row>
+              <row>
+                <cell colspan="2">Positive Ageing Grant</cell>
+                <cell colspan="5">Multiple small grants to positively engage with ageing South Australian's</cell>
+                <cell>155</cell>
+              </row>
+              <row>
+                <cell colspan="2">Community Foodies</cell>
+                <cell colspan="5">SA community food program to improve knowledge and increase behaviours in relation to healthy eating</cell>
+                <cell>150</cell>
+              </row>
+              <row>
+                <cell colspan="2">Sexual Health Information Networking &amp; Education SA Inc.</cell>
+                <cell colspan="5">Yarning On Program—support schools to deliver culturally appropriate relationships and sexual health education programs to students</cell>
+                <cell>150</cell>
+              </row>
+              <row>
+                <cell colspan="2">Public Health Influential Partnerships</cell>
+                <cell colspan="5">Support for the public health function of local councils</cell>
+                <cell>147</cell>
+              </row>
+              <row>
+                <cell colspan="2">Aboriginal Scholarships</cell>
+                <cell colspan="5">Scholarships to support Aboriginal Studies undertaking tertiary courses</cell>
+                <cell>144</cell>
+              </row>
+              <row>
+                <cell colspan="2">Streetlink Youth Health Service</cell>
+                <cell colspan="5">Streetlink Youth Health Service</cell>
+                <cell>142</cell>
+              </row>
+              <row>
+                <cell colspan="2">Retirement Village Residents Advocacy Service</cell>
+                <cell colspan="5">Retirement Village Residents Advocacy Service</cell>
+                <cell>136</cell>
+              </row>
+              <row>
+                <cell colspan="2">University Program Grants</cell>
+                <cell colspan="5">International Centre for Allied Health Evidence (iCAHE) translation and training funding</cell>
+                <cell>136</cell>
+              </row>
+              <row>
+                <cell colspan="2">Grants for Seniors</cell>
+                <cell colspan="5">Multiple small grants to support senior's programs</cell>
+                <cell>101</cell>
+              </row>
+              <row>
+                <cell colspan="2">Sexual Health Information Networking &amp; Education SA Inc.</cell>
+                <cell colspan="5">Provision of telephone and face to face professional counselling and other services to members of the LGBTIQ community</cell>
+                <cell>100</cell>
+              </row>
+              <row>
+                <cell colspan="2">Fertility Fundamentals Inc.</cell>
+                <cell colspan="5">Provision of fertility advice and guidance utilising modern natural family planning methodologies</cell>
+                <cell>100</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australian Childhood Immunisation Register Co-payment</cell>
+                <cell colspan="5">Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>82</cell>
+              </row>
+              <row>
+                <cell colspan="2">Elder Abuse Prevention Phone Line Support and Referral Service</cell>
+                <cell colspan="5">South Australian Elder Abuse Prevention Phone Line Support and Referral Service</cell>
+                <cell>80</cell>
+              </row>
+              <row>
+                <cell colspan="2">Strength for life</cell>
+                <cell colspan="5">Strength for life</cell>
+                <cell>80</cell>
+              </row>
+              <row>
+                <cell colspan="2">Mature Women's Ambassador project</cell>
+                <cell colspan="5">Mature Women's Ambassador project to enable enhanced participation of older women in the workforce</cell>
+                <cell>75</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australia and New Zealand Intensive Care Society (ANZICS) CORE Intensive Care Registries</cell>
+                <cell colspan="5">Review of processes and delivery of quality assurance programs detailing benchmarking of intensive care outcomes</cell>
+                <cell>73</cell>
+              </row>
+              <row>
+                <cell colspan="2">Council on the Ageing SA Inc.</cell>
+                <cell colspan="5">Plan and deliver ZestFest 2018 (Every Generational Festival) program of events</cell>
+                <cell>70</cell>
+              </row>
+              <row>
+                <cell colspan="2">Aged Rights Advocacy Service Incorporated Program</cell>
+                <cell colspan="5">Deliver a state-wide program to raise awareness and understanding of living a positive life, safeguarding rights, and prevention strategies for concerns related to elder abuse</cell>
+                <cell>54</cell>
+              </row>
+              <row>
+                <cell colspan="2">Radio for the Third Age Incorporated</cell>
+                <cell colspan="5">Activities to enable older South Australians to feel connected and better informed about ageing issues, projects, programs and events</cell>
+                <cell>44</cell>
+              </row>
+              <row>
+                <cell colspan="2">Veterans Health Advisory Council Executive Officer</cell>
+                <cell colspan="5">Funding to employ an Executive Officer to co-ordinate comprehensive support functions and project work for the Veterans' Health Advisory Council (VHAC)</cell>
+                <cell>40</cell>
+              </row>
+              <row>
+                <cell colspan="2">Digital Inclusion Project </cell>
+                <cell colspan="5">Supporting older people to develop the skills and confidence they need to connect, participate and interact safely in the digital world</cell>
+                <cell>30</cell>
+              </row>
+              <row>
+                <cell colspan="2">Knowing your Rights for Culturally and Linguistically Diverse Communities Project</cell>
+                <cell colspan="5">Raise awareness of services for older people from culturally and linguistically diverse communities</cell>
+                <cell>30</cell>
+              </row>
+              <row>
+                <cell colspan="2">Australian Rehabilitation Outcome Centre (AROC)—National Benchmarking System </cell>
+                <cell colspan="5">Support a national benchmarking system to improve clinical rehabilitation outcomes</cell>
+                <cell>22</cell>
+              </row>
+              <row>
+                <cell colspan="2">National Mental Health Consumer and Carer Forum (NMHCCF) </cell>
+                <cell colspan="5">Facilitate the National Mental Health Consumer and Carer Forum (NMHCCF)</cell>
+                <cell>21</cell>
+              </row>
+              <row>
+                <cell colspan="2">Other subsidies / grants</cell>
+                <cell colspan="5">All other subsidies / contributions</cell>
+                <cell>8,379</cell>
+              </row>
+              <row>
+                <cell colspan="2" />
+                <cell colspan="5">Total</cell>
+                <cell>42,898</cell>
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190212c5894798ce1f45cda0000006" />
+        <page num="4538" />
+        <text id="20190212c5894798ce1f45cda0000007">
+          <inserted>The following table details grant commitments as at 30 June 2018:</inserted>
+        </text>
+        <text id="20190212c5894798ce1f45cda0000008">
+          <inserted>
+            <table>
+              <rowtitle>
+                <cell>Grant program/fund name</cell>
+                <cell>Beneficiary/Recipient</cell>
+                <cell>Purpose</cell>
+                <cell>Value$000</cell>
+                <cell>Subject to grant agreement under TI I5</cell>
+              </rowtitle>
+              <row>
+                <cell>South Australian Health and Medical Research Institute (SAHMRI) Operational Grant</cell>
+                <cell>South Australian Health and Medical Research Institute Limited</cell>
+                <cell>South Australian Health and Medical Research Institute (SAHMRI)—operational grant 2016-2020</cell>
+                <cell>11,624</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Cancer Research</cell>
+                <cell>South Australian Health and Medical Research Institute Limited</cell>
+                <cell>Beat Cancer Project—foster cancer research in those areas where South Australia can make a significant contribution to the evidence base for cancer control locally and internationally</cell>
+                <cell>3,000</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Aboriginal Health Council of South Australia Funding</cell>
+                <cell>Aboriginal Health Council of South Australia Limited</cell>
+                <cell>Provide services that promote and advance social, physical and mental health for Aboriginal people of South Australia</cell>
+                <cell>1,429</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Suicide prevention strategies</cell>
+                <cell>Beyond Blue Limited</cell>
+                <cell>National depression initiative</cell>
+                <cell>557</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Health Consumers Alliance of South Australia core services</cell>
+                <cell>Health Consumers Alliance of South Australia Incorporated</cell>
+                <cell>Health Consumers Alliance of South Australia core services</cell>
+                <cell>488</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Closing the Gap in Aboriginal Health Outcomes</cell>
+                <cell>South Australian Health and Medical Research Institute Limited</cell>
+                <cell>Establish and operate the South Australian Aboriginal Chronic Disease Consortium</cell>
+                <cell>460</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>South Australia's Ageing Plan</cell>
+                <cell>Council on the Ageing SA Inc.</cell>
+                <cell>South Australia's Ageing Plan</cell>
+                <cell>368</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Drug and alcohol services</cell>
+                <cell>South Australian Network of Drug and Alcohol Services Incorporated</cell>
+                <cell>Provision of leadership and co-ordination to the non-government sector and partnership between government and non-government drug and alcohol services</cell>
+                <cell>310</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>South Australian Audit of Peri-Operative Mortality (SAAPM)</cell>
+                <cell>Royal Australasian College of Surgeons</cell>
+                <cell>South Australian Audit of Peri-Operative Mortality (SAAPM)</cell>
+                <cell>272</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Aboriginal Scholarships</cell>
+                <cell>Various</cell>
+                <cell>Various Scholarships</cell>
+                <cell>262</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>University Program Grants</cell>
+                <cell>University of South Australia</cell>
+                <cell>International Centre for Allied Health Evidence (iCAHE) translation and training funding</cell>
+                <cell>210</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Veterans Health Advisory Council Executive Officer</cell>
+                <cell>RSL Care South Australia Incorporated</cell>
+                <cell>Funding to employ an Executive Officer to co-ordinate comprehensive support functions and project work for the Veterans' Health Advisory Council (VHAC)</cell>
+                <cell>187</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australia and New Zealand Intensive Care Society (ANZICS) CORE Intensive Care Registries</cell>
+                <cell>Australian and New Zealand Intensive Care Society</cell>
+                <cell>Review of processes and delivery of quality assurance programs detailing benchmarking of intensive care outcomes</cell>
+                <cell>150</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Public Health Influential Partnerships</cell>
+                <cell>Local Government Association of South Australia</cell>
+                <cell>Support for the public health function of local councils</cell>
+                <cell>74</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Tableong project</cell>
+                <cell>The Australian Centre for Social Innovation Inc.</cell>
+                <cell>Tableong project: encourage building of relationships through the sharing of mealtime experiences in local neighbourhoods</cell>
+                <cell>38</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Engaging older people in the Festivals </cell>
+                <cell>Festivals Adelaide Ltd</cell>
+                <cell>Support major arts festivals to consider opportunities for the continued active involvement of older South Australians</cell>
+                <cell>18</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>University of South Australia</cell>
+                <cell>Activating citizen scientists among older members of the South Australian community</cell>
+                <cell>15</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>City of Marion</cell>
+                <cell>Building wellbeing across the southern region</cell>
+                <cell>14</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>City of Port Lincoln</cell>
+                <cell>Development of an Ageing Well in Southern Eyre Peninsula Strategy</cell>
+                <cell>14</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>Eastern Health Authority</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>12</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Agriculture Kangaroo Island Incorporated </cell>
+                <cell>Positive ageing grants—positively engaging ageing farmers</cell>
+                <cell>9</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of Tea Tree Gully</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>9</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Lakes Community Welfare Association</cell>
+                <cell>Positive ageing grants—re-engaging seniors from the wider African communities</cell>
+                <cell>9</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>City of Tea Tree Gully</cell>
+                <cell>Development of a framework for design and recommendations for precincts seeking to become Age Friendly</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>City of Victor Harbor</cell>
+                <cell>Meaningful community participation for people living with memory loss</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>Corporation of the City of Norwood, Payneham &amp; St Peters</cell>
+                <cell>Connecting older people to places—age friendly wayfinding strategy for signage to enable older people to walk to key locations</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>District Council of Lower Eyre Peninsula</cell>
+                <cell>Social connectedness program to support older people connect to community, information and activities for health and wellbeing and digital literacy</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Knowing your Rights for Culturally and Linguistically Diverse Communities Project</cell>
+                <cell>Multicultural Communities Council of SA Inc.</cell>
+                <cell>Raise awareness of services for older people from culturally and linguistically diverse communities</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Seniors Information Service Inc.</cell>
+                <cell>Positive ageing grants—healing with traditional remedies program for the Aboriginal and Torres Strait Islander community</cell>
+                <cell>8</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of Onkaparinga</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>6</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of Playford</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>6</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Marra Dreaming</cell>
+                <cell>Positive ageing grants—basket weaving classes</cell>
+                <cell>6</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Eastwood Community Centre Inc.</cell>
+                <cell>Positive ageing grants—workshops to empower better health, wellbeing and resilience in older people</cell>
+                <cell>5</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Seniors on Screen 2017 – Media  Resource Centre Inc.</cell>
+                <cell>Media Resource Centre Inc.</cell>
+                <cell>Seniors on Screen 2018—affordable and accessible weekly arts program for older South Australians</cell>
+                <cell>5</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Carers and Disability Link Incorporated</cell>
+                <cell>Positive ageing grants—dementia friendly community garden project</cell>
+                <cell>4</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>City of Playford</cell>
+                <cell>Engage older men in teaching woodworking and metalworking skills to youth and working with school children to design and make items of outdoor furniture for the school community</cell>
+                <cell>4</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Suicide prevention strategies</cell>
+                <cell>Every Life Matters</cell>
+                <cell>Suicide prevention—Every Life Matters Inc. Action Plan</cell>
+                <cell>4</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Positive Ageing Grant</cell>
+                <cell>Uniting Communities Incorporated</cell>
+                <cell>Positive ageing grants—empowering ageing in Country SA</cell>
+                <cell>4</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of Port Adelaide Enfield</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>3</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of Salisbury</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>3</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>City of West Torrens</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>3</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Australian Childhood Immunisation Register Co-payment</cell>
+                <cell>District Council of Mount Barker</cell>
+                <cell>Australian Immunisation Register (AIR)—Childhood Immunisation</cell>
+                <cell>3</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>District Council of Barunga West</cell>
+                <cell>Digital literacy skills to connect older people to family and friends, information about community and government services, and activities for health and wellbeing</cell>
+                <cell>2</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Age Friendly South Australia</cell>
+                <cell>Flinders University</cell>
+                <cell>Promoting activity engagement in older adults</cell>
+                <cell>1</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell>Suicide prevention strategies</cell>
+                <cell>Pangula Mannamurna Aboriginal Corporation</cell>
+                <cell>Suicide prevention—delivery of the Live Long, Live Strong Treasuring Life program</cell>
+                <cell>1</cell>
+                <cell>Yes</cell>
+              </row>
+              <row>
+                <cell />
+                <cell />
+                <cell>Total</cell>
+                <cell>19,637</cell>
+                <cell />
+              </row>
+            </table>
+          </inserted>
+        </text>
+        <text id="20190212c5894798ce1f45cda0000009" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

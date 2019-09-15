@@ -1,0 +1,31 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Petitions</name>
+    <subject>
+      <name>Service SA Modbury</name>
+      <text id="20190213b23b479c94cd49d3a0000001">
+        <heading>Service SA Modbury</heading>
+      </text>
+      <talker role="member" id="543">
+        <name>Ms BEDFORD</name>
+        <house>House of Assembly</house>
+        <electorate id="">Florey</electorate>
+        <text id="20190213b23b479c94cd49d3a0000002">
+          <by role="member" id="543">Ms BEDFORD (Florey):</by>  Presented a petition signed by 100 residents of South Australia requesting the house to urge the government not to proceed with the proposed closure of the Service SA Modbury Branch announced as a cost-saving measure in the 2018-19 state budget.</text>
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>

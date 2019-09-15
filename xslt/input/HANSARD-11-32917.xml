@@ -1,0 +1,70 @@
+<!--The Official Report of Parliamentary Debates (Hansard) of the Legislative Council and the House of Assembly of the Parliament of South Australia are covered by parliamentary privilege. Republication by others is not afforded the same protection and may result in exposure to legal liability if the material is defamatory. You may copy and make use of excerpts of proceedings where (1) you attribute the Parliament as the source, (2) you assume the risk of liability if the manner of your use is defamatory, (3) you do not use the material for the purpose of advertising, satire or ridicule, or to misrepresent members of Parliament, and (4) your use of the extracts is fair, accurate and not misleading. Copyright in the Official Report of Parliamentary Debates is held by the Attorney-General of South Australia.-->
+<hansard id="" tocId="" xml:lang="EN-AU" schemaVersion="1.0" xsi:noNamespaceSchemaLocation="hansard_1_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2007/XMLSchema-instance" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <name>House of Assembly</name>
+  <date date="2019-02-13" />
+  <sessionName>Fifty-Fourth Parliament, First Session (54-1)</sessionName>
+  <parliamentNum>54</parliamentNum>
+  <sessionNum>1</sessionNum>
+  <parliamentName>Parliament of South Australia</parliamentName>
+  <house>House of Assembly</house>
+  <venue></venue>
+  <reviewStage>published</reviewStage>
+  <startPage num="4543" />
+  <endPage num="4648" />
+  <dateModified time="2019-06-05T16:45:27+09:30" />
+  <proceeding continued="true">
+    <name>Estimates Replies</name>
+    <subject>
+      <name>Public Sector Employees</name>
+      <text id="201902135c8250bb4cac462ea0000001">
+        <inserted>
+          <heading>Public Sector Employees</heading>
+        </inserted>
+      </text>
+      <talker role="member" id="4842" kind="question">
+        <name>The Hon. S.C. MULLIGHAN</name>
+        <house>House of Assembly</house>
+        <electorate id="">Lee</electorate>
+        <questions>
+          <question date="2019-02-13">
+            <name>Public Sector Employees</name>
+          </question>
+        </questions>
+        <text id="201902135c8250bb4cac462ea0000002">
+          <inserted>In reply to <by role="member" id="4842">the Hon. S.C. MULLIGHAN (Lee)</by> (21 September 2018).  (Estimates Committee B)</inserted>
+        </text>
+      </talker>
+      <talker role="member" id="">
+        <name>The Hon. R.I. LUCAS</name>
+        <house>House of Assembly</house>
+        <electorate id="">Treasurer</electorate>
+        <text id="201902135c8250bb4cac462ea0000003">
+          <inserted>
+            <by role="member" id="">The Hon. R.I. LUCAS (Treasurer):</by>  I have been advised of the following:</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000004">
+          <inserted>The Office of the Commissioner for Public Sector Employment (OCPSE) publishes the Workforce Information Report (the Report), the official record of the size and composition of the South Australian Public Sector workforce as at June each year.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000005">
+          <inserted>Workforce information for the 2018-19 financial year will be published in the second half of 2019. Information for the previous year is available in the 2017-18 report accessible at:</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000006">
+          <inserted>https://publicsector.sa.gov.au/about/office-for-the-public-sector/workforce-information/.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000007">
+          <inserted>The size of the public sector workforce as at 30 June 2018 is presented in table 1 of the report. Table 1 reports workforce data as headcount and Full Time Equivalent, and for each individual agency in the public sector.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000008">
+          <inserted>Table 3(b) breaks down the public sector workforce by appointment type (ongoing, short term, long term, or other). This table presents the number of employees as headcount. Data aggregated by FTE and agency is not published in the report.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000009">
+          <inserted>Table 9 details the number of executives across the public sector, by headcount. A breakdown of executives by FTE, agency and appointment type is not published in the report.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000010">
+          <inserted>The report and interactive dashboards with selected workforce data for each agency are available on the OCPSE website at publicsector.sa.gov.au.</inserted>
+        </text>
+        <text id="201902135c8250bb4cac462ea0000011" />
+      </talker>
+    </subject>
+  </proceeding>
+</hansard>
