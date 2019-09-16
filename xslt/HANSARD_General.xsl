@@ -10,18 +10,20 @@
 
 	<xsl:template match="hansard">
 		 <xsl:element name="header">
-			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
-			<xsl:element name="parliamentName"><xsl:value-of select="parliamentName"/></xsl:element>
-			<xsl:element name="parliamentNum"><xsl:value-of select="parliamentNum"/></xsl:element>
-			<xsl:element name="reviewStage"><xsl:value-of select="reviewStage"/></xsl:element>
-			<xsl:element name="sessionName"><xsl:value-of select="sessionName"/></xsl:element>
-			<xsl:element name="sessionNum"><xsl:value-of select="sessionNum"/></xsl:element>
-			<xsl:element name="venue"><xsl:value-of select="venue"/></xsl:element>
-			<xsl:element name="date"><xsl:value-of select="date/@date"/></xsl:element>
-			<xsl:element name="dateModified"><xsl:value-of select="dateModified/@time"/></xsl:element>
-			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
-			<xsl:element name="proceedingType"><xsl:value-of select="proceeding/name"/></xsl:element>
-			<xsl:element name="subject"><xsl:value-of select="proceeding/subject/name"/></xsl:element>
+			 <xsl:element name="id">filename_generated_id</xsl:element>
+			 <xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
+			 <xsl:element name="parliamentName"><xsl:value-of select="parliamentName"/></xsl:element>
+		 	 <xsl:element name="parliamentNum"><xsl:value-of select="parliamentNum"/></xsl:element>
+		 	 <xsl:element name="reviewStage"><xsl:value-of select="reviewStage"/></xsl:element>
+			 <xsl:element name="sessionName"><xsl:value-of select="sessionName"/></xsl:element>
+			 <xsl:element name="sessionNum"><xsl:value-of select="sessionNum"/></xsl:element>
+			 <xsl:element name="venue"><xsl:value-of select="venue"/></xsl:element>
+			 <xsl:element name="date"><xsl:value-of select="date/@date"/></xsl:element>
+			 <xsl:element name="dateModified"><xsl:value-of select="dateModified/@time"/></xsl:element>
+			 <xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
+			 <xsl:element name="url">generated_url</xsl:element>
+			 <xsl:element name="proceedingType"><xsl:value-of select="proceeding/name"/></xsl:element>
+			 <xsl:element name="subject"><xsl:value-of select="proceeding/subject/name"/></xsl:element>
          </xsl:element>
 
         <xsl:apply-templates select="//bill" mode="bill"/>
@@ -32,7 +34,7 @@
 
 	<xsl:template match="talker" mode="talker">
 		<xsl:element name="talker">
-			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: need to handle case where a talker doesn't have an ID -->
+			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: Generate if null -->
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
 			<xsl:element name="role"><xsl:value-of select="@role"/></xsl:element>
@@ -47,13 +49,18 @@
 				<xsl:with-param name="talkerID" select="@id"/>
 		</xsl:apply-templates>
 
-		<xsl:apply-templates select=".//text" mode="text"/>
+		<xsl:apply-templates select=".//text" mode="text">
+			<xsl:with-param name="talkerID" select="@id"/>
+		</xsl:apply-templates>
 	</xsl:template>
 
 	<xsl:template match="talker/text" mode="text">
+		<xsl:param name="talkerID"/>
+
 		<xsl:element name="text">
 			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
-			<xsl:element name="talkerID"><xsl:value-of select="../@id"/></xsl:element>
+			<xsl:element name="talkerID"><xsl:value-of select="$talkerID"/></xsl:element>
+			<xsl:element name="hansardID">filename_generated_id</xsl:element>
 			<xsl:element name="kind"><xsl:value-of select="../@kind"/></xsl:element>
 			<xsl:element name="text">
 				<xsl:apply-templates select="* | text()"/>
@@ -85,11 +92,9 @@
 		<xsl:param name="talkerID"/>
 
 		<xsl:element name="portfolio">
+			<xsl:element name="id">generated_id</xsl:element>
 			<xsl:element name="talkerID">
 				<xsl:value-of select="$talkerID"/>
-			</xsl:element>
-			<xsl:element name="id">
-				<xsl:value-of select="@id"/>
 			</xsl:element>
 			<xsl:element name="name">
 				<xsl:value-of select="name"/>
@@ -99,7 +104,8 @@
 
 	<xsl:template match="bill" mode="bill">
 		<xsl:element name="bill">
-			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
+			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: Generate if null -->
+			<xsl:element name="hansardID">filename_generated_id</xsl:element>
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 		</xsl:element>
 	</xsl:template>
@@ -108,6 +114,7 @@
 		<xsl:param name="talkerID"/>
 
 		<xsl:element name="question">
+			<xsl:element name="id">generated_id</xsl:element>
 			<xsl:element name="talkerID">
 				<xsl:value-of select="$talkerID"/>
 			</xsl:element>
@@ -124,10 +131,11 @@
 	</xsl:template>
 
 	<xsl:template match="text" mode="proceeding">
-		<xsl:element name="proceedingText">
-			<xsl:element name="id">
-				<xsl:value-of select="@id"/>
-			</xsl:element>
+		<xsl:element name="text">
+			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element>
+			<xsl:element name="talkerID"/>
+			<xsl:element name="hansardID">filename_generated_id</xsl:element>
+			<xsl:element name="kind">proceeding</xsl:element>
 			<xsl:element name="text">
 				<xsl:apply-templates select="* | text()"/>
 			</xsl:element>
