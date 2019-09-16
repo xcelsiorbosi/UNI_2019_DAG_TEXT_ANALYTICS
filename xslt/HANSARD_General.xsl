@@ -47,7 +47,7 @@
 				<xsl:with-param name="talkerID" select="@id"/>
 		</xsl:apply-templates>
 
-		<xsl:apply-templates select=".//text" mode="text"/> <!-- TODO: Should text without contents be ignored? -->
+		<xsl:apply-templates select=".//text" mode="text"/>
 	</xsl:template>
 
 	<xsl:template match="talker/text" mode="text">

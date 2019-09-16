@@ -43,4 +43,4 @@ rem Personal Explanation
 java -jar c:/saxon/saxon9he.jar input/HANSARD-11-32867.xml HANSARD_General.xsl -o:output/xslt_HANSARD-11-32867_personal_explanation.xml
 
 rem Matter of Privilege
-java -jar c:/saxon/saxon9he.jar input/HANSARD-11-32827.xml HANSARD_General.xsl -o:output/xslt_HANSARD-11-32827.xml_matter_privilege.xml
+java -jar c:/saxon/saxon9he.jar input/HANSARD-11-32827.xml HANSARD_General.xsl -o:output/xslt_HANSARD-11-32827_matter_privilege.xml
