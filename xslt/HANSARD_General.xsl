@@ -33,8 +33,21 @@
 	</xsl:template>
 
 	<xsl:template match="talker" mode="talker">
+
+		<xsl:variable name="talkerID">
+			<xsl:choose>
+				<xsl:when test="@id != ''">
+					<xsl:value-of select="@id" />
+				</xsl:when>
+				<xsl:otherwise>
+					<!-- Generate talker ID if it does not exist -->
+					<xsl:value-of select="generate-id(.)" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
 		<xsl:element name="talker">
-			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: Generate if null -->
+			<xsl:element name="id"><xsl:value-of select="$talkerID"/></xsl:element>
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 			<xsl:element name="house"><xsl:value-of select="house"/></xsl:element>
 			<xsl:element name="role"><xsl:value-of select="@role"/></xsl:element>
@@ -42,15 +55,15 @@
 		</xsl:element>
 
 		<xsl:apply-templates select=".//portfolio" mode="portfolio">
-				<xsl:with-param name="talkerID" select="@id"/>
+				<xsl:with-param name="talkerID" select="$talkerID"/>
 		</xsl:apply-templates>
 
 		<xsl:apply-templates select=".//question" mode="question">
-				<xsl:with-param name="talkerID" select="@id"/>
+				<xsl:with-param name="talkerID" select="$talkerID"/>
 		</xsl:apply-templates>
 
 		<xsl:apply-templates select=".//text" mode="text">
-			<xsl:with-param name="talkerID" select="@id"/>
+			<xsl:with-param name="talkerID" select="$talkerID"/>
 		</xsl:apply-templates>
 	</xsl:template>
 
@@ -103,8 +116,20 @@
 	</xsl:template>
 
 	<xsl:template match="bill" mode="bill">
+		<xsl:variable name="billID">
+			<xsl:choose>
+				<xsl:when test="@id != ''">
+					<xsl:value-of select="@id" />
+				</xsl:when>
+				<xsl:otherwise>
+					<!-- Generate Bill ID if it does not exist -->
+					<xsl:value-of select="generate-id(.)" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
 		<xsl:element name="bill">
-			<xsl:element name="id"><xsl:value-of select="@id"/></xsl:element> <!-- TODO: Generate if null -->
+			<xsl:element name="id"><xsl:value-of select="$billID"/></xsl:element>
 			<xsl:element name="hansardID">filename_generated_id</xsl:element>
 			<xsl:element name="name"><xsl:value-of select="name"/></xsl:element>
 		</xsl:element>
