@@ -143,6 +143,7 @@
 			<xsl:element name="talkerID">
 				<xsl:value-of select="$talkerID"/>
 			</xsl:element>
+			<xsl:element name="hansardID">filename_generated_id</xsl:element>
 			<xsl:element name="date">
 				<xsl:value-of select="@date"/>
 			</xsl:element>
