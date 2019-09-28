@@ -58,10 +58,11 @@ The table below outlines some of the common naming styles in Python code and whe
 |Method	|Use a lowercase word or words. Separate words with underscores to improve readability.	|class_method, method|
 |Constant	|Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.	|CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT|
 |Module	|Use a short, lowercase word or words. Separate words with underscores to improve readability.	|module.py, my_module.py|
-|Package	|Use a short, lowercase word or words. Do not separate words with underscores.| package, mypackage|
+|Package	|Use a short, lowercase word or words. Separate words with underscores if it improves readability.| package, package_input|
 
 Additional reading resources on using PEP 8 style guide:
 * [Python Naming Conventions](https://visualgit.readthedocs.io/en/latest/pages/naming_convention.html)
+* [Pep 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 ## Authors
 * Aaron Butler
