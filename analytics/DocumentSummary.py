@@ -45,16 +45,17 @@ def generate_text_rank_summary(original_text):
 # TextRank does not rely on any previous training data and can work with any arbitrary piece of text.
 # TextRank is a general purpose graph-based ranking algorithm for NLP
 # Generate clean sentences
+# Generate clean sentences
 def read_article(file_name, output=True):
     file = open(file_name, "r")
-    filedata = file.readlines()
-    article = re.split(r'[?!.:] ', filedata[0])
-    return create_clean_sentences(article, output)
+    file_data = file.readlines()
+    sentences = re.split(r'[?!.] ', file_data[0])
+    return create_clean_sentences(sentences, output)
 
 
 def read_text(text, output=True):
-    article = re.split(r'[?!.:] ', text)
-    return create_clean_sentences(article, output)
+    sentences = re.split(r'[?!.] ', text)
+    return create_clean_sentences(sentences, output)
 
 
 def create_clean_sentences(article, output=True):
@@ -63,12 +64,10 @@ def create_clean_sentences(article, output=True):
     for sentence in article:
         processed = sentence.replace("[^a-zA-Z]", " ")
         word_count = len(re.findall(r'\w+', processed))
-        if word_count > 4:  # Include sentences with more than five words
+        if word_count > 4:  # Include sentences with more than four words
             sentences.append(processed.split(" "))
         if output:
             print(sentence, ": words = ", word_count)
-
-    # sentences.pop()
 
     return sentences
 
@@ -120,7 +119,6 @@ def generate_summary(file_name, text, top_n=5, output=True):
     summarize_text = []
 
     # Step 1 - Read text and split it
-    sentences = ""
     if file_name is not None:
         sentences = read_article(file_name, output)
     elif len(text) <= 200:
@@ -130,10 +128,10 @@ def generate_summary(file_name, text, top_n=5, output=True):
         sentences = read_text(text, output)
 
     # Step 2 - Generate Similarly Matrix across sentences
-    sentence_similarity_martix = build_similarity_matrix(sentences, stop_words)
+    sentence_similarity_matrix = build_similarity_matrix(sentences, stop_words)
 
     # Step 3 - Rank sentences in similarity matrix
-    sentence_similarity_graph = nx.from_numpy_array(sentence_similarity_martix)
+    sentence_similarity_graph = nx.from_numpy_array(sentence_similarity_matrix)
     try:
         scores = nx.pagerank(sentence_similarity_graph, max_iter=100)
     except nx.NetworkXError:
