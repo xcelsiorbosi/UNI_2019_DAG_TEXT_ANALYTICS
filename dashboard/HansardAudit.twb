@@ -116,13 +116,12 @@
             <relation connection='sqlserver.0gd5nt81gdglhf12n3oex1dxh3px' name='FinalPortfolio' table='[dbo].[FinalPortfolio]' type='table' />
           </relation>
           <relation connection='excel-direct.1e0ogel0f7k32214qev2r0f8pdan' name='TextRank' table='[TextRank$]' type='table'>
-            <columns gridOrigin='A1:F8834:no:A1:F8834:0' header='yes' outcome='6'>
+            <columns gridOrigin='A1:E8834:no:A1:E8834:0' header='yes' outcome='6'>
               <column datatype='string' name='hansardID' ordinal='0' />
-              <column datatype='string' name='text' ordinal='1' />
-              <column datatype='integer' name='WordCount' ordinal='2' />
-              <column datatype='string' name='Truncated' ordinal='3' />
-              <column datatype='string' name='KeyWords' ordinal='4' />
-              <column datatype='string' name='TextRankCustom' ordinal='5' />
+              <column datatype='integer' name='WordCount' ordinal='1' />
+              <column datatype='string' name='Truncated' ordinal='2' />
+              <column datatype='string' name='KeyWords' ordinal='3' />
+              <column datatype='string' name='TextRankCustom' ordinal='4' />
             </columns>
           </relation>
         </relation>
@@ -172,7 +171,6 @@
           <map key='[Venue]' value='[FinalHeader].[Venue]' />
           <map key='[WordCount]' value='[TextRank].[WordCount]' />
           <map key='[hansardID]' value='[TextRank].[hansardID]' />
-          <map key='[text]' value='[TextRank].[text]' />
         </cols>
         <metadata-records>
           <metadata-record class='column'>
@@ -903,27 +901,12 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>text</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[text]</local-name>
-            <parent-name>[TextRank]</parent-name>
-            <remote-alias>text</remote-alias>
-            <ordinal>48</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RAU_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
             <remote-name>WordCount</remote-name>
             <remote-type>20</remote-type>
             <local-name>[WordCount]</local-name>
             <parent-name>[TextRank]</parent-name>
             <remote-alias>WordCount</remote-alias>
-            <ordinal>49</ordinal>
+            <ordinal>48</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -937,7 +920,7 @@
             <local-name>[Truncated]</local-name>
             <parent-name>[TextRank]</parent-name>
             <remote-alias>Truncated</remote-alias>
-            <ordinal>50</ordinal>
+            <ordinal>49</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -952,7 +935,7 @@
             <local-name>[KeyWords]</local-name>
             <parent-name>[TextRank]</parent-name>
             <remote-alias>KeyWords</remote-alias>
-            <ordinal>51</ordinal>
+            <ordinal>50</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -967,7 +950,7 @@
             <local-name>[TextRankCustom]</local-name>
             <parent-name>[TextRank]</parent-name>
             <remote-alias>TextRankCustom</remote-alias>
-            <ordinal>52</ordinal>
+            <ordinal>51</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -984,8 +967,8 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>2</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:F8834:no:A1:F8834:0&quot;</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E8834:no:A1:E8834:0&quot;</attribute>
               <attribute datatype='boolean' name='header'>true</attribute>
               <attribute datatype='integer' name='outcome'>6</attribute>
             </attributes>
@@ -1088,82 +1071,42 @@
       <column caption='Hansard ID1' datatype='string' hidden='true' name='[hansardID]' role='dimension' type='nominal' />
       <column caption='Text1' datatype='string' hidden='true' name='[text]' role='dimension' type='nominal' />
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/student/source/repos/UNI_2019_DAG_TEXT_ANALYTICS/data/HANSARDFilesInfo+ (newHansard).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2019 12:56:17 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/student/source/repos/UNI_2019_DAG_TEXT_ANALYTICS/data/HANSARDFilesInfo+ (newHansard).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/30/2019 07:20:46 AM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <cols>
-            <map key='[BillID]' value='[Extract].[BillID]' />
             <map key='[BillName]' value='[Extract].[BillName]' />
-            <map key='[Date (FinalQuestion)]' value='[Extract].[Date]' />
-            <map key='[DateModified]' value='[Extract].[DateModified]' />
-            <map key='[Date]' value='[Extract].[Date1]' />
-            <map key='[Electorate]' value='[Extract].[Electorate]' />
+            <map key='[Date]' value='[Extract].[Date]' />
             <map key='[FileName]' value='[Extract].[FileName]' />
             <map key='[HansardID (FinalBill)]' value='[Extract].[HansardID]' />
             <map key='[HansardID (FinalPortfolio)]' value='[Extract].[HansardID1]' />
-            <map key='[HansardID (FinalQuestion)]' value='[Extract].[HansardID2]' />
-            <map key='[HansardID (FinalText)]' value='[Extract].[HansardID3]' />
-            <map key='[HansardID]' value='[Extract].[HansardID4]' />
-            <map key='[House (DistinctTalker)]' value='[Extract].[House]' />
-            <map key='[House]' value='[Extract].[House1]' />
-            <map key='[ID]' value='[Extract].[ID]' />
+            <map key='[HansardID]' value='[Extract].[HansardID2]' />
+            <map key='[House]' value='[Extract].[House]' />
             <map key='[KeyWords]' value='[Extract].[KeyWords]' />
-            <map key='[Kind]' value='[Extract].[Kind]' />
             <map key='[Name (FinalPortfolio)]' value='[Extract].[Name]' />
-            <map key='[Name]' value='[Extract].[Name1]' />
-            <map key='[ParliamentName]' value='[Extract].[ParliamentName]' />
-            <map key='[ParliamentNum]' value='[Extract].[ParliamentNum]' />
-            <map key='[PortfolioID]' value='[Extract].[PortfolioID]' />
             <map key='[ProceedingType]' value='[Extract].[ProceedingType]' />
-            <map key='[ProcessedOn]' value='[Extract].[ProcessedOn]' />
-            <map key='[QonNum]' value='[Extract].[QonNum]' />
-            <map key='[QuestionID]' value='[Extract].[QuestionID]' />
-            <map key='[Question]' value='[Extract].[Question]' />
-            <map key='[ReviewStage]' value='[Extract].[ReviewStage]' />
-            <map key='[Role]' value='[Extract].[Role]' />
-            <map key='[SessionName]' value='[Extract].[SessionName]' />
-            <map key='[SessionNum]' value='[Extract].[SessionNum]' />
             <map key='[Subject]' value='[Extract].[Subject]' />
-            <map key='[TalkerID (DistinctTalker)]' value='[Extract].[TalkerID]' />
-            <map key='[TalkerID (FinalPortfolio)]' value='[Extract].[TalkerID1]' />
-            <map key='[TalkerID (FinalQuestion)]' value='[Extract].[TalkerID2]' />
-            <map key='[TalkerID]' value='[Extract].[TalkerID3]' />
             <map key='[TalkerName]' value='[Extract].[TalkerName]' />
-            <map key='[TextID]' value='[Extract].[TextID]' />
             <map key='[TextRankCustom]' value='[Extract].[TextRankCustom]' />
             <map key='[Text]' value='[Extract].[Text]' />
             <map key='[Truncated]' value='[Extract].[Truncated]' />
             <map key='[URL]' value='[Extract].[URL]' />
-            <map key='[Venue]' value='[Extract].[Venue]' />
             <map key='[WordCount]' value='[Extract].[WordCount]' />
           </cols>
           <refresh>
-            <refresh-event add-from-file-path='HANSARDFilesInfo+ (newHansard)' increment-value='%null%' refresh-type='create' rows-inserted='287841' timestamp-start='2019-09-29 12:56:17.171' />
+            <refresh-event add-from-file-path='HANSARDFilesInfo+ (newHansard)' increment-value='%null%' refresh-type='create' rows-inserted='287841' timestamp-start='2019-09-30 07:20:46.896' />
           </refresh>
           <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>ID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[ID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>ID</remote-alias>
-              <ordinal>0</ordinal>
-              <family>HANSARDFilesInfo</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>12977</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
             <metadata-record class='column'>
               <remote-name>FileName</remote-name>
               <remote-type>129</remote-type>
               <local-name>[FileName]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>FileName</remote-alias>
-              <ordinal>1</ordinal>
+              <ordinal>0</ordinal>
               <family>HANSARDFilesInfo</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>12977</approx-count>
+              <approx-count>12116</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1173,143 +1116,34 @@
               <local-name>[URL]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>URL</remote-alias>
-              <ordinal>2</ordinal>
+              <ordinal>1</ordinal>
               <family>HANSARDFilesInfo</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>12977</approx-count>
+              <approx-count>12116</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>ProcessedOn</remote-name>
-              <remote-type>135</remote-type>
-              <local-name>[ProcessedOn]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>ProcessedOn</remote-alias>
-              <ordinal>3</ordinal>
-              <family>HANSARDFilesInfo</family>
-              <local-type>datetime</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>12977</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>HansardID4</remote-name>
+              <remote-name>HansardID2</remote-name>
               <remote-type>20</remote-type>
               <local-name>[HansardID]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>HansardID4</remote-alias>
-              <ordinal>4</ordinal>
+              <remote-alias>HansardID2</remote-alias>
+              <ordinal>2</ordinal>
               <family>FinalHeader</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>12977</approx-count>
+              <approx-count>12116</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Name1</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Name]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Name1</remote-alias>
-              <ordinal>5</ordinal>
-              <family>FinalHeader</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>ParliamentName</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[ParliamentName]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>ParliamentName</remote-alias>
-              <ordinal>6</ordinal>
-              <family>FinalHeader</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>ParliamentNum</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[ParliamentNum]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>ParliamentNum</remote-alias>
-              <ordinal>7</ordinal>
-              <family>FinalHeader</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>ReviewStage</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[ReviewStage]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>ReviewStage</remote-alias>
-              <ordinal>8</ordinal>
-              <family>FinalHeader</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>SessionName</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[SessionName]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>SessionName</remote-alias>
-              <ordinal>9</ordinal>
-              <family>FinalHeader</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>SessionNum</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[SessionNum]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>SessionNum</remote-alias>
-              <ordinal>10</ordinal>
-              <family>FinalHeader</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Venue</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Venue]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Venue</remote-alias>
-              <ordinal>11</ordinal>
-              <family>FinalHeader</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Date1</remote-name>
+              <remote-name>Date</remote-name>
               <remote-type>133</remote-type>
               <local-name>[Date]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Date1</remote-alias>
-              <ordinal>12</ordinal>
+              <remote-alias>Date</remote-alias>
+              <ordinal>3</ordinal>
               <family>FinalHeader</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
@@ -1317,25 +1151,12 @@
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>DateModified</remote-name>
-              <remote-type>135</remote-type>
-              <local-name>[DateModified]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>DateModified</remote-alias>
-              <ordinal>13</ordinal>
-              <family>FinalHeader</family>
-              <local-type>datetime</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>339</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>House1</remote-name>
+              <remote-name>House</remote-name>
               <remote-type>129</remote-type>
               <local-name>[House]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>House1</remote-alias>
-              <ordinal>14</ordinal>
+              <remote-alias>House</remote-alias>
+              <ordinal>4</ordinal>
               <family>FinalHeader</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1349,7 +1170,7 @@
               <local-name>[ProceedingType]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>ProceedingType</remote-alias>
-              <ordinal>15</ordinal>
+              <ordinal>5</ordinal>
               <family>FinalHeader</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1363,66 +1184,11 @@
               <local-name>[Subject]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Subject</remote-alias>
-              <ordinal>16</ordinal>
+              <ordinal>6</ordinal>
               <family>FinalHeader</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>3894</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>HansardID3</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[HansardID (FinalText)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>HansardID3</remote-alias>
-              <ordinal>17</ordinal>
-              <family>FinalText</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>12977</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TextID</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[TextID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TextID</remote-alias>
-              <ordinal>18</ordinal>
-              <family>FinalText</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>104501</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TalkerID3</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[TalkerID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TalkerID3</remote-alias>
-              <ordinal>19</ordinal>
-              <family>FinalText</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>457</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Kind</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Kind]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Kind</remote-alias>
-              <ordinal>20</ordinal>
-              <family>FinalText</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>3478</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1432,25 +1198,11 @@
               <local-name>[Text]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Text</remote-alias>
-              <ordinal>21</ordinal>
+              <ordinal>7</ordinal>
               <family>FinalText</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>53570</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>BillID</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[BillID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>BillID</remote-alias>
-              <ordinal>22</ordinal>
-              <family>FinalBill</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1151</approx-count>
+              <approx-count>51768</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1460,11 +1212,11 @@
               <local-name>[HansardID (FinalBill)]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>HansardID</remote-alias>
-              <ordinal>23</ordinal>
+              <ordinal>8</ordinal>
               <family>FinalBill</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>3568</approx-count>
+              <approx-count>3613</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1473,39 +1225,11 @@
               <local-name>[BillName]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>BillName</remote-alias>
-              <ordinal>24</ordinal>
+              <ordinal>9</ordinal>
               <family>FinalBill</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>584</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TalkerID</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[TalkerID (DistinctTalker)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TalkerID</remote-alias>
-              <ordinal>25</ordinal>
-              <family>DistinctTalker</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>457</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>House</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[House (DistinctTalker)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>House</remote-alias>
-              <ordinal>26</ordinal>
-              <family>DistinctTalker</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
+              <approx-count>680</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1515,119 +1239,11 @@
               <local-name>[TalkerName]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>TalkerName</remote-alias>
-              <ordinal>27</ordinal>
+              <ordinal>10</ordinal>
               <family>DistinctTalker</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>242</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Role</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Role]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Role</remote-alias>
-              <ordinal>28</ordinal>
-              <family>DistinctTalker</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Electorate</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Electorate]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Electorate</remote-alias>
-              <ordinal>29</ordinal>
-              <family>DistinctTalker</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>85</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>HansardID2</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[HansardID (FinalQuestion)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>HansardID2</remote-alias>
-              <ordinal>30</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>22142</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>QuestionID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[QuestionID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>QuestionID</remote-alias>
-              <ordinal>31</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>27444</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Date</remote-name>
-              <remote-type>133</remote-type>
-              <local-name>[Date (FinalQuestion)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Date</remote-alias>
-              <ordinal>32</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>date</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>356</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>QonNum</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[QonNum]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>QonNum</remote-alias>
-              <ordinal>33</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>7770</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Question</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Question]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Question</remote-alias>
-              <ordinal>34</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>5551</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TalkerID2</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[TalkerID (FinalQuestion)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TalkerID2</remote-alias>
-              <ordinal>35</ordinal>
-              <family>FinalQuestion</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>190</approx-count>
+              <approx-count>186</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1637,38 +1253,11 @@
               <local-name>[HansardID (FinalPortfolio)]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>HansardID1</remote-alias>
-              <ordinal>36</ordinal>
+              <ordinal>11</ordinal>
               <family>FinalPortfolio</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>6645</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TalkerID1</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[TalkerID (FinalPortfolio)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TalkerID1</remote-alias>
-              <ordinal>37</ordinal>
-              <family>FinalPortfolio</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>38</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>PortfolioID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[PortfolioID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>PortfolioID</remote-alias>
-              <ordinal>38</ordinal>
-              <family>FinalPortfolio</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>13206</approx-count>
+              <approx-count>5711</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1677,11 +1266,11 @@
               <local-name>[Name (FinalPortfolio)]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Name</remote-alias>
-              <ordinal>39</ordinal>
+              <ordinal>12</ordinal>
               <family>FinalPortfolio</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>135</approx-count>
+              <approx-count>150</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1691,11 +1280,11 @@
               <local-name>[WordCount]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>WordCount</remote-alias>
-              <ordinal>40</ordinal>
+              <ordinal>13</ordinal>
               <family>TextRank</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>7160</approx-count>
+              <approx-count>7459</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1704,11 +1293,11 @@
               <local-name>[Truncated]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Truncated</remote-alias>
-              <ordinal>41</ordinal>
+              <ordinal>14</ordinal>
               <family>TextRank</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>12116</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RAU_S2' />
             </metadata-record>
@@ -1718,11 +1307,11 @@
               <local-name>[KeyWords]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>KeyWords</remote-alias>
-              <ordinal>42</ordinal>
+              <ordinal>15</ordinal>
               <family>TextRank</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>12889</approx-count>
+              <approx-count>12149</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RAU_S2' />
             </metadata-record>
@@ -1732,18 +1321,18 @@
               <local-name>[TextRankCustom]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>TextRankCustom</remote-alias>
-              <ordinal>43</ordinal>
+              <ordinal>16</ordinal>
               <family>TextRank</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>12871</approx-count>
+              <approx-count>12350</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RAU_S2' />
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.55914' measure-ordering='alphabetic' measure-percentage='0.369624' parameter-percentage='0.0712366' show-hidden-fields='true' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.524194' measure-ordering='alphabetic' measure-percentage='0.405914' parameter-percentage='0.0698925' show-hidden-fields='true' show-structure='true' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
       </semantic-values>
@@ -3401,8 +2990,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='504' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='505' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='510' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98176' id='511' param='vert' type='layout-flow' w='99034' x='483' y='912'>
                 <zone forceUpdate='true' h='5583' id='283' type='text' w='99034' x='483' y='912'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Record Search</run>
@@ -3631,8 +3220,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='504' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='505' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='510' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98176' id='511' param='vert' type='layout-flow' w='99034' x='483' y='912'>
                 <zone forceUpdate='true' h='5587' id='283' type='text' w='99034' x='483' y='912'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Record Search</run>
@@ -3885,8 +3474,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='517' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98176' id='518' param='vert' type='layout-flow' w='99034' x='483' y='912'>
+            <zone h='100000' id='523' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98176' id='524' param='vert' type='layout-flow' w='99034' x='483' y='912'>
                 <zone forceUpdate='true' h='5586' id='283' type='text' w='99034' x='483' y='912'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Summary</run>
@@ -4046,7 +3635,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='14' />
       <simple-id uuid='{5F1F9C81-D844-4AE0-AF60-4784104E33F1}' />
     </window>
     <window class='dashboard' name='Audit Dashboard (2)'>
