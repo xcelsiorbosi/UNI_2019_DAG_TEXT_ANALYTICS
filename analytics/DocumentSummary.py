@@ -51,8 +51,9 @@ def create_long_sentences(article, output=True):
     sentences = []
 
     for sentence in article:
+        sentence = re.sub(r'[0-9]?.?&#x9;', '', sentence)  # Remove tags
         word_count = len(re.findall(r'\w+', sentence))
-        if word_count > 4:  # Include sentences with more than four words
+        if 4 < word_count <= 100:  # Include sentences with 5 to 100 words
             sentences.append(sentence.split(" "))
         if output:
             print(sentence, ": words = ", word_count)
@@ -126,9 +127,9 @@ def build_similarity_matrix(sentences):
 
 
 # Generate Summary Method
-def generate_summary_from_file(file_name, top_n=5, output=True):
+def generate_summary_from_file(file_path, top_n=5, output=True):
     # Read text and split it into sentences
-    file = open(file_name, "r")
+    file = open(file_path, "r")
     file_data = file.readlines()
     sentences = re.split(r'[?!.] ', file_data[0])
 
@@ -158,7 +159,8 @@ def generate_summary(sentences, top_n=5, output=True):
     try:
         # https://stackoverflow.com/questions/13040548/networkx-differences-between-pagerank-pagerank-numpy-and-pagerank-scipy
         # scores = nx.pagerank(sentence_similarity_graph) # The eigenvector calculation is done by the power iteration method and has no guarantee of convergence
-        scores = nx.pagerank_numpy(sentence_similarity_graph)  # The eigenvector calculation uses NumPy’s interface to the LAPACK eigenvalue solvers. This will be the fastest and most accurate for small graphs.
+        scores = nx.pagerank_numpy(
+            sentence_similarity_graph)  # The eigenvector calculation uses NumPy’s interface to the LAPACK eigenvalue solvers. This will be the fastest and most accurate for small graphs.
         # scores = nx.pagerank_scipy(sentence_similarity_graph) # SciPy sparse-matrix implementation of the power-method
     except nx.NetworkXError:
         print("NetworkXError")
