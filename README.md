@@ -65,10 +65,10 @@ Additional reading resources on using PEP 8 style guide:
 * [Pep 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 ## Authors
-* Aaron Butler
-* Bipin Karki - *Data Scraper*
-* Katherine Noack
-* Mahmoud Yousefi
+* Aaron Butler - *Text analytics*
+* Bipin Karki - *Data Scraper and text analytics*
+* Katherine Noack - *Dashboards and text analytics*
+* Mahmoud Yousefi - *ETL and text analytics*
 
 ## Acknowledgments
 * Eric Lam - *University Mentor*

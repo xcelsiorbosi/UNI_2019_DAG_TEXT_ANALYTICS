@@ -1,4 +1,5 @@
 /xslt/output/*.xml
 /analytics/.ipynb_checkpoints/
+/xml_etl/.ipynb_checkpoints/
 /output/
 /.idea/
