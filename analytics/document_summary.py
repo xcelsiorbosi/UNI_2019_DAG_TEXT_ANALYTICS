@@ -158,7 +158,8 @@ def generate_summary(sentences, top_n=5, output=True):
     sentence_similarity_graph = nx.from_numpy_array(sentence_similarity_matrix)
     try:
         # https://stackoverflow.com/questions/13040548/networkx-differences-between-pagerank-pagerank-numpy-and-pagerank-scipy
-        # The eigenvector calculation uses NumPy’s interface to the LAPACK eigenvalue solvers. This will be the fastest and most accurate for small graphs.
+        # The eigenvector calculation uses NumPy’s interface to the LAPACK eigenvalue solvers.
+        # This will be the fastest and most accurate for small graphs.
         scores = nx.pagerank_numpy(sentence_similarity_graph)
     except nx.NetworkXError:
         print("NetworkXError")

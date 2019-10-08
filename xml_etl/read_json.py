@@ -1,17 +1,19 @@
-import sys, os
-cwd = os.getcwd()
+import os
 from pathlib import Path
-parentPath = Path(cwd).parent
-parentPath = str(parentPath)
-
-jsonLocation = parentPath+"\\xml_json\\"
-
-print(jsonLocation)
-# ------------------------------------------
 import pyspark
 from pyspark import SparkConf
 from pyspark import SparkContext
-sc =SparkContext()
+
+cwd = os.getcwd()
+
+parentPath = Path(cwd).parent
+parentPath = str(parentPath)
+
+jsonLocation = parentPath + "\\xml_json\\"
+
+print(jsonLocation)
+# ------------------------------------------
+sc = SparkContext()
 
 # You can configure the SparkContext
 
