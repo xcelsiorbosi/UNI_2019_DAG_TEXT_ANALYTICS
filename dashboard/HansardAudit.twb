@@ -1838,7 +1838,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.716867' group-percentage='0.0888554' measure-ordering='alphabetic' measure-percentage='0.11747' parameter-percentage='0.0768072' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.718407' group-percentage='0.0892857' measure-ordering='alphabetic' measure-percentage='0.115385' parameter-percentage='0.0769231' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' user-set-layout='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[none:Subject:nk]' palette='color_blind_10_0' type='palette'>
@@ -9663,28 +9663,6 @@
             <column-instance column='[Subject]' derivation='None' name='[none:Subject:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_334392310203834368]' derivation='User' name='[usr:Calculation_334392310203834368:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[Exclusions (Proceeding Type,Step 1: Drill Down Proceeding to Portfolio)]'>
-            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
-              <groupfilter function='crossjoin'>
-                <groupfilter function='level-members' level='[none:ProceedingType:nk]' />
-                <groupfilter function='level-members' level='[none:Calculation_1395271504146288644:nk]' />
-              </groupfilter>
-              <groupfilter function='reorder-dimensionality'>
-                <groupfilter function='crossjoin'>
-                  <groupfilter function='member' level='[none:Calculation_1395271504146288644:nk]' member='%null%' />
-                  <groupfilter function='union'>
-                    <groupfilter function='member' level='[none:ProceedingType:nk]' member='&quot;Answers to Questions&quot;' />
-                    <groupfilter function='member' level='[none:ProceedingType:nk]' member='&quot;Bills&quot;' />
-                    <groupfilter function='member' level='[none:ProceedingType:nk]' member='&quot;Question Time&quot;' />
-                  </groupfilter>
-                </groupfilter>
-                <order>
-                  <hierarchy name='[none:ProceedingType:nk]' />
-                  <hierarchy name='[none:Calculation_1395271504146288644:nk]' />
-                </order>
-              </groupfilter>
-            </groupfilter>
-          </filter>
           <filter class='quantitative' column='[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:Date:qk]' context='true' filter-group='6' included-values='in-range'>
             <min>#2017-08-02#</min>
             <max>#2019-08-01#</max>
@@ -9699,7 +9677,6 @@
             <column>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:Date:qk]</column>
             <column>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:ProceedingType:nk]</column>
             <column>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:Subject:nk]</column>
-            <column>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[Exclusions (Proceeding Type,Step 1: Drill Down Proceeding to Portfolio)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -10546,8 +10523,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1616' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1617' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='1628' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1629' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='8680' id='283' type='text' w='93531' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Audit Team Dashboard: Search for Key Terms</run>
@@ -10759,8 +10736,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='850' minheight='850' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1638' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1639' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='1650' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1651' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='8686' id='283' type='text' w='93533' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Client Overview</run>
@@ -11004,8 +10981,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1609' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98142' id='1610' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='100000' id='1621' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1622' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='8703' id='283' type='text' w='93537' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Record Search</run>
@@ -11291,8 +11268,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1615' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98142' id='1616' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='100000' id='1627' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1628' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='8687' id='283' type='text' w='93532' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Record Search</run>
@@ -11557,8 +11534,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1638' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1639' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='1650' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='1651' param='vert' type='layout-flow' w='99034' x='483' y='929'>
                 <zone forceUpdate='true' h='8695' id='283' type='text' w='93536' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Subject Overview</run>
@@ -11886,8 +11863,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2800' minheight='2800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='1627' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98142' id='1628' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='100000' id='1639' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='1640' param='vert' type='layout-flow' w='99034' x='483' y='929'>
                 <zone forceUpdate='true' h='8654' id='283' type='text' w='93526' x='483' y='929'>
                   <formatted-text>
                     <run fontcolor='#000000' fontsize='18'>Hansard Summary: &lt;</run>
@@ -12142,34 +12119,6 @@
         </viewpoint>
         <viewpoint name='Top Subjects'>
           <zoom type='fit-width' />
-          <selection-collection>
-            <tuple-selection>
-              <tuple-reference>
-                <tuple-descriptor>
-                  <pane-descriptor>
-                    <x-fields>
-                      <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[sum:Calculation_334392310211846146:qk]</field>
-                    </x-fields>
-                    <y-fields>
-                      <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:Subject:nk]</field>
-                    </y-fields>
-                  </pane-descriptor>
-                  <columns>
-                    <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:ProceedingType:nk]</field>
-                    <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:Subject:nk]</field>
-                    <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[sum:Calculation_1008524882580594690:qk]</field>
-                    <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[sum:Calculation_334392310211846146:qk]</field>
-                  </columns>
-                </tuple-descriptor>
-                <tuple>
-                  <value>&quot;Question Time&quot;</value>
-                  <value>&quot;Australian Craniofacial Unit&quot;</value>
-                  <value>5</value>
-                  <value>69</value>
-                </tuple>
-              </tuple-reference>
-            </tuple-selection>
-          </selection-collection>
           <highlight>
             <color-one-way>
               <field>[federated.1wm7je70rorxvz1e7w0qp0oglqx8].[none:ProceedingType:nk]</field>
@@ -12177,7 +12126,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='365' />
+      <active id='376' />
       <simple-id uuid='{56996174-EF52-47C3-B378-0F428A0F23C2}' />
     </window>
     <window class='dashboard' name='Record Search Dashboard A'>
@@ -12195,7 +12144,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='14' />
+      <active id='-1' />
       <simple-id uuid='{5F1F9C81-D844-4AE0-AF60-4784104E33F1}' />
     </window>
     <window class='dashboard' name='Record Search Dashboard B'>
@@ -12236,7 +12185,7 @@
           </selection-collection>
         </viewpoint>
       </viewpoints>
-      <active id='14' />
+      <active id='-1' />
       <simple-id uuid='{96FC7215-3AE6-40FF-8784-2587B187ED3B}' />
     </window>
     <window class='dashboard' name='Audit Team Dashboard'>
@@ -12265,7 +12214,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='1460' />
       <simple-id uuid='{F28A4DAB-57E6-48BD-93A7-AE3F052411A7}' />
     </window>
     <window class='dashboard' name='Client Overview Dashboard'>
