@@ -1,6 +1,7 @@
 /xslt/output/*.xml
 /analytics/.ipynb_checkpoints/
 /analytics/__pycache__/
+/analytics/ssis/__pycache__/
 /xml_etl/.ipynb_checkpoints/
 /output/
 /.idea/
