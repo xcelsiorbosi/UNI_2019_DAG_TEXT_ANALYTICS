@@ -22,24 +22,6 @@ def smart_truncate(content, length=200, suffix='...'):
         return ' '.join(content[:length + 1].split(' ')[0:-1]) + suffix
 
 
-def generate_text_rank_summary(text):
-    # Return original text if less than 200 characters long
-    if len(text) <= 200:
-        return text
-
-    sentences = []
-    text_sentences = re.split(r'[?!.] ', text)
-
-    for sentence in text_sentences:
-        processed = sentence.replace("[^a-zA-Z]", " ")
-        word_count = len(re.findall(r'\w+', processed))
-        if word_count > 1:  # Include sentences with more than one word
-            sentences.append(processed)
-
-    summary = summarize('. '.join(sentences))
-    return summary.replace("\n", " ").replace("..", ".")
-
-
 # https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70
 # Approach uses TextRank algorithm
 # TextRank does not rely on any previous training data and can work with any arbitrary piece of text.

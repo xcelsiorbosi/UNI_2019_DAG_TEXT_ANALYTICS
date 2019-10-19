@@ -1,6 +1,5 @@
 import pyodbc
 import pandas as pd
-import time
 from text_summary_statistics import word_count, get_keywords
 from document_summary import smart_truncate, generate_summary_from_text
 
@@ -32,50 +31,21 @@ def word_count_db(hansard_id, text_id, text):
     db_cursor.execute("UPDATE HANSARD.dbo.FinalText SET WordCount = ? WHERE TextID = ? AND HansardID = ?", 
                       text_word_count, text_id, hansard_id)
 
-t0 = time.time()
-
 # Iterate through Final Text table and add word count to table if it doesn't already exist
 text.loc[text['WordCount'] == None].apply(
-    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1)
+    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1) # 4019.269sec ~66 min
 
-t1 = time.time()
-total_time = t1-t0
-print("Time =", total_time) # 4019.269sec ~66 min
-
-# Iterate through Final Text table and add word count to table if it doesn't already exist
-#for row in db_cursor:
-#for index, row in text.iterrows():
-#    text = row['Text']
-#    text_word_count = row['WordCount']
-
-#    if text_word_count is not None:
-#        print("Already exists!")
-#        continue
-#    
-#    text_word_count = 0
-#    if text is not None:
-#        text_word_count = word_count(text)
-#    
-#    #db_cursor.execute("INSERT into HANSARD.dbo.FinalText(WordCount) VALUES (?)", text_words)
-#    hansard_id = row['HansardID']
-#    text_id = row['TextID']    
-#    print(hansard_id, text_id, text_word_count, sep=" - ")
-#    db_cursor.execute("UPDATE HANSARD.dbo.FinalText SET WordCount = ? WHERE TextID = ? AND HansardID = ?", 
-#                      text_word_count, text_id, hansard_id)
-    
 # Get full text for each Hansard record
 grouped_text = text.groupby('HansardID')['Text'].agg(lambda col: '. '.join(col))
 grouped_text = pd.DataFrame(grouped_text)
-#grouped_text['HansardID'] = grouped_text.index
 grouped_text['Text'] = grouped_text.Text.replace("..",".")
 grouped_text['Text'] = grouped_text.Text.replace("!.","!")
 grouped_text['Text'] = grouped_text.Text.replace("\?.","\?")
-#grouped_text.reset_index() # Reset index and add HansardID as column
-#grouped_text.reset_index(drop=True)
-#grouped_text = grouped_text.astype({"Text":'str', "HansardID":'int'}) 
 
+# Combine full text with HansardFilesInfo table
 combined = pd.merge(grouped_text, info, how='inner', left_on = 'HansardID', right_on = 'ID')
 
+# Iterate over all Hansard records in database and add sentiment and summaries if they do not already exist
 for index, row in combined.iterrows():    
     hansard_id = row['ID']
     full_text = row['Text']
@@ -100,7 +70,78 @@ for index, row in combined.iterrows():
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET TruncatedSummary = ? WHERE ID = ?", 
                           summary, hansard_id)
 
-    # TODO: Audit Team Key Terms
+# Determine whether text contains mentions of Audit Team Key Terms and add as new table to 
+# HANSARD database. Everytime this term search is run will replace the table in the database in case
+# of changes to key terms listed in the spreadsheet. 
 
-db_connection.commit()
+text_search = pd.DataFrame(text, columns= ['HansardID','TextID','Text'])
+text_search['Text'] = text_search.Text.str.lower() # Convert to lowercase
 
+# Get Audit teams search terms
+import os
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '..\\data\\AuditTeamTerms.xlsx')
+
+data = pd.read_excel(filename, sheet_name="Performance Audit")
+performance = pd.DataFrame(data)
+performance['ProcessedTerm'] = performance.Term.str.lower() # Convert to lowercase
+
+data = pd.read_excel(filename, sheet_name="Local Government Audit")
+government = pd.DataFrame(data)
+government['ProcessedTerm'] = government.Term.str.lower() # Convert to lowercase
+
+data = pd.read_excel(filename, sheet_name="IT Audit")
+it = pd.DataFrame(data)
+it['ProcessedTerm'] = it.Term.str.lower() # Convert to lowercase
+
+# Performance Audit Team Terms
+pattern = '|'.join(r"{}".format(x) for x in performance.ProcessedTerm)
+text_search['MatchedTerm'] = text_search.Text.str.extract('(' + pattern + ')', expand=False)
+performance_terms = pd.merge(performance, text_search, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
+performance_terms.columns = ['Term','ProcessedTerm','HansardID','TextID','Text']
+del text_search['MatchedTerm'] # Delete newly added column from text data
+del performance_terms['Text'] # Delete unneeded Text column from results
+del performance_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
+performance_terms['AuditTeam'] = "Performance"
+
+# Local Government Audit Team Terms
+pattern = '|'.join(r"{}".format(x) for x in government.ProcessedTerm)
+text_search['MatchedTerm'] = text_search.Text.str.extract('('+ pattern + ')', expand=False)
+government_terms = pd.merge(government, text_search, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
+government_terms.columns = ['Term','Alternate','ProcessedTerm','HansardID','TextID','Text']
+del text_search['MatchedTerm'] # Delete newly added column from text data
+del government_terms['Text'] # Delete unneeded Text column from results
+del government_terms['Alternate'] # Delete unneeded Alternate column from results
+del government_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
+government_terms['AuditTeam'] = "Local Government"
+
+# IT Audit Team Terms
+pattern = '|'.join(r"{}".format(x) for x in it.ProcessedTerm)
+text_search['MatchedTerm'] = text_search.Text.str.extract('('+ pattern + ')', expand=False)
+it_terms = pd.merge(it, text_search, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
+it_terms.columns = ['Term','ProcessedTerm','HansardID','TextID','Text']
+del text_search['MatchedTerm'] # Delete newly added column from text data
+del it_terms['Text'] # Delete unneeded Text column from results
+del it_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
+it_terms['AuditTeam'] = "IT"
+
+# Merge search results
+merged_data = pd.concat([performance_terms, government_terms,it_terms], ignore_index=True)
+merged_data = merged_data.drop_duplicates() # Drop duplicate rows
+print(merged_data.shape)
+
+# Add key term search results to KeyTerms table in HANSARD database
+db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms") # Delete all rows from table
+for index,row in merged_data.iterrows():
+    db_cursor.execute("INSERT INTO HANSARD.dbo.KeyTerms([HansardID],[TextID],[Term],[AuditTeam]) VALUES (?,?,?,?)", 
+                   row['HansardID'], 
+                   row['TextID'], 
+                   row['Term'],
+                   row['AuditTeam']) 
+
+# Commit changes to the HANSARD database
+db_connection.commit() 
+
+# Close connection to the database
+db_cursor.close()
+db_connection.close()
