@@ -48,5 +48,5 @@ names(TextClient)[3]<-"FileName"
 # Inserting the Data into clientsmention table on Hansard DB on SS
 sqlSave(dbhandle, TextClient[c("FileName","TextID","AGDClient","AGDFormal","ClientType")], tablename = "ClientsMention",rownames = FALSE)
 
-#Closing the DB Connectio
+#Closing the DB Connection
 odbcClose(dbhandle)
