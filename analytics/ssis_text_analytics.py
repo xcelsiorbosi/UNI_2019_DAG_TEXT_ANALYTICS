@@ -2,7 +2,7 @@ import pyodbc
 import pandas as pd
 import time
 from text_summary_statistics import word_count, get_keywords
-from document_summary import smart_truncate, generate_summary
+from document_summary import smart_truncate, generate_summary_from_text
 
 # Connect to HANSARD database
 db_connection = pyodbc.connect('Driver={SQL Server};'
@@ -28,7 +28,7 @@ def word_count_db(hansard_id, text_id, text):
     if text is not None:
         text_word_count = word_count(text)
     
-    print(hansard_id, text_id, text_word_count, sep=" -- ")
+    print(hansard_id, text_id, text_word_count, sep=" -- ") # DELETE WHEN FINISH TESTING
     db_cursor.execute("UPDATE HANSARD.dbo.FinalText SET WordCount = ? WHERE TextID = ? AND HansardID = ?", 
                       text_word_count, text_id, hansard_id)
 
@@ -83,11 +83,22 @@ for index, row in combined.iterrows():
     # Calculate and add keywords to HANSARDFilesInfo table if it does not exist
     if row['KeyWords'] == 'None':
         key_words = get_keywords(full_text)
-        print(hansard_id, key_words, sep=" -- ")
+        print(hansard_id, key_words, sep=" -- ") # DELETE WHEN FINISH TESTING
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET KeyWords = ? WHERE ID = ?", 
                           key_words, hansard_id)
 
-    # TODO: Document Summaries
+    # Document Summaries
+    if row['Summary'] == 'None':
+        summary = generate_summary_from_text(full_text, 3, False)
+        print(hansard_id, summary, sep=" -- ") # DELETE WHEN FINISH TESTING
+        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET Summary = ? WHERE ID = ?", 
+                          summary, hansard_id)
+
+    if row['TruncatedSummary'] == 'None':
+        summary = smart_truncate(full_text)
+        print(hansard_id, summary, sep=" -- ") # DELETE WHEN FINISH TESTING
+        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET TruncatedSummary = ? WHERE ID = ?", 
+                          summary, hansard_id)
 
     # TODO: Audit Team Key Terms
 
