@@ -1,4 +1,5 @@
 import pyodbc
+import os
 import pandas as pd
 from text_summary_statistics import word_count, get_keywords
 from document_summary import smart_truncate, generate_summary_from_text
@@ -78,9 +79,8 @@ text_search = pd.DataFrame(text, columns= ['HansardID','TextID','Text'])
 text_search['Text'] = text_search.Text.str.lower() # Convert to lowercase
 
 # Get Audit teams search terms
-import os
 dirname = os.path.dirname(__file__)
-filename = os.path.join(dirname, '..\\data\\AuditTeamTerms.xlsx')
+filename = os.path.join(dirname, '..\\..\\data\\AuditTeamTerms.xlsx')
 
 data = pd.read_excel(filename, sheet_name="Performance Audit")
 performance = pd.DataFrame(data)
