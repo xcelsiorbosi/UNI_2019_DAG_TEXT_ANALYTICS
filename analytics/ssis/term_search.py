@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import time
 
 
 def process_term(term):
@@ -21,7 +20,8 @@ def process_terms(terms):
     processed = terms.str.lower()  # Convert to lowercase
     processed = processed.str.strip()  # Trim any whitespace from ends
 
-    # Search for terms separated by '+' in any order: Use regex (?=.*\bTerm\b)(?=.*\bTerm\b) where \b is a word boundary
+    # Search for terms separated by '+' in any order:
+    # Use regex (?=.*\bTerm\b)(?=.*\bTerm\b) where \b is a word boundary
     processed = processed.str.replace(' *\+ *', r'\\b)(?=.*\\b')
     processed = processed.apply(lambda x: process_term(x))
 
@@ -65,57 +65,41 @@ def search_key_terms(terms_df, text_df, audit_team_name):
     return results
 
 
-def import_spreadsheet_terms(path, sheet_name):
-    excel_data = pd.read_excel(path, sheet_name=sheet_name)
-    excel_data = pd.DataFrame(excel_data)
-    excel_data['Alternate'] = excel_data.Alternate.replace(np.nan, '', regex=True)  # Replace missing alternate terms
-    excel_data = excel_data.astype({"Term": 'str', "Alternate": 'str'})
-    excel_data['TermPattern'] = process_terms(excel_data.Term)  # Process term into regular expression (regex)
-    excel_data['AlternatePattern'] = process_terms(excel_data.Alternate)  # Process alternate term into regex
-    return excel_data
+#def import_spreadsheet_terms(path, sheet_name):
+#    excel_data = pd.read_excel(path, sheet_name=sheet_name)
+#    excel_data = pd.DataFrame(excel_data)
+#    excel_data['Alternate'] = excel_data.Alternate.replace(np.nan, '', regex=True)  # Replace missing alternate terms
+#    excel_data = excel_data.astype({"Term": 'str', "Alternate": 'str'})
+#    excel_data['TermPattern'] = process_terms(excel_data.Term)  # Process term into regular expression (regex)
+#    excel_data['AlternatePattern'] = process_terms(excel_data.Alternate)  # Process alternate term into regex
+#    return excel_data
 
 
 # Import data from spreadsheet
-text = pd.read_excel("..\\data\\Hansard1102019.xlsx", sheet_name="Text")
-text = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
-text = text.astype({"HansardID": 'str', "TextID": 'str', "Text": 'str'})
-text['TextLower'] = text.Text.str.lower()  # Convert to lowercase
+#text = pd.read_excel("..\\data\\Hansard1102019.xlsx", sheet_name="Text")
+#text = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
+#text = text.astype({"HansardID": 'str', "TextID": 'str', "Text": 'str'})
+#text['TextLower'] = text.Text.str.lower()  # Convert to lowercase
 
 # Import key terms from spreadsheet
-performance = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Performance")
-government = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Local Government")
-it = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "IT")
+#performance = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Performance")
+#government = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Local Government")
+#it = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "IT")
 
-# TODO: Iterate through all sheets and import terms
-#df = pd.read_excel('excel_file_path.xls')
-#excel_file = pd.ExcelFile('excel_file_path.xls') # this will read the first sheet into df
-#for sheet_name in excel_file.sheet_names:
-#    terms = excel_file.parse(sheet_name) # Each sheet contains the terms for a separate audit team
-#    terms = pd.DataFrame(terms)
-#    terms['Alternate'] = terms.Alternate.replace(np.nan, '', regex=True)  # Replace missing alternate terms
-#    terms = terms.astype({"Term": 'str', "Alternate": 'str'})
-#    terms['TermPattern'] = process_terms(terms.Term)  # Process term into regular expression (regex)
-#    terms['AlternatePattern'] = process_terms(terms.Alternate)  # Process alternate term into regex
-#    search_results = search_key_term(terms, text, sheet_name) # The sheet name is the name of the audit team
+#start_time = time.time()
+#performance_terms = search_key_terms(performance, text, "Performance")  # Performance Audit Team Terms
+#government_terms = search_key_terms(government, text, "Local Government")  # Local Government Audit Team Terms
+#it_terms = search_key_terms(it, text, "IT")  # IT Audit Team Terms
 
-# TODO: Only run for HansardID's not already found in KeyTerms table.
-# TODO: If want to trigger a complete rebuild of the table because the clients spreadsheet has changed AGD will need to drop/clear the table.
-# TODO: Recreate table if it doesn't exist (in case AGD drop table instead of just clear it)
-
-start_time = time.time()
-performance_terms = search_key_terms(performance, text, "Performance")  # Performance Audit Team Terms
-government_terms = search_key_terms(government, text, "Local Government")  # Local Government Audit Team Terms
-it_terms = search_key_terms(it, text, "IT")  # IT Audit Team Terms
-
-end_time = time.time()
-total_time = end_time - start_time
-print(total_time)
+#end_time = time.time()
+#total_time = end_time - start_time
+#print(total_time)
 
 # Merge results and output to Excel
-merged_data = pd.concat([performance_terms, government_terms, it_terms], ignore_index=True)
-merged_data = merged_data.drop_duplicates()  # Drop duplicate rows
+#merged_data = pd.concat([performance_terms, government_terms, it_terms], ignore_index=True)
+#merged_data = merged_data.drop_duplicates()  # Drop duplicate rows
 
-print("Combined = ", merged_data.shape)
+#print("Combined = ", merged_data.shape)
 # Without alternate term search: 17873
 # With alternate term search:
-merged_data.to_excel('.\\TermSearch.xlsx', sheet_name='TermSearch', index=False)
+#merged_data.to_excel('.\\TermSearch.xlsx', sheet_name='TermSearch', index=False)
