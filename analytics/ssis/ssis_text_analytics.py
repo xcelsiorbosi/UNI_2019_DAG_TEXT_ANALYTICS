@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from text_summary_statistics import word_count, get_keywords
 from document_summary import smart_truncate, generate_summary_from_text
+#from term_search import process_terms, search_key_terms
 
 # Connect to HANSARD database
 #print(pyodbc.drivers()) # Print available ODBC drivers
@@ -21,7 +22,7 @@ info = info.astype({"ID":'str', "KeyWords":'str', "Summary":'str', "TruncatedSum
 # Get FinalText table
 text = pd.read_sql_query("SELECT *  FROM HANSARD.dbo.FinalText", db_connection)
 text = pd.DataFrame(text, columns= ['HansardID','TextID','Text','WordCount'])
-text = text.astype({"HansardID":'str', "TextID":'str', "Text":'str', "WordCount":'int'}) 
+text = text.astype({"HansardID":'str', "TextID":'str', "Text":'str', "WordCount":'str'})
 
 def word_count_db(hansard_id, text_id, text):
     # Calculate word count for specified text and add to Final Text table
@@ -33,8 +34,10 @@ def word_count_db(hansard_id, text_id, text):
                       text_word_count, text_id, hansard_id)
 
 # Iterate through Final Text table and add word count to table if it doesn't already exist
-text.loc[text['WordCount'] == None].apply(
-    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1) # 4019.269sec ~66 min
+text.loc[text['WordCount'] == 'None'].apply(
+    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1) # ~66 min for 8833 records
+
+db_connection.commit() # Commit changes to the HANSARD database
 
 # Get full text for each Hansard record
 grouped_text = text.groupby('HansardID')['Text'].agg(lambda col: '. '.join(col))
@@ -74,6 +77,8 @@ for index, row in combined.iterrows():
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET RecordText = ? WHERE ID = ?", 
                           full_text, hansard_id)
 
+
+db_connection.commit() # Commit changes to the HANSARD database
 
 # Determine whether text contains mentions of Audit Team Key Terms and add as new table to 
 # HANSARD database. Everytime this term search is run will replace the table in the database in case
@@ -132,7 +137,7 @@ it_terms['AuditTeam'] = "IT"
 # Merge search results
 merged_data = pd.concat([performance_terms, government_terms,it_terms], ignore_index=True)
 merged_data = merged_data.drop_duplicates() # Drop duplicate rows
-#print(merged_data.shape)
+print(merged_data.shape)
 
 # Add key term search results to KeyTerms table in HANSARD database
 db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms") # Delete all rows from table

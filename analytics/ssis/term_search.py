@@ -29,7 +29,7 @@ def process_terms(terms):
 
 
 # Search for Key Terms in Hansard Text
-def search_key_term(terms_df, text_df, audit_team_name):
+def search_key_terms(terms_df, text_df, audit_team_name):
     results = pd.DataFrame().reindex_like(text_df)
     results['Term'] = np.NaN
     del results['Text']  # Delete unneeded Text column from results
@@ -102,9 +102,9 @@ it = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "IT")
 # TODO: Recreate table if it doesn't exist (in case AGD drop table instead of just clear it)
 
 start_time = time.time()
-performance_terms = search_key_term(performance, text, "Performance")  # Performance Audit Team Terms
-government_terms = search_key_term(government, text, "Local Government")  # Local Government Audit Team Terms
-it_terms = search_key_term(it, text, "IT")  # IT Audit Team Terms
+performance_terms = search_key_terms(performance, text, "Performance")  # Performance Audit Team Terms
+government_terms = search_key_terms(government, text, "Local Government")  # Local Government Audit Team Terms
+it_terms = search_key_terms(it, text, "IT")  # IT Audit Team Terms
 
 end_time = time.time()
 total_time = end_time - start_time
