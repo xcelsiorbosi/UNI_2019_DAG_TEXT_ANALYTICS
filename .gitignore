@@ -1,8 +1,15 @@
 /xslt/output/*.xml
+
 /analytics/.ipynb_checkpoints/
 /analytics/__pycache__/
+/analytics/.Rhistory
+/analytics/ssis/__pycache__/
+/analytics/ssis/.Rhistory
+
 /xml_etl/.ipynb_checkpoints/
+/dashboard/dashboard_clients/.Rhistory
 /output/
+
 /.idea/
 /.vs/
 /.Rhistory

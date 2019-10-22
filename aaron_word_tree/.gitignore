@@ -1,8 +1,0 @@
-# PyCharm files.
-.idea/
-
-# Python compiled files.
-*.py[cod]
-
-# IPython Notebook checkpoints.
-.ipynb_checkpoints/

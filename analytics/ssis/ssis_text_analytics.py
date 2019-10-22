@@ -3,9 +3,11 @@ import os
 import pandas as pd
 from text_summary_statistics import word_count, get_keywords
 from document_summary import smart_truncate, generate_summary_from_text
+#from term_search import process_terms, search_key_terms
 
 # Connect to HANSARD database
-db_connection = pyodbc.connect('Driver={SQL Server};'
+#print(pyodbc.drivers()) # Print available ODBC drivers
+db_connection = pyodbc.connect('Driver={SQL Server Native Client 11.0};'
                       'Server=DA-PROD1;'
                       'Database=HANSARD;'
                       'Trusted_Connection=yes;')
@@ -13,14 +15,14 @@ db_connection = pyodbc.connect('Driver={SQL Server};'
 db_cursor = db_connection.cursor()
 
 # Get HANSARDFilesInfo table
-info = pd.read_sql_query("SELECT ID, KeyWords, Summary, TruncatedSummary FROM HANSARD.dbo.HANSARDFilesInfo", 
+info = pd.read_sql_query("SELECT ID, KeyWords, Summary, TruncatedSummary, RecordText FROM HANSARD.dbo.HANSARDFilesInfo", 
                          db_connection)
-info = info.astype({"ID":'str', "KeyWords":'str', "Summary":'str', "TruncatedSummary":'str'}) 
+info = info.astype({"ID":'str', "KeyWords":'str', "Summary":'str', "TruncatedSummary":'str', "RecordText":'str'}) 
 
 # Get FinalText table
 text = pd.read_sql_query("SELECT *  FROM HANSARD.dbo.FinalText", db_connection)
 text = pd.DataFrame(text, columns= ['HansardID','TextID','Text','WordCount'])
-text = text.astype({"HansardID":'str', "TextID":'str', "Text":'str', "WordCount":'int'}) 
+text = text.astype({"HansardID":'str', "TextID":'str', "Text":'str', "WordCount":'str'})
 
 def word_count_db(hansard_id, text_id, text):
     # Calculate word count for specified text and add to Final Text table
@@ -28,13 +30,14 @@ def word_count_db(hansard_id, text_id, text):
     if text is not None:
         text_word_count = word_count(text)
     
-    print(hansard_id, text_id, text_word_count, sep=" -- ") # DELETE WHEN FINISH TESTING
     db_cursor.execute("UPDATE HANSARD.dbo.FinalText SET WordCount = ? WHERE TextID = ? AND HansardID = ?", 
                       text_word_count, text_id, hansard_id)
 
 # Iterate through Final Text table and add word count to table if it doesn't already exist
-text.loc[text['WordCount'] == None].apply(
-    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1) # 4019.269sec ~66 min
+text.loc[text['WordCount'] == 'None'].apply(
+    lambda x:  word_count_db(x.HansardID, x.TextID, x.Text), axis=1) # ~66 min for 8833 records
+
+db_connection.commit() # Commit changes to the HANSARD database
 
 # Get full text for each Hansard record
 grouped_text = text.groupby('HansardID')['Text'].agg(lambda col: '. '.join(col))
@@ -54,22 +57,28 @@ for index, row in combined.iterrows():
     # Calculate and add keywords to HANSARDFilesInfo table if it does not exist
     if row['KeyWords'] == 'None':
         key_words = get_keywords(full_text)
-        print(hansard_id, key_words, sep=" -- ") # DELETE WHEN FINISH TESTING
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET KeyWords = ? WHERE ID = ?", 
                           key_words, hansard_id)
 
     # Document Summaries
     if row['Summary'] == 'None':
         summary = generate_summary_from_text(full_text, 3, False)
-        print(hansard_id, summary, sep=" -- ") # DELETE WHEN FINISH TESTING
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET Summary = ? WHERE ID = ?", 
                           summary, hansard_id)
 
     if row['TruncatedSummary'] == 'None':
         summary = smart_truncate(full_text)
-        print(hansard_id, summary, sep=" -- ") # DELETE WHEN FINISH TESTING
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET TruncatedSummary = ? WHERE ID = ?", 
                           summary, hansard_id)
+
+    # Full Record Text
+    if row['RecordText'] == 'None':
+        print(hansard_id, "Full Text", sep=" -- ") # DELETE WHEN FINISH TESTING
+        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET RecordText = ? WHERE ID = ?", 
+                          full_text, hansard_id)
+
+
+db_connection.commit() # Commit changes to the HANSARD database
 
 # Determine whether text contains mentions of Audit Team Key Terms and add as new table to 
 # HANSARD database. Everytime this term search is run will replace the table in the database in case

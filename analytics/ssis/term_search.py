@@ -1,69 +1,121 @@
 import pandas as pd
-
-data = pd.read_excel ("..\\data\\Hansard1102019.xlsx", sheet_name="Text")
-text = pd.DataFrame(data, columns= ['HansardID','TextID','Text'])
-text = text.astype({"HansardID":'str', "TextID":'str', "Text":'str'})
-text.Text = text.Text.str.lower() # Convert to lowercase
-
-def key_term_mentions(terms, text, audit_team_name):
-
-    terms['ProcessedTerm'] = terms.Term.str.lower() # Convert to lowercase
-
-    pattern = '|'.join(r"{}".format(x) for x in terms.ProcessedTerm)
-    text['MatchedTerm'] = text.Text.str.extract('(' + pattern + ')', expand=False)
-    term_mentions = pd.merge(terms, text, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
-    term_mentions.columns = ['Term','ProcessedTerm','FileName','TextID','Text']
-    del text['MatchedTerm'] # Delete newly added column from text data
-    del term_mentions['Text'] # Delete unneeded Text column from results
-    del term_mentions['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
-    term_mentions['AuditTeam'] = audit_team_name
-    return term_mentions
+import numpy as np
+import time
 
 
-data = pd.read_excel("..\\data\\AuditTeamTerms.xlsx", sheet_name="Performance Audit")
-performance = pd.DataFrame(data)
-performance['ProcessedTerm'] = performance.Term.str.lower() # Convert to lowercase
+def process_term(term):
+    if "?=.*" in term:
+        # Search for terms separated by any text and in any order
+        term = r'(?=.*\b' + term + r'\b)'
+    elif not term:
+        # Term does not exist and should not be processed further
+        return ""
+    else:
+        # Search for term as a whole word
+        term = r'\b(' + term + ')' + r'\b'  # \b word boundary
 
-data = pd.read_excel("..\\data\\AuditTeamTerms.xlsx", sheet_name="Local Government Audit")
-government = pd.DataFrame(data)
-government['ProcessedTerm'] = government.Term.str.lower() # Convert to lowercase
+    return term
 
-data = pd.read_excel("..\\data\\AuditTeamTerms.xlsx", sheet_name="IT Audit")
-it = pd.DataFrame(data)
-it['ProcessedTerm'] = it.Term.str.lower() # Convert to lowercase
 
-# Performance Audit Team Terms
-pattern = '|'.join(r"{}".format(x) for x in performance.ProcessedTerm)
-text['MatchedTerm'] = text.Text.str.extract('(' + pattern + ')', expand=False)
-performance_terms = pd.merge(performance, text, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
-performance_terms.columns = ['Term','ProcessedTerm','FileName','TextID','Text']
-del text['MatchedTerm'] # Delete newly added column from text data
-del performance_terms['Text'] # Delete unneeded Text column from results
-del performance_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
-performance_terms['AuditTeam'] = "Performance"
+def process_terms(terms):
+    processed = terms.str.lower()  # Convert to lowercase
+    processed = processed.str.strip()  # Trim any whitespace from ends
 
-# Local Government Audit Team Terms
-pattern = '|'.join(r"{}".format(x) for x in government.ProcessedTerm)
-text['MatchedTerm'] = text.Text.str.extract('('+ pattern + ')', expand=False)
-government_terms = pd.merge(government, text, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
-government_terms.columns = ['Term','Alternate','ProcessedTerm','FileName','TextID','Text']
-del text['MatchedTerm'] # Delete newly added column from text data
-del government_terms['Text'] # Delete unneeded Text column from results
-del government_terms['Alternate'] # Delete unneeded Alternate column from results
-del government_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
-government_terms['AuditTeam'] = "Local Government"
+    # Search for terms separated by '+' in any order: Use regex (?=.*\bTerm\b)(?=.*\bTerm\b) where \b is a word boundary
+    processed = processed.str.replace(' *\+ *', r'\\b)(?=.*\\b')
+    processed = processed.apply(lambda x: process_term(x))
 
-# IT Audit Team Terms
-pattern = '|'.join(r"{}".format(x) for x in it.ProcessedTerm)
-text['MatchedTerm'] = text.Text.str.extract('('+ pattern + ')', expand=False)
-it_terms = pd.merge(it, text, left_on= 'ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
-it_terms.columns = ['Term','ProcessedTerm','FileName','TextID','Text']
-del text['MatchedTerm'] # Delete newly added column from text data
-del it_terms['Text'] # Delete unneeded Text column from results
-del it_terms['ProcessedTerm'] # Delete unneeded ProcessedTerm column from results
-it_terms['AuditTeam'] = "IT"
+    return processed
+
+
+# Search for Key Terms in Hansard Text
+def search_key_terms(terms_df, text_df, audit_team_name):
+    results = pd.DataFrame().reindex_like(text_df)
+    results['Term'] = np.NaN
+    del results['Text']  # Delete unneeded Text column from results
+    del results['TextLower']  # Delete unneeded Text column from results
+    results = results.dropna()  # Delete all rows
+
+    for index, row in terms_df.iterrows():
+        # Search for match to term
+        match_term = text_df.TextLower.str.contains(row['TermPattern'], case=False, regex=True) | \
+                     text_df.Text.str.contains(row['TermPattern'], case=False, regex=True)
+
+        match = pd.DataFrame(match_term, columns=['Term'])
+
+        # Search for match to alternate term
+        if row['AlternatePattern']:
+            # Match to alternate term is true if a match has already been found for the original term
+            match_alternate = match['Term'] | \
+                              text_df.TextLower.str.contains(row['AlternatePattern'], case=False, regex=True) | \
+                              text_df.Text.str.contains(row['AlternatePattern'], case=False, regex=True)
+            match_alternate = pd.DataFrame(match_alternate, columns=['Alternate'])
+            match['Term'] = match['Term'] | match_alternate['Alternate']
+
+        if not match.empty:
+            match = pd.concat([text_df.reset_index(drop=True), match], axis=1)
+            del match['Text']  # Delete unneeded Text column from results
+            del match['TextLower']  # Delete unneeded TextLower column from results
+            match = match.loc[match.Term, :]  # drop rows that did not match term
+            match['Term'] = row['Term']
+            results = pd.concat([results, match], ignore_index=True, sort=False)  # Add matched terms to final result
+
+    results = results.drop_duplicates()  # Drop duplicate rows
+    results['AuditTeam'] = audit_team_name
+    return results
+
+
+def import_spreadsheet_terms(path, sheet_name):
+    excel_data = pd.read_excel(path, sheet_name=sheet_name)
+    excel_data = pd.DataFrame(excel_data)
+    excel_data['Alternate'] = excel_data.Alternate.replace(np.nan, '', regex=True)  # Replace missing alternate terms
+    excel_data = excel_data.astype({"Term": 'str', "Alternate": 'str'})
+    excel_data['TermPattern'] = process_terms(excel_data.Term)  # Process term into regular expression (regex)
+    excel_data['AlternatePattern'] = process_terms(excel_data.Alternate)  # Process alternate term into regex
+    return excel_data
+
+
+# Import data from spreadsheet
+text = pd.read_excel("..\\data\\Hansard1102019.xlsx", sheet_name="Text")
+text = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
+text = text.astype({"HansardID": 'str', "TextID": 'str', "Text": 'str'})
+text['TextLower'] = text.Text.str.lower()  # Convert to lowercase
+
+# Import key terms from spreadsheet
+performance = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Performance")
+government = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "Local Government")
+it = import_spreadsheet_terms("..\\data\\AuditTeamTerms.xlsx", "IT")
+
+# TODO: Iterate through all sheets and import terms
+#df = pd.read_excel('excel_file_path.xls')
+#excel_file = pd.ExcelFile('excel_file_path.xls') # this will read the first sheet into df
+#for sheet_name in excel_file.sheet_names:
+#    terms = excel_file.parse(sheet_name) # Each sheet contains the terms for a separate audit team
+#    terms = pd.DataFrame(terms)
+#    terms['Alternate'] = terms.Alternate.replace(np.nan, '', regex=True)  # Replace missing alternate terms
+#    terms = terms.astype({"Term": 'str', "Alternate": 'str'})
+#    terms['TermPattern'] = process_terms(terms.Term)  # Process term into regular expression (regex)
+#    terms['AlternatePattern'] = process_terms(terms.Alternate)  # Process alternate term into regex
+#    search_results = search_key_term(terms, text, sheet_name) # The sheet name is the name of the audit team
+
+# TODO: Only run for HansardID's not already found in KeyTerms table.
+# TODO: If want to trigger a complete rebuild of the table because the clients spreadsheet has changed AGD will need to drop/clear the table.
+# TODO: Recreate table if it doesn't exist (in case AGD drop table instead of just clear it)
+
+start_time = time.time()
+performance_terms = search_key_terms(performance, text, "Performance")  # Performance Audit Team Terms
+government_terms = search_key_terms(government, text, "Local Government")  # Local Government Audit Team Terms
+it_terms = search_key_terms(it, text, "IT")  # IT Audit Team Terms
+
+end_time = time.time()
+total_time = end_time - start_time
+print(total_time)
 
 # Merge results and output to Excel
-merged_data = pd.concat([performance_terms, government_terms,it_terms], ignore_index=True)
-merged_data = merged_data.drop_duplicates() # Drop duplicate rows
+merged_data = pd.concat([performance_terms, government_terms, it_terms], ignore_index=True)
+merged_data = merged_data.drop_duplicates()  # Drop duplicate rows
+
+print("Combined = ", merged_data.shape)
+# Without alternate term search: 17873
+# With alternate term search:
 merged_data.to_excel('.\\TermSearch.xlsx', sheet_name='TermSearch', index=False)
