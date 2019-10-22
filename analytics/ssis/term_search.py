@@ -46,7 +46,8 @@ def search_key_terms(terms_df, text_df, audit_team_name):
         # Search for match to alternate term
         if row['AlternatePattern']:
             # Match to alternate term is true if a match has already been found for the original term
-            match_alternate = text_df.TextLower.str.contains(row['AlternatePattern'], case=False, regex=True) | \
+            match_alternate = match['Term'] | \
+                              text_df.TextLower.str.contains(row['AlternatePattern'], case=False, regex=True) | \
                               text_df.Text.str.contains(row['AlternatePattern'], case=False, regex=True)
             match_alternate = pd.DataFrame(match_alternate, columns=['Alternate'])
             match['Term'] = match['Term'] | match_alternate['Alternate']
