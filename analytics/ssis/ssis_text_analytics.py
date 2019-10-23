@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import numpy as np
 from text_summary_statistics import word_count, get_keywords
-from document_summary import smart_truncate, generate_summary_from_text
+from document_summary import generate_summary_from_text
 from term_search import process_terms, search_key_terms
 
 
@@ -20,9 +20,9 @@ db_connection = pyodbc.connect('Driver={SQL Server Native Client 11.0};'
 db_cursor = db_connection.cursor()
 
 # Get HANSARDFilesInfo table
-info = pd.read_sql_query("SELECT ID, KeyWords, Summary, TruncatedSummary, RecordText FROM HANSARD.dbo.HANSARDFilesInfo",
+info = pd.read_sql_query("SELECT ID, KeyWords, Summary, RecordText FROM HANSARD.dbo.HANSARDFilesInfo",
                          db_connection)
-info = info.astype({"ID": 'str', "KeyWords": 'str', "Summary": 'str', "TruncatedSummary": 'str', "RecordText": 'str'})
+info = info.astype({"ID": 'str', "KeyWords": 'str', "Summary": 'str', "RecordText": 'str'})
 
 # Get FinalText table
 text = pd.read_sql_query("SELECT *  FROM HANSARD.dbo.FinalText", db_connection)
@@ -70,15 +70,10 @@ for index, row in combined.iterrows():
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET KeyWords = ? WHERE ID = ?",
                           key_words, hansard_id)
 
-    # Document Summaries
+    # Document Summary
     if row['Summary'] == 'None':
         summary = generate_summary_from_text(full_text, 3, False)
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET Summary = ? WHERE ID = ?",
-                          summary, hansard_id)
-
-    if row['TruncatedSummary'] == 'None':
-        summary = smart_truncate(full_text)
-        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET TruncatedSummary = ? WHERE ID = ?",
                           summary, hansard_id)
 
     # Full Record Text

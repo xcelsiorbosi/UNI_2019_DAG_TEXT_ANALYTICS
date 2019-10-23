@@ -8,18 +8,9 @@ from nltk.stem import WordNetLemmatizer
 from nltk.stem import SnowballStemmer  # is based on The Porter Stemming Algorithm
 import numpy as np
 import networkx as nx
-from gensim.summarization.summarizer import summarize
 
 nltk.download('stopwords')
 nltk.download('wordnet')
-
-
-def smart_truncate(content, length=200, suffix='...'):
-    # This function truncates the content to the specified number of characters and appends suffix.
-    if len(content) <= length:
-        return content
-    else:
-        return ' '.join(content[:length + 1].split(' ')[0:-1]) + suffix
 
 
 # https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70
