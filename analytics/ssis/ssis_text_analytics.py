@@ -29,6 +29,7 @@ text = pd.read_sql_query("SELECT *  FROM HANSARD.dbo.FinalText", db_connection)
 text = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text', 'WordCount'])
 text = text.astype({"HansardID": 'str', "TextID": 'str', "Text": 'str', "WordCount": 'str'})
 
+print("Starting word count ...")
 
 def word_count_db(hansard_id, text_id, text):
     # Calculate word count for specified text and add to Final Text table
@@ -56,6 +57,8 @@ grouped_text['Text'] = grouped_text.Text.replace("\?.", "\?")
 # Combine full text with HansardFilesInfo table
 combined = pd.merge(grouped_text, info, how='inner', left_on='HansardID', right_on='ID')
 
+print("Starting key words and document summaries ...")
+
 # Iterate over all Hansard records in database and add sentiment and summaries if they do not already exist
 for index, row in combined.iterrows():
     hansard_id = row['ID']
@@ -80,7 +83,6 @@ for index, row in combined.iterrows():
 
     # Full Record Text
     if row['RecordText'] == 'None':
-        print(hansard_id, "Full Text", sep=" -- ")  # DELETE WHEN FINISH TESTING
         db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET RecordText = ? WHERE ID = ?",
                           full_text, hansard_id)
 
@@ -91,8 +93,10 @@ db_connection.commit()  # Commit changes to the HANSARD database
 # HANSARD database. Every time this term search is run will replace the table in the database in case
 # of changes to key terms listed in the spreadsheet. 
 
+print("Starting key term search ...")
+
 text_search = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
-text_search['Text'] = text_search.Text.str.lower()  # Convert to lowercase
+text_search['TextLower'] = text_search.Text.str.lower()  # Convert to lowercase
 
 # TODO: Only run for HansardID's not already found in KeyTerms table.
 # TODO: If want to trigger a complete rebuild of the table because the clients spreadsheet has changed AGD will need to drop/clear the table.
@@ -121,75 +125,10 @@ for sheet_name in excel_file.sheet_names:
                           row['TextID'],
                           row['Term'],
                           row['AuditTeam'])
+    
+    print("Committed Terms for Audit Team:", sheet_name, search_results.shape, sep=" ")
 
-    db_connection.commit() # Commit changes to the HANSARD database
-    print("Committed Terms:", sheet_name, search_results.shape, sep=" ")
-
-# Get Audit teams search terms
-#dirname = os.path.dirname(__file__)
-#filename = os.path.join(dirname, '..\\..\\data\\AuditTeamTerms.xlsx')
-
-#data = pd.read_excel(filename, sheet_name="Performance Audit")
-#performance = pd.DataFrame(data)
-#performance['ProcessedTerm'] = performance.Term.str.lower()  # Convert to lowercase
-
-#data = pd.read_excel(filename, sheet_name="Local Government Audit")
-#government = pd.DataFrame(data)
-#government['ProcessedTerm'] = government.Term.str.lower()  # Convert to lowercase
-
-#data = pd.read_excel(filename, sheet_name="IT Audit")
-#it = pd.DataFrame(data)
-#it['ProcessedTerm'] = it.Term.str.lower()  # Convert to lowercase
-
-# Performance Audit Team Terms
-#pattern = '|'.join(r"{}".format(x) for x in performance.ProcessedTerm)
-#text_search['MatchedTerm'] = text_search.Text.str.extract('(' + pattern + ')', expand=False)
-#performance_terms = pd.merge(performance, text_search, left_on='ProcessedTerm', right_on='MatchedTerm').drop(
-#    'MatchedTerm', axis=1)
-#performance_terms.columns = ['Term', 'ProcessedTerm', 'HansardID', 'TextID', 'Text']
-#del text_search['MatchedTerm']  # Delete newly added column from text data
-#del performance_terms['Text']  # Delete unneeded Text column from results
-#del performance_terms['ProcessedTerm']  # Delete unneeded ProcessedTerm column from results
-#performance_terms['AuditTeam'] = "Performance"
-
-# Local Government Audit Team Terms
-#pattern = '|'.join(r"{}".format(x) for x in government.ProcessedTerm)
-#text_search['MatchedTerm'] = text_search.Text.str.extract('(' + pattern + ')', expand=False)
-#government_terms = pd.merge(government, text_search, left_on='ProcessedTerm', right_on='MatchedTerm').drop(
-#    'MatchedTerm', axis=1)
-#government_terms.columns = ['Term', 'Alternate', 'ProcessedTerm', 'HansardID', 'TextID', 'Text']
-#del text_search['MatchedTerm']  # Delete newly added column from text data
-#del government_terms['Text']  # Delete unneeded Text column from results
-#del government_terms['Alternate']  # Delete unneeded Alternate column from results
-#del government_terms['ProcessedTerm']  # Delete unneeded ProcessedTerm column from results
-#government_terms['AuditTeam'] = "Local Government"
-
-# IT Audit Team Terms
-#pattern = '|'.join(r"{}".format(x) for x in it.ProcessedTerm)
-#text_search['MatchedTerm'] = text_search.Text.str.extract('(' + pattern + ')', expand=False)
-#it_terms = pd.merge(it, text_search, left_on='ProcessedTerm', right_on='MatchedTerm').drop('MatchedTerm', axis=1)
-#it_terms.columns = ['Term', 'ProcessedTerm', 'HansardID', 'TextID', 'Text']
-#del text_search['MatchedTerm']  # Delete newly added column from text data
-#del it_terms['Text']  # Delete unneeded Text column from results
-#del it_terms['ProcessedTerm']  # Delete unneeded ProcessedTerm column from results
-#it_terms['AuditTeam'] = "IT"
-
-# Merge search results
-#merged_data = pd.concat([performance_terms, government_terms, it_terms], ignore_index=True)
-#merged_data = merged_data.drop_duplicates()  # Drop duplicate rows
-#print(merged_data.shape)
-
-# Add key term search results to KeyTerms table in HANSARD database
-#db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms")  # Delete all rows from table
-#for index, row in merged_data.iterrows():
-#    db_cursor.execute("INSERT INTO HANSARD.dbo.KeyTerms([HansardID],[TextID],[Term],[AuditTeam]) VALUES (?,?,?,?)",
-#                      row['HansardID'],
-#                      row['TextID'],
-#                      row['Term'],
-#                      row['AuditTeam'])
-
-# Commit changes to the HANSARD database
-#db_connection.commit()
+db_connection.commit() # Commit changes to the HANSARD database
 
 # Close connection to the database
 db_cursor.close()
