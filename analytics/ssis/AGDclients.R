@@ -7,7 +7,7 @@ library(RODBC)
 
 
 #importing Clients table
-clients = read_xlsx("C:\\Users\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS\\data\\Clients12102019.xlsx", sheet = "Sheet1")
+clients = read_xlsx("C:\\Users\\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS\\data\\Clients12102019.xlsx", sheet = "Sheet1")
 #Connecting to the Text table on the SQL Server DB
 
 dbhandle <- odbcDriverConnect('driver={SQL Server};server=DA-PROD1;database=HANSARD;trusted_connection=true')
