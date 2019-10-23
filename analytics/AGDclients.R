@@ -11,7 +11,7 @@ clients = read_xlsx("C:\\Users\\student2\\Desktop\\Clients_mention_Dashboard_Re_
 #Connecting to the Text table on the SQL Server DB
 
 dbhandle <- odbcDriverConnect('driver={SQL Server};server=DA-PROD1;database=HANSARD;trusted_connection=true')
-currTableSQL<-paste("SELECT *  FROM HANSARD.dbo.Text",sep="")
+currTableSQL<-paste("SELECT *  FROM HANSARD.dbo.FinalText",sep="")
 
 Hansard1102019 <-sqlQuery(dbhandle,currTableSQL)
 
@@ -41,12 +41,12 @@ TextClient1 <- merge(x = Client_File, y = clients, by = "AGDClient", all.x = TRU
 
 # Dropping the unnecessary columns and Rownames and renaming the HAnsardID
 
-TextClient <- select(TextClient1, -c("TalkerID", "Text", "Kind"))
+TextClient <- select(TextClient1, -c("TalkerID", "Text", "Kind","WordCount"))
 
-names(TextClient)[3]<-"FileName"
+#names(TextClient)[3]<-"FileName"
 
 # Inserting the Data into clientsmention table on Hansard DB on SS
-sqlSave(dbhandle, TextClient[c("FileName","TextID","AGDClient","AGDFormal","ClientType")], tablename = "ClientsMention",rownames = FALSE)
+sqlSave(dbhandle, TextClient[c("HansardID","TextID","AGDClient","AGDFormal","ClientType")], tablename = "ClientsMention",rownames = FALSE)
 
 #Closing the DB Connection
 odbcClose(dbhandle)
