@@ -7,7 +7,7 @@ library(RODBC)
 
 
 #importing Clients table
-clients = read_xlsx("C:\\Users\\student2\\Desktop\\Clients_mention_Dashboard_Re_Moe\\Clients12102019.xlsx", sheet = "Sheet1")
+clients = read_xlsx("C:\\Users\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS\\data\\Clients12102019.xlsx", sheet = "Sheet1")
 #Connecting to the Text table on the SQL Server DB
 
 dbhandle <- odbcDriverConnect('driver={SQL Server};server=DA-PROD1;database=HANSARD;trusted_connection=true')
@@ -43,7 +43,6 @@ TextClient1 <- merge(x = Client_File, y = clients, by = "AGDClient", all.x = TRU
 
 TextClient <- select(TextClient1, -c("TalkerID", "Text", "Kind","WordCount"))
 
-#names(TextClient)[3]<-"FileName"
 
 # Inserting the Data into clientsmention table on Hansard DB on SS
 sqlSave(dbhandle, TextClient[c("HansardID","TextID","AGDClient","AGDFormal","ClientType")], tablename = "ClientsMention",rownames = FALSE)
