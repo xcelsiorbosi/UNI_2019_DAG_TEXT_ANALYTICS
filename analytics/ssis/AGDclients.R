@@ -7,7 +7,7 @@ library(RODBC)
 
 
 # Import Clients and their alternate names from spreadsheet
-clients = read_xlsx("C:\\Users\\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS\\data\\Clients12102019.xlsx", sheet = "Sheet1")
+clients = read_xlsx("C:\\Users\\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS\\data\\ClientNames.xlsx", sheet = "Sheet1")
 
 # Connect to the Text table on the HANSARD SQL Server database
 db_connection <- odbcDriverConnect('driver={SQL Server};server=DA-PROD1;database=HANSARD;trusted_connection=true')

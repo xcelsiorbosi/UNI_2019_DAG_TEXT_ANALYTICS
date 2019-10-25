@@ -9,36 +9,36 @@ library(SnowballC)
 library(textclean)
 library(stopwords)
 #importing text sheet
-LDA.Hansard1102019 = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard1102019.xlsx", sheet = "Text")
+LDA.Hansard22102019 = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx", sheet = "Text")
 
 #importing talker staging sheet
-TalkerStaging = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard1102019.xlsx", 
+TalkerStaging = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx",
                           sheet = "TalkerStaging")
 
 Talker = unique(TalkerStaging$TalkerName)
 #Talker = paste0('"',Talker,'"')
 Electorate=unique(TalkerStaging$Electorate)
 
-#path = ("C:\\Users\\Bipin Karki\\Downloads\\Hansard1102019.xlsx")
+#path = ("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx")
 
-LDA.Hansard1102019 = LDA.Hansard1102019 %>% filter(LDA.Hansard1102019$Kind != "NULL")
+LDA.Hansard22102019 = LDA.Hansard22102019 %>% filter(LDA.Hansard22102019$Kind != "NULL")
 
 listofphrase = c("The PRESIDENT:  Minister.", "Leave granted.","Members interjecting:", "The SPEAKER:  Order!", 
                  "The SPEAKER:", "interjecting:", "NULL","The PRESIDENT:","The CHAIR:")
 
 #removing rows that has above list of phrase
-LDA.Hansard1102019 = drop_row(LDA.Hansard1102019, "Text", listofphrase,  ignore.case=TRUE)
-#LDA.Hansard1102019$Text = str_replace(LDA.Hansard1102019$Text, "The Hon.*:","")
+LDA.Hansard22102019 = drop_row(LDA.Hansard22102019, "Text", listofphrase,  ignore.case=TRUE)
+#LDA.Hansard22102019$Text = str_replace(LDA.Hansard22102019$Text, "The Hon.*:","")
 
 #removing talker names
-LDA.Hansard1102019$Text <- gsub(paste0(Talker,collapse = "|"),"", LDA.Hansard1102019$Text)
+LDA.Hansard22102019$Text <- gsub(paste0(Talker,collapse = "|"),"", LDA.Hansard22102019$Text)
 
 #removing Electorate information
-LDA.Hansard1102019$Text <- gsub(paste0(Electorate,collapse = "|"),"", LDA.Hansard1102019$Text)
+LDA.Hansard22102019$Text <- gsub(paste0(Electorate,collapse = "|"),"", LDA.Hansard22102019$Text)
 
 
 #Question Kind
-LDA.Hansard.question = filter(LDA.Hansard1102019, LDA.Hansard1102019$Kind == "question")
+LDA.Hansard.question = filter(LDA.Hansard22102019, LDA.Hansard22102019$Kind == "question")
 
 #Stop word "stopwords.txt" file location from database
 
@@ -47,7 +47,7 @@ listofStopWords = readLines('C:\\Users\\Bipin Karki\\Desktop\\stopwords.txt')
 stop_word <- c(stopwords("english"), "advised", "reply","null", "hon", "january",
                "february", 'march', 'april', 'may', 'minister', 'xhas', 'new','general', 'attorney',
                'june', 'july', 'august', 'september', 'will','since', 'school','picton',
-               'october', 'november', 'december','advisedthe', 'stuartâminister',
+               'october', 'november', 'december','advisedthe', 'stuartï¿½minister',
                'reply', 'can', 'per', 'total', 'many', 'xwhat', 'currently', 'following',
                'australian', 'department','opposition', 'provide','provided', 'including',
                'learning', 'Bill','bill', 'government', 'say', 'well', 'might', 'get','days',
@@ -59,7 +59,7 @@ stop_word <- c(stopwords("english"), "advised", "reply","null", "hon", "january"
                'without','every','must', 'whether', 'answer', 'question', 'leave', 'make', 'asking', 'members',
                'explanation', 'brief', 'asking', 'arising', 'seek', 'member', 'interjecting', 'australia',
                'south', 'state', 'regarding', 'house', 'time', 'inform', 'office', 'receive', 'day', 'review',
-               'understand','first','croydonâleader','premier', 'years','croydon\xe2leader','staff', listofStopWords)
+               'understand','first','croydonï¿½leader','premier', 'years','croydon\xe2leader','staff', listofStopWords)
 
 
 dtm <- CreateDtm(doc_vec = LDA.Hansard.question$Text, # character vector of documents

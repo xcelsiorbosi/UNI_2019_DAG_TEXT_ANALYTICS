@@ -16,13 +16,13 @@ library(SnowballC)
 
 
 #importing text sheet
-LDA.Hansard1102019 = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard1102019.xlsx", sheet = "Text")
+LDA.Hansard22102019 = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx", sheet = "Text")
 
 #getting header sheet
-LDA.HANSARD.header = data.frame(read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard1102019.xlsx", sheet = "Header"))
+LDA.HANSARD.header = data.frame(read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx", sheet = "Header"))
 
 #Combining all the text transcript by HansardID, Kind and TalkerID
-LDA.Hansard.Texts.all = LDA.Hansard1102019 %>% group_by(Kind, TalkerID, HansardID) %>% summarise(discussion = paste(Text, collapse = " "))
+LDA.Hansard.Texts.all = LDA.Hansard22102019 %>% group_by(Kind, TalkerID, HansardID) %>% summarise(discussion = paste(Text, collapse = " "))
 
 #merging talker information and header information
 LDA.Hansard.Texts.all = merge(x = LDA.Hansard.Texts.all[,-c(1)], y = LDA.HANSARD.header[,-c(8,10)], 
