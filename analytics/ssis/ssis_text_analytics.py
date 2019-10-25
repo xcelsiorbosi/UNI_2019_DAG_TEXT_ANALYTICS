@@ -56,47 +56,51 @@ grouped_text['Text'] = grouped_text.Text.replace("\?.", "\?")
 
 # Combine full text with HansardFilesInfo table
 combined = pd.merge(grouped_text, info, how='inner', left_on='HansardID', right_on='ID')
+combined = combined.loc[combined['KeyWords'] == 'None'] # Get rows without key words already calculated
 
 print("Starting key words and document summaries ...")
 
-# Iterate over all Hansard records in database and add sentiment and summaries if they do not already exist
+# Iterate over Hansard records in database and add sentiment, summary and full text if they do not already exist
 for index, row in combined.iterrows():
     hansard_id = row['ID']
     full_text = row['Text']
 
-    # Calculate and add keywords to HANSARDFilesInfo table if it does not exist
-    if row['KeyWords'] == 'None':
-        key_words = get_keywords(full_text)
-        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET KeyWords = ? WHERE ID = ?",
-                          key_words, hansard_id)
+    # Calculate and add keywords to HANSARDFilesInfo table 
+    key_words = get_keywords(full_text)
+    db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET KeyWords = ? WHERE ID = ?",
+                      key_words, hansard_id)
 
     # Document Summary
-    if row['Summary'] == 'None':
-        summary = generate_summary_from_text(full_text, 3, False)
-        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET Summary = ? WHERE ID = ?",
-                          summary, hansard_id)
+    summary = generate_summary_from_text(full_text, 3, False)
+    db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET Summary = ? WHERE ID = ?",
+                      summary, hansard_id)
 
     # Full Record Text
-    if row['RecordText'] == 'None':
-        db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET RecordText = ? WHERE ID = ?",
-                          full_text, hansard_id)
+    db_cursor.execute("UPDATE HANSARD.dbo.HANSARDFilesInfo SET RecordText = ? WHERE ID = ?",
+                      full_text, hansard_id)
 
 db_connection.commit()  # Commit changes to the HANSARD database
 
 
 # Determine whether text contains mentions of Audit Team Key Terms and add as new table to 
-# HANSARD database. Every time this term search is run will replace the table in the database in case
-# of changes to key terms listed in the spreadsheet. 
+# HANSARD database. Term search is only run for Hansard ID's that do not appear in KeyTerms table. 
 
 print("Starting key term search ...")
 
 text_search = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
 text_search['TextLower'] = text_search.Text.str.lower()  # Convert to lowercase
+        
+#db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms")  # Delete all rows from table
+#db_connection.commit() # Commit changes to the HANSARD database
+#print("Delete KeyTerms rows")
 
-# TODO: Only run for HansardID's not already found in KeyTerms table.
-# TODO: If want to trigger a complete rebuild of the table because the clients spreadsheet has changed AGD will need to drop/clear the table.
-# TODO: Recreate table if it doesn't exist (in case AGD drop table instead of just clear it)
-db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms")  # Delete all rows from table
+# Filter out text that have already been searched for key terms
+key_terms_table = pd.read_sql_query("SELECT HansardID FROM HANSARD.dbo.KeyTerms",
+                         db_connection)
+key_terms_table = key_terms_table.astype({"HansardID": 'str'})
+if (len(key_terms_table.index) > 0):
+    hansard_records_searched = key_terms_table.HansardID.unique() # Hansard records already searched for key terms
+    text_search = text_search[~text_search['HansardID'].isin(hansard_records_searched)]
 
 # Get Excel Spreadsheet containing Audit Team key terms
 dirname = os.path.dirname(__file__)
@@ -112,7 +116,7 @@ for sheet_name in excel_file.sheet_names:
     terms['TermPattern'] = process_terms(terms.Term)  # Process term into regular expression (regex)
     terms['AlternatePattern'] = process_terms(terms.Alternate)  # Process alternate term into regex
     search_results = search_key_terms(terms, text_search, sheet_name)  # The sheet name is the name of the audit team
-
+    
     # Add key term search results to KeyTerms table in HANSARD database
     for index, row in search_results.iterrows():
         db_cursor.execute("INSERT INTO HANSARD.dbo.KeyTerms([HansardID],[TextID],[Term],[AuditTeam]) VALUES (?,?,?,?)",

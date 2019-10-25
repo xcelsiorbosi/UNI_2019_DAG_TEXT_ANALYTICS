@@ -36,29 +36,32 @@ def search_key_terms(terms_df, text_df, audit_team_name):
     del results['TextLower']  # Delete unneeded Text column from results
     results = results.dropna()  # Delete all rows
 
-    for index, row in terms_df.iterrows():
+    for index, row in terms_df.iterrows():        
+
         # Search for match to term
         match_term = text_df.TextLower.str.contains(row['TermPattern'], case=False, regex=True) | \
                      text_df.Text.str.contains(row['TermPattern'], case=False, regex=True)
 
         match = pd.DataFrame(match_term, columns=['Term'])
 
-        # Search for match to alternate term
-        if row['AlternatePattern']:
-            # Match to alternate term is true if a match has already been found for the original term
-            match_alternate = match['Term'] | \
-                              text_df.TextLower.str.contains(row['AlternatePattern'], case=False, regex=True) | \
+        # Search for match to alternate term     
+        if row['AlternatePattern']:      
+            # Assumes match to alternate term is true if a match has already been found for the original term
+            match_alternate = match['Term'] | text_df.TextLower.str.contains(row['AlternatePattern'], case=False, regex=True) | \
                               text_df.Text.str.contains(row['AlternatePattern'], case=False, regex=True)
             match_alternate = pd.DataFrame(match_alternate, columns=['Alternate'])
             match['Term'] = match['Term'] | match_alternate['Alternate']
-
+        
+        # Add matched terms (if any exist) to final result
         if not match.empty:
-            match = pd.concat([text_df.reset_index(drop=True), match], axis=1)
+            match = pd.concat([text_df.reset_index(drop=True), match], axis=1)         
             del match['Text']  # Delete unneeded Text column from results
             del match['TextLower']  # Delete unneeded TextLower column from results
+            match = match.dropna()  # drop rows with null values
             match = match.loc[match.Term, :]  # drop rows that did not match term
-            match['Term'] = row['Term']
-            results = pd.concat([results, match], ignore_index=True, sort=False)  # Add matched terms to final result
+            if not match.empty:
+                match['Term'] = row['Term']                
+                results = pd.concat([results, match], ignore_index=True, sort=False)  
 
     results = results.drop_duplicates()  # Drop duplicate rows
     results['AuditTeam'] = audit_team_name
