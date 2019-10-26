@@ -11,12 +11,16 @@ These instructions will get you a copy of the project up and running on your loc
 Listed below are what is required to run this project. 
 
 * [Python](https://www.python.org/downloads/) 
+    * Minimum version Python 3.7
 * [R](https://www.r-project.org/)
+    * Minimum version R 3.6.1
 * [Selenium](https://selenium-python.readthedocs.io/installation.html)
     * Python module selenium can be installed using pip: ``` $pip install selenium  ```
 * [Chrome Web Driver](https://chromedriver.chromium.org/getting-started)
 * [Google Chrome](https://www.google.com/chrome/)
 * [Saxon: XSLT and XQuery Processor](http://saxon.sourceforge.net/)
+
+Additional prerequisites, such as Python and R libraries, are described in the Installation and Deployment Guide in the documentation directory. 
 
 ### Installation and Deployment
 

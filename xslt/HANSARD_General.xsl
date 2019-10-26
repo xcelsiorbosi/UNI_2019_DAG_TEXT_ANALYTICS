@@ -1,6 +1,9 @@
 <?xml version='1.0' ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" indent="yes" version="1.0" encoding="UTF-8" />
+	<!-- This XSLT is used to extract useful information for the Hansard Data Mining Project and outputs this information
+	into an XML format more easily processed by SSIS. It can be applied to all 15 proceeding types currently available
+	through the Hansard web page as of 26th Octoboer 2019 -->
 
 	<xsl:template match="/">
         <xsl:element name="hansard">
