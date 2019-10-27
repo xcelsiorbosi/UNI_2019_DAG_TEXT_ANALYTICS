@@ -9,7 +9,6 @@ from text_summary_statistics import word_count, get_keywords
 from document_summary import generate_summary_from_text
 from term_search import process_terms, search_key_terms
 
-
 # Connect to HANSARD database
 # print(pyodbc.drivers()) # Print available ODBC drivers
 db_connection = pyodbc.connect('Driver={SQL Server Native Client 11.0};'
@@ -30,6 +29,7 @@ text = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text', 'WordCount'])
 text = text.astype({"HansardID": 'str', "TextID": 'str', "Text": 'str', "WordCount": 'str'})
 
 print("Starting word count ...")
+
 
 def word_count_db(hansard_id, text_id, text):
     # Calculate word count for specified text and add to Final Text table
@@ -56,7 +56,7 @@ grouped_text['Text'] = grouped_text.Text.replace("\?.", "\?")
 
 # Combine full text with HansardFilesInfo table
 combined = pd.merge(grouped_text, info, how='inner', left_on='HansardID', right_on='ID')
-combined = combined.loc[combined['KeyWords'] == 'None'] # Get rows without key words already calculated
+combined = combined.loc[combined['KeyWords'] == 'None']  # Get rows without key words already calculated
 
 print("Starting key words and document summaries ...")
 
@@ -81,25 +81,19 @@ for index, row in combined.iterrows():
 
 db_connection.commit()  # Commit changes to the HANSARD database
 
-
-# Determine whether text contains mentions of Audit Team Key Terms and add as new table to 
+# Determine whether text contains mentions of Audit Team Key Terms and add as new table to
 # HANSARD database. Term search is only run for Hansard ID's that do not appear in KeyTerms table. 
 
 print("Starting key term search ...")
 
 text_search = pd.DataFrame(text, columns=['HansardID', 'TextID', 'Text'])
 text_search['TextLower'] = text_search.Text.str.lower()  # Convert to lowercase
-        
-#db_cursor.execute("DELETE FROM HANSARD.dbo.KeyTerms")  # Delete all rows from table
-#db_connection.commit() # Commit changes to the HANSARD database
-#print("Delete KeyTerms rows")
 
 # Filter out text that have already been searched for key terms
-key_terms_table = pd.read_sql_query("SELECT HansardID FROM HANSARD.dbo.KeyTerms",
-                         db_connection)
+key_terms_table = pd.read_sql_query("SELECT HansardID FROM HANSARD.dbo.KeyTerms", db_connection)
 key_terms_table = key_terms_table.astype({"HansardID": 'str'})
-if (len(key_terms_table.index) > 0):
-    hansard_records_searched = key_terms_table.HansardID.unique() # Hansard records already searched for key terms
+if len(key_terms_table.index) > 0:
+    hansard_records_searched = key_terms_table.HansardID.unique()  # Hansard records already searched for key terms
     text_search = text_search[~text_search['HansardID'].isin(hansard_records_searched)]
 
 # Get Excel Spreadsheet containing Audit Team key terms
@@ -116,7 +110,7 @@ for sheet_name in excel_file.sheet_names:
     terms['TermPattern'] = process_terms(terms.Term)  # Process term into regular expression (regex)
     terms['AlternatePattern'] = process_terms(terms.Alternate)  # Process alternate term into regex
     search_results = search_key_terms(terms, text_search, sheet_name)  # The sheet name is the name of the audit team
-    
+
     # Add key term search results to KeyTerms table in HANSARD database
     for index, row in search_results.iterrows():
         db_cursor.execute("INSERT INTO HANSARD.dbo.KeyTerms([HansardID],[TextID],[Term],[AuditTeam]) VALUES (?,?,?,?)",
@@ -124,10 +118,10 @@ for sheet_name in excel_file.sheet_names:
                           row['TextID'],
                           row['Term'],
                           row['AuditTeam'])
-    
+
     print("Committed Terms for Audit Team:", sheet_name, search_results.shape, sep=" ")
 
-db_connection.commit() # Commit changes to the HANSARD database
+db_connection.commit()  # Commit changes to the HANSARD database
 
 # Close connection to the database
 db_cursor.close()

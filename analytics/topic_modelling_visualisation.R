@@ -1,5 +1,4 @@
-
-#loading requred library
+# Load  required libraries
 library(readxl)
 library(tidyr)
 library(dplyr)
@@ -14,62 +13,58 @@ library(tm)
 library(stringr)
 library(SnowballC)
 
+project_path = "C:\\Users\\student\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
 
-#importing text sheet
-LDA.Hansard22102019 = read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx", sheet = "Text")
+input_file = paste(project_path, "\\data\\Hansard22102019.xlsx", sep="")
 
-#getting header sheet
-LDA.HANSARD.header = data.frame(read_xlsx("C:\\Users\\Bipin Karki\\Downloads\\Hansard22102019.xlsx", sheet = "Header"))
+# Import data from Excel spreadsheet
+data = read_xlsx(input_file, sheet = "Text")
+header = data.frame(read_xlsx(input_file, sheet = "Header"))
 
-#Combining all the text transcript by HansardID, Kind and TalkerID
-LDA.Hansard.Texts.all = LDA.Hansard22102019 %>% group_by(Kind, TalkerID, HansardID) %>% summarise(discussion = paste(Text, collapse = " "))
+# Combine all the text transcript by HansardID, Kind and TalkerID
+text = data %>% group_by(Kind, TalkerID, HansardID) %>% summarise(discussion = paste(Text, collapse = " "))
 
-#merging talker information and header information
-LDA.Hansard.Texts.all = merge(x = LDA.Hansard.Texts.all[,-c(1)], y = LDA.HANSARD.header[,-c(8,10)], 
-                          by.x = c("HansardID"), by.y = c("HansardID"))
-unique(LDA.Hansard.Texts.all$ProceedingType)
+# Merge talker information and header information
+text = merge(x = text[,-c(1)], y = header[,-c(8,10)], by.x = c("HansardID"), by.y = c("HansardID"))
+unique(text$ProceedingType)
 
 #converting list (Hansard.Texts) into data frame (Hansard.Texts)
-LDA.Hansard.bills = filter(LDA.Hansard.Texts.all, LDA.Hansard.Texts.all$ProceedingType == "Bills")
+bills = filter(text, text$ProceedingType == "Bills")
 
-#######################BAsic TEXT ANALYSIS OF DISCUSSION########################
+#######################  BASIC TEXT ANALYSIS OF DISCUSSION ########################
 
 # Build corpus
-corpus_bills <- iconv(LDA.Hansard.bills$discussion, to = "UTF-8")
+corpus_bills <- iconv(bills$discussion, to = "UTF-8")
 corpus_bills <- Corpus(VectorSource(corpus_bills))
 
-#change to lowercase
-Hansard.bills <- tm_map(corpus_bills, content_transformer(tolower))
+# Change to lowercase
+hansard_bills <- tm_map(corpus_bills, content_transformer(tolower))
 
+# Remove everything except English words
+remove_punctuation <- function(x) gsub("[^[:alpha:][:space:]]*", "", x)
+hansard_bills <- tm_map(hansard_bills, content_transformer(remove_punctuation))
 
-#remove everything except english words
-removeNumPunct <- function(x) gsub("[^[:alpha:][:space:]]*", "", x)
-Hansard.bills <- tm_map(Hansard.bills, content_transformer(removeNumPunct))
+# Remove stop words
+hansard_bills = tm_map(hansard_bills, removeWords, stop_word)
 
+# Remove whitespace
+hansard_bills <- tm_map(hansard_bills, stripWhitespace)
 
-#removing stop words
-Hansard.bills = tm_map(Hansard.bills, removeWords, stop_word) 
-#remove whitespace
-Hansard.bills <- tm_map(Hansard.bills, stripWhitespace)
+# Topic Modelling
 
-
-#topic Modelling
-
-#importing clean dataset in an matrix form
-doc.lengths <- rowSums(as.matrix(DocumentTermMatrix(Hansard.bills)))
-dtm <- DocumentTermMatrix(Hansard.bills[doc.lengths > 0])
+# Import clean dataset in an matrix form
+doc_lengths <- rowSums(as.matrix(DocumentTermMatrix(hansard_bills)))
+dtm <- DocumentTermMatrix(hansard_bills[doc_lengths > 0])
 
 # Now for some topics
 SEED = sample(1:1000000, 1)  # Pick a random seed for replication
 k = 5  # Let's start with 5 topics
+models <- LDA(dtm, k = k, control = list(seed = SEED)) # This might take a minute!
 
-# This might take a minute!
-models <- LDA(dtm, k = k, control = list(seed = SEED))
-
-#list of Topics
+# List of Topics
 terms(models, 10)
 
-#interactive visualization of topic modelling
+# Interactive visualisation of topic modelling
 topicmodels_json_ldavis <- function(fitted, doc_term){
   require(LDAvis)
   require(slam)
@@ -89,7 +84,5 @@ topicmodels_json_ldavis <- function(fitted, doc_term){
   return(json_lda)
 }
 
-
 json_res <- topicmodels_json_ldavis(models, dtm)
-
 serVis(json_res)
