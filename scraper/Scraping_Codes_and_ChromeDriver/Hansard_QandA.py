@@ -4,7 +4,7 @@ from datetime import timedelta
 
 #setting startdate and end date
 end_date = (datetime.today().strftime('%d/%m/%Y'))
-start_date = datetime.today()-timedelta(days=85)
+start_date = datetime.today()-timedelta(days=30)
 start_date = (start_date.strftime('%d/%m/%Y'))
 
 # Import all necessary packages for the project.
