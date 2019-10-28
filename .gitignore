@@ -5,6 +5,7 @@
 /analytics/.Rhistory
 /analytics/ssis/__pycache__/
 /analytics/ssis/.Rhistory
+/analytics/word_tree/.ipynb_checkpoints/
 
 /xml_etl/.ipynb_checkpoints/
 /dashboard/dashboard_clients/.Rhistory

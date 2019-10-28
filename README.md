@@ -10,21 +10,22 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites 
 Listed below are what is required to run this project. 
 
-* [Python](https://www.python.org/downloads/) ```TODO: Is there a specific version of python required?```
+* [Python](https://www.python.org/downloads/) 
+    * Minimum version Python 3.7
+* [R](https://www.r-project.org/)
+    * Minimum version R 3.6.1
 * [Selenium](https://selenium-python.readthedocs.io/installation.html)
     * Python module selenium can be installed using pip: ``` $pip install selenium  ```
 * [Chrome Web Driver](https://chromedriver.chromium.org/getting-started)
 * [Google Chrome](https://www.google.com/chrome/)
 * [Saxon: XSLT and XQuery Processor](http://saxon.sourceforge.net/)
+    * Version 9 provided in xslt/saxon directory
 
-### Installing
-```TODO: A step by step series of examples that tell you how to get a development environment running```
+Additional prerequisites, such as Python and R libraries, are described in the Installation and Deployment Guide in the documentation directory. 
 
-## Running the tests
-```TODO: Explain how to run the automated tests for this system. If we have any```
+### Installation and Deployment
 
-## Deployment
-```TODO: Add additional notes about how to deploy this on a live system```
+An Installation and Deployment Guide for this project is included in the documentation directory.
 
 ## Contributing
 When contributing to this project follow these steps:

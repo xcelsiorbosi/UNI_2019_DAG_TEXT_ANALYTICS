@@ -1,9 +1,6 @@
-from nltk.tokenize import word_tokenize
-import nltk
 # nltk.download('punkt')
-
-
 import pandas as pd
+from nltk.tokenize import word_tokenize
 
 
 try: 
@@ -18,16 +15,9 @@ except:
 	wordHansardLookUp = pd.DataFrame(None, columns=["word", "textID"])
 	wordHansardLookUp.to_csv('wordHansardLookUp.csv')
 
-
-
-# print(wordLoopUp)
-
-
 from nltk.tokenize import sent_tokenize
-df = pd.read_excel("..\\data\\Hansard1102019.xlsx")
+df = pd.read_excel("..\\data\\Hansard22102019.xlsx")
 # print(df.head())
-
-
 
 dfTemp = df
 print(dfTemp.columns)
@@ -42,10 +32,6 @@ for i in dfTemp['Text']:
     except:
         print("error")
         sentTokens.append("blank")
-
-
-from nltk.tokenize import word_tokenize
-
 
 loops = len(sentTokens)
 
@@ -83,15 +69,8 @@ def clean(sent):
 	return sent
 
 
-
-
-def checkBag(listOfWordTokens, TextID):
+def check_bag(listOfWordTokens, TextID):
 	# print(listOfWordTokens)
-
-
-			# ["wordID", "textID"]
-
-
 	for i in listOfWordTokens:
 		dfTempBagOfWords = pd.read_csv('wordLookUp.csv')
 		wordHansardLookUp = pd.read_csv('wordHansardLookUp.csv')
@@ -106,7 +85,6 @@ def checkBag(listOfWordTokens, TextID):
 			#word and textID
 			wordLocAndWord = [currentWord, TextID]
 			# newFrameTextToTextID = pd.DataFrame([wordLocAndWord],columns = ["wordID", "textID"])
-			
 
 			tempwordHansardLookUp = wordHansardLookUp.append(newFrameTextToTextID)
 			tempwordHansardLookUp = tempwordHansardLookUp.drop_duplicates()
@@ -117,16 +95,15 @@ def checkBag(listOfWordTokens, TextID):
 			print('adding to wordBank')
 			# wordIDs.append(word_id)
 			
-			#word and bagofwords
+			# word and bagofwords
 			thing = [currentWord, word_id]
 			newFrame = pd.DataFrame([thing],columns = ['word', 'wordID'])
 			tempBagofwords = dfTempBagOfWords.append(newFrame)
 
-			#word and textID
+			# word and textID
 			wordLocAndWord = [currentWord, TextID]
 			newFrameTextToTextID = pd.DataFrame([wordLocAndWord],columns = ["word", "textID"])
 			tempwordHansardLookUp = wordHansardLookUp.append(newFrameTextToTextID)
-
 
 			print("-------------------------------")
 			print(tempBagofwords)
@@ -148,11 +125,8 @@ for i in range(loops):
 	wordTokens.append(a)
 	textID = df['TextID'][i]
 	for j in wordTokens:
-		checkBag(j,textID)
-
-
+		check_bag(j,textID)
 
 # import pandas as pd
-# df = pd.read_excel("..\\data\\Hansard1102019.xlsx")
-
+# df = pd.read_excel("..\\data\\Hansard22102019.xlsx")
 # print(df['TextID'][8])
