@@ -36,7 +36,7 @@ driver.find_element_by_name('searchend').clear()
 driver.find_element_by_name('searchend').send_keys(end_date)  # end date to finish scraping
 driver.find_element_by_class_name('hansard-search-button').click()  # it clecks search icon in the page after
 time.sleep(3)
-driver.find_element_by_xpath(("//*[@title=\"Refine by: Answers to Questions\"]")).click()  # this will select only debates from filters in the website present in left side
+driver.find_element_by_xpath("//*[@title=\"Refine by: Answers to Questions\"]").click()  # this will select only debates from filters in the website present in left side
 time.sleep(3)
 
 # Scraping all the websites that has debates and storing in the list called allherfs

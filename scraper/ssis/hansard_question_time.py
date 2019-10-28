@@ -12,7 +12,7 @@ config = configparser.ConfigParser()
 config.read('..\\config.ini')
 chrome_driver = config['Paths']['chrome']
 interval_days = int(config['Scraper']['scraper_days'])
-question_time_directory = config['Paths']['answers']
+question_time_directory = config['Paths']['question_time']
 
 # Set start date and end date
 end_date = (datetime.today().strftime('%d/%m/%Y'))
@@ -37,7 +37,7 @@ driver.find_element_by_name('searchend').send_keys(end_date)  # end date to fini
 driver.find_element_by_class_name(
     'hansard-search-button').click()  # it clicks search icon in the page after dates are specified
 time.sleep(3)
-driver.find_element_by_xpath(("//*[@title=\"Refine by: Question Time\"]")).click()  # this will select only question time from filters in the website
+driver.find_element_by_xpath("//*[@title=\"Refine by: Question Time\"]").click()  # this will select only question time from filters in the website
 time.sleep(3)
 
 # Scraping all the websites that has debates and storing in the list called allherfs

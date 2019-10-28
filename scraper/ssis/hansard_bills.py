@@ -1,7 +1,7 @@
 # Import library
+import configparser
 from datetime import datetime
 from datetime import timedelta
-import configparser
 
 # Read required values from projects configuration file
 config = configparser.ConfigParser()
@@ -37,7 +37,7 @@ driver.find_element_by_name('searchend').clear()
 driver.find_element_by_name('searchend').send_keys(end_date)   # end date to finish scraping
 driver.find_element_by_class_name('hansard-search-button').click()  # it clicks search icon in the page after
 time.sleep(3)
-driver.find_element_by_xpath(("//*[@title=\"Refine by: Bills\"]")).click()  # this will select only debates from filters in the website present in left side
+driver.find_element_by_xpath("//*[@title=\"Refine by: Bills\"]").click()  # this will select only debates from filters in the website present in left side
 time.sleep(3)
 
 
