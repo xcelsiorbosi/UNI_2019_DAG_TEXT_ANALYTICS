@@ -14,6 +14,7 @@ nltk.download('wordnet')
 
 
 # https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70
+# https://medium.com/@shivangisareen/text-summarisation-with-gensim-textrank-46bbb3401289
 # Approach uses TextRank algorithm
 # TextRank does not rely on any previous training data and can work with any arbitrary piece of text.
 # TextRank is a general purpose graph-based ranking algorithm for NLP

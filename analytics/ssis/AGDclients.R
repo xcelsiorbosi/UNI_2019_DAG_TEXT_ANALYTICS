@@ -5,7 +5,7 @@ library(dplyr)
 library(stringr)
 library(RODBC)
 
-project_path = "C:\\Users\\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
+project_path = "C:\\Users\\student\\source\\repos\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
 
 input_file = paste(project_path, "\\data\\ClientNames.xlsx", sep="")
 
