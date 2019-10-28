@@ -9,7 +9,7 @@ library(SnowballC)
 library(textclean)
 library(stopwords)
 
-project_path = "C:\\Users\\student\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
+project_path = "C:\\Users\\student2\\Documents\\GitHub\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
 
 input_file = paste(project_path, "\\data\\Hansard22102019.xlsx", sep="")
 stopwords_file = paste(project_path, '\\data\\stopwords.txt', sep="")

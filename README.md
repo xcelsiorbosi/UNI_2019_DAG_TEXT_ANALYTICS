@@ -19,6 +19,7 @@ Listed below are what is required to run this project.
 * [Chrome Web Driver](https://chromedriver.chromium.org/getting-started)
 * [Google Chrome](https://www.google.com/chrome/)
 * [Saxon: XSLT and XQuery Processor](http://saxon.sourceforge.net/)
+    * Version 9 provided in xslt/saxon directory
 
 Additional prerequisites, such as Python and R libraries, are described in the Installation and Deployment Guide in the documentation directory. 
 
