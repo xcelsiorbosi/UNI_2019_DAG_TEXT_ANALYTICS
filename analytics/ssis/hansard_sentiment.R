@@ -48,6 +48,8 @@ if (nrow(info) > 0) {
   
   # Close the database Connection
   odbcClose(db_connection)
+  
+  rm(breaked_discussion, hansard_text, sentiment_discussion)
     
   # Plot sentiment scores
   #qplot(sentiment_discussion$ave_sentiment, geom="histogram",binwidth=0.05,
@@ -70,5 +72,5 @@ if (nrow(info) > 0) {
 
 }
   
-rm(text, combined, breaked_discussion, hansard_text, info, sentiment_discussion, db_connection)
+rm(text, info, db_connection)
   

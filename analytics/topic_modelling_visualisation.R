@@ -22,19 +22,18 @@ stopwords_file = paste(project_path, '\\data\\stopwords.txt', sep="")
 data = read_xlsx(input_file, sheet = "Text")
 header = data.frame(read_xlsx(input_file, sheet = "Header"))
 
-# Combine all the text transcript by HansardID, Kind and TalkerID
+# Combine all text transcripts by HansardID, Kind and TalkerID
 text = data %>% group_by(Kind, TalkerID, HansardID) %>% summarise(discussion = paste(Text, collapse = " "))
 
 # Merge talker information and header information
 text = merge(x = text[,-c(1)], y = header[,-c(8,10)], by.x = c("HansardID"), by.y = c("HansardID"))
 unique(text$ProceedingType)
 
-#converting list (Hansard.Texts) into data frame (Hansard.Texts)
 bills = filter(text, text$ProceedingType == "Bills")
 
 #######################  BASIC TEXT ANALYSIS OF DISCUSSION ########################
 
-# Stop word "stopwords.txt" file location from database
+# Read stop words from file
 stopwords_list = readLines(stopwords_file) 
 
 stop_word <- c(stopwords("english"), "advised", "reply","null", "hon", "january",
