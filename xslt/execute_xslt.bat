@@ -1,6 +1,6 @@
 rem Proceeding Types on Hansard as of 15/09/2019: http://hansardpublic.parliament.sa.gov.au/#/search/0
 rem Question Time
-java -jar "%~dp0/saxon/saxon9he.jar" "%~dp0/input/HANSARD-10-27650.xml "%~dp0\HANSARD_General.xsl" -o:"%~dp0/output/xslt_HANSARD-10-27650_question_time.xml"
+java -jar "%~dp0/saxon/saxon9he.jar" "%~dp0/input/HANSARD-10-27650.xml" "%~dp0\HANSARD_General.xsl" -o:"%~dp0/output/xslt_HANSARD-10-27650_question_time.xml"
 
 rem Answers to Questions
 java -jar "%~dp0/saxon/saxon9he.jar" "%~dp0/input/HANSARD-11-32902.xml" "%~dp0\HANSARD_General.xsl" -o:"%~dp0/output/xslt_HANSARD-11-32902_questions_and_answers.xml"
