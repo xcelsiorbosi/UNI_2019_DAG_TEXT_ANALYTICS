@@ -16,6 +16,7 @@ library(SnowballC)
 project_path = "C:\\Users\\student\\source\\repos\\UNI_2019_DAG_TEXT_ANALYTICS" # UPDATE
 
 input_file = paste(project_path, "\\data\\Hansard22102019.xlsx", sep="")
+stopwords_file = paste(project_path, '\\data\\stopwords.txt', sep="")
 
 # Import data from Excel spreadsheet
 data = read_xlsx(input_file, sheet = "Text")
@@ -32,6 +33,26 @@ unique(text$ProceedingType)
 bills = filter(text, text$ProceedingType == "Bills")
 
 #######################  BASIC TEXT ANALYSIS OF DISCUSSION ########################
+
+# Stop word "stopwords.txt" file location from database
+stopwords_list = readLines(stopwords_file) 
+
+stop_word <- c(stopwords("english"), "advised", "reply","null", "hon", "january",
+               "february", 'march', 'april', 'may', 'minister', 'xhas', 'new','general', 'attorney',
+               'june', 'july', 'august', 'september', 'will','since', 'school','picton',
+               'october', 'november', 'december','advisedthe', 'stuart�minister',
+               'reply', 'can', 'per', 'total', 'many', 'xwhat', 'currently', 'following',
+               'australian', 'department','opposition', 'provide','provided', 'including',
+               'learning', 'Bill','bill', 'government', 'say', 'well', 'might', 'get','days',
+               'want', 'provides', 'like', 'one', 'much', 'look','way', 'know', 'last','today',
+               'just', 'two','xthe', 'made','think','within', 'given','place','another',
+               'put','take','now','sure','part', 'also', 'advice', 'year', 'number', 'made',
+               'think', 'may', 'see', 'able', 'set','better','close','outline','relation','asked','ensure',
+               'ask','use','thing','however','quite','put','give','next','question','questions','yesterday',
+               'without','every','must', 'whether', 'answer', 'question', 'leave', 'make', 'asking', 'members',
+               'explanation', 'brief', 'asking', 'arising', 'seek', 'member', 'interjecting', 'australia',
+               'south', 'state', 'regarding', 'house', 'time', 'inform', 'office', 'receive', 'day', 'review',
+               'understand','first','croydon�leader','premier', 'years','croydon\xe2leader','staff', stopwords_list)
 
 # Build corpus
 corpus_bills <- iconv(bills$discussion, to = "UTF-8")

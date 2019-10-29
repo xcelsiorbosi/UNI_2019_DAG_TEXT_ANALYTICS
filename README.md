@@ -18,6 +18,7 @@ Listed below are what is required to run this project.
     * Python module selenium can be installed using pip: ``` $pip install selenium  ```
 * [Chrome Web Driver](https://chromedriver.chromium.org/getting-started)
 * [Google Chrome](https://www.google.com/chrome/)
+* [Java](https://www.java.com/en/download/)
 * [Saxon: XSLT and XQuery Processor](http://saxon.sourceforge.net/)
     * Version 9 provided in xslt/saxon directory
 

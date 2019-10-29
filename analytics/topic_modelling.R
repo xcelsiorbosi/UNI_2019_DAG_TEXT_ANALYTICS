@@ -22,7 +22,7 @@ data = read_xlsx(input_file, sheet = "Text")
 talker_staging = read_xlsx(input_file, sheet = "TalkerStaging")
 
 talker = unique(talker_staging$TalkerName)
-electorate=unique(talker_staging$electorate)
+electorate=unique(talker_staging$Electorate)
 
 data = data %>% filter(data$Kind != "NULL")
 
@@ -102,7 +102,7 @@ model_list <- TmParallelApply(X = k_list, FUN = function(k){
                    cpus = 1)
   m$k <- k
   m
-}, export= ls(), # c("question_dtm"), # export only needed for Windows machines
+}, export = ls(), # c("question_dtm"), # export only needed for Windows machines
 cpus = 2) 
 
 # Get average coherence for each model
