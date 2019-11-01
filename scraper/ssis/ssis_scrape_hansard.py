@@ -8,7 +8,6 @@ config = configparser.ConfigParser()
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, '..\\..\\config.ini')
 config.read(filename)
-print(config.sections)
 bill_directory = config['Paths']['bills']
 answers_directory = config['Paths']['answers']
 question_time_directory = config['Paths']['question_time']
