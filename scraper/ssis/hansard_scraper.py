@@ -62,14 +62,14 @@ def scrape_hansard(output_directory, debate_filter):
         soup = BeautifulSoup(html, 'html.parser')
     
     all_hrefs = [string + s for s in all_hrefs]  # adding string to compete the webpage link
-    driver.close()
 
     # Scrape all XML files for individual debates
-    driver = webdriver.Chrome(executable_path=chrome_driver, chrome_options=options)
     for i in range(len(all_hrefs)):        
         driver.get(all_hrefs[i])
         driver.find_element_by_xpath("//*[@alt=\"XML\"]").click()  # download the XML file
-        time.sleep(10)
+        #time.sleep(10)
+    
+    time.sleep(10)
     
     driver.close()
     driver.quit()
