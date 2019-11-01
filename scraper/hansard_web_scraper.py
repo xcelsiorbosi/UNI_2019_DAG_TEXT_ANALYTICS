@@ -18,10 +18,12 @@ def proceeding_filter(directory, xpath):
 
     # Read required values from projects configuration file
     config = configparser.ConfigParser()
-    config.read('..\\config.ini')
-    chrome_driver = config['Paths']['chrome']
-    interval_days = int(config['Scraper']['scraper_days'])
-
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, '..\\config.ini')
+    config.read(filename)
+    chrome_driver = config.get('Paths', 'chrome')
+    interval_days = int(config.get('Scraper', 'scraper_days'))
+    
     # Set Chrome option settings
     options = webdriver.ChromeOptions()
     options.add_experimental_option("prefs", {

@@ -1,20 +1,23 @@
 # Import libraries
 import configparser
 import time
+import os
 from datetime import datetime
 from datetime import timedelta
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
 
 def scrape_hansard(output_directory, debate_filter):
+
     # Read required values from projects configuration file
     config = configparser.ConfigParser()
-    config.read('..\\config.ini')
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, '..\\..\\config.ini')
+    config.read(filename)
     chrome_driver = config['Paths']['chrome']
     interval_days = int(config['Scraper']['scraper_days'])
-
+    
     # Set start date and end date
     end_date = (datetime.today().strftime('%d/%m/%Y'))
     start_date = datetime.today() - timedelta(days=interval_days)

@@ -7,6 +7,8 @@
 /analytics/ssis/.Rhistory
 /analytics/word_tree/.ipynb_checkpoints/
 
+/scraper/ssis/__pycache__/
+
 /xml_etl/.ipynb_checkpoints/
 /dashboard/dashboard_clients/.Rhistory
 /output/

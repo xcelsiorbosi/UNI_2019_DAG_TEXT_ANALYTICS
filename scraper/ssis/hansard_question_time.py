@@ -9,7 +9,9 @@ import os
 
 # Read required values from projects configuration file
 config = configparser.ConfigParser()
-config.read('..\\config.ini')
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '..\\..\\config.ini')
+config.read(filename)
 chrome_driver = config['Paths']['chrome']
 interval_days = int(config['Scraper']['scraper_days'])
 question_time_directory = config['Paths']['question_time']
@@ -19,7 +21,6 @@ end_date = (datetime.today().strftime('%d/%m/%Y'))
 start_date = datetime.today() - timedelta(days=interval_days)
 start_date = (start_date.strftime('%d/%m/%Y'))
 
-cwd = os.getcwd()
 options = webdriver.ChromeOptions()  # option settings
 options.add_experimental_option("prefs", {
     "download.default_directory": question_time_directory,  # path of folder where xmls needs to be saved

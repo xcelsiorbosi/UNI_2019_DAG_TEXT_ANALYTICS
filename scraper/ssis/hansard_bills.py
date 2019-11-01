@@ -1,11 +1,17 @@
-# Import library
+# Import all necessary packages for the project.
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import time
+import os
 import configparser
 from datetime import datetime
 from datetime import timedelta
 
 # Read required values from projects configuration file
 config = configparser.ConfigParser()
-config.read('..\\config.ini')
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '..\\..\\config.ini')
+config.read(filename)
 chrome_driver = config['Paths']['chrome']
 interval_days = int(config['Scraper']['scraper_days'])
 bill_directory = config['Paths']['bills']
@@ -15,12 +21,6 @@ end_date = (datetime.today().strftime('%d/%m/%Y'))
 start_date = datetime.today()-timedelta(days=interval_days)
 start_date = (start_date.strftime('%d/%m/%Y'))
 
-# Import all necessary packages for the project.
-from selenium import webdriver
-from bs4 import BeautifulSoup
-import time
-import os
-cwd = os.getcwd()
 options = webdriver.ChromeOptions()  # option settings
 options.add_experimental_option("prefs", {
   "download.default_directory": bill_directory,
