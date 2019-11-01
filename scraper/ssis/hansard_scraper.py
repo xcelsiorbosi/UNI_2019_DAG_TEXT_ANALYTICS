@@ -40,8 +40,7 @@ def scrape_hansard(output_directory, debate_filter):
     driver.find_element_by_name('searchend').send_keys(end_date)  # end date to finish scraping
     driver.find_element_by_class_name('hansard-search-button').click()  # it clicks search icon in the page after
     time.sleep(3)
-    driver.find_element_by_xpath(
-        debate_filter).click()  # select only debates from filters in the website present in left side
+    driver.find_element_by_xpath(debate_filter).click()  # select only debates from filters in the website present in left side
     time.sleep(3)
 
     # Scraping all the websites that has debates and storing in the list called all_hrefs
@@ -61,13 +60,16 @@ def scrape_hansard(output_directory, debate_filter):
         time.sleep(10)
         html = driver.page_source.encode("utf-8")  # this will again grab new link to the website of another page
         soup = BeautifulSoup(html, 'html.parser')
+    
     all_hrefs = [string + s for s in all_hrefs]  # adding string to compete the webpage link
     driver.close()
 
     # Scrape all XML files for individual debates
-    for i in range(len(all_hrefs)):
-        driver = webdriver.Chrome(executable_path=chrome_driver, chrome_options=options)
+    driver = webdriver.Chrome(executable_path=chrome_driver, chrome_options=options)
+    for i in range(len(all_hrefs)):        
         driver.get(all_hrefs[i])
         driver.find_element_by_xpath("//*[@alt=\"XML\"]").click()  # download the XML file
         time.sleep(10)
-        driver.close()
+    
+    driver.close()
+    driver.quit()
