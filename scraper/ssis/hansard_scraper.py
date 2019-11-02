@@ -6,6 +6,7 @@ from datetime import datetime
 from datetime import timedelta
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 def scrape_hansard(output_directory, debate_filter):
@@ -47,29 +48,46 @@ def scrape_hansard(output_directory, debate_filter):
     # Note: In this section the links of individual XML pages are stored
     html = driver.page_source.encode("utf-8")  # Find the current page that driver is running
     soup = BeautifulSoup(html, 'html.parser')  # Take all the HTML tags from the page
-    string = "http://hansardpublic.parliament.sa.gov.au/Pages/"  # this string is added later in the extracted href to complete the webpage link of individual XML file
+    hansard_url = "http://hansardpublic.parliament.sa.gov.au/Pages/"  # this string is added later in the extracted href to complete the webpage link of individual XML file
     all_hrefs = []  # all_hrefs contains links of individual XML file page
     while soup.findAll("a", title="Move to next page"):  # Take the page into next page until there is next click icon
         for title in soup.findAll("h3"):  # Look for <h3> tags in the page because this tag has links to the XML file
-            hrefs = title.findAll("a", href=True)  # looking for all <a> that has href inside it
+            hrefs = title.findAll("a", href=True)  # Look for all <a> that has href inside it
             if len(hrefs) > 0:
                 hrefs = hrefs[0]["href"]
-                all_hrefs.append(hrefs)  # appending all links to XML in all_hrefs
+                all_hrefs.append(hrefs)  # append all links to XML in all_hrefs
         time.sleep(4)
-        driver.find_element_by_id('PageLinkNext').click()  # this will click the next page icon
+        driver.find_element_by_id('PageLinkNext').click()  # click the next page icon
         time.sleep(10)
-        html = driver.page_source.encode("utf-8")  # this will again grab new link to the website of another page
+        html = driver.page_source.encode("utf-8")  # grab new link to the website of another page
         soup = BeautifulSoup(html, 'html.parser')
+
+    # Get links for last page that does not have a "Move to next page" button
+    for title in soup.findAll("h3"):  # Look for <h3> tags in the page because this tag has links to the XML file
+        hrefs = title.findAll("a", href=True)  # looking for all <a> that has href inside it
+        if len(hrefs) > 0:
+            hrefs = hrefs[0]["href"]
+            all_hrefs.append(hrefs)  # append all links to XML in all_hrefs
     
-    all_hrefs = [string + s for s in all_hrefs]  # adding string to compete the webpage link
+    all_hrefs = [hansard_url + s for s in all_hrefs]  # adding string to compete the webpage link
 
     # Scrape all XML files for individual debates
     for i in range(len(all_hrefs)):        
         driver.get(all_hrefs[i])
         driver.find_element_by_xpath("//*[@alt=\"XML\"]").click()  # download the XML file
-        #time.sleep(10)
-    
-    time.sleep(10)
-    
+        
+    # Waits for all the files to be completed and returns the paths
+    WebDriverWait(driver, 240, 10).until(every_downloads_chrome)
+        
     driver.close()
     driver.quit()
+
+
+def every_downloads_chrome(driver):
+    if not driver.current_url.startswith("chrome://downloads"):
+        driver.get("chrome://downloads/")
+    return driver.execute_script("""
+        var items = downloads.Manager.get().items_;
+        if (items.every(e => e.state === "COMPLETE"))
+            return items.map(e => e.fileUrl || e.file_url);
+        """)
